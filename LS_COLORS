@@ -330,14 +330,20 @@ CAPABILITY            38;5;17
 .epf                  1
 # }}}
 # }}}
-# code {{{1
-# version control {{{2
+
+
+
+#################################
+####  Code Source Files {1}  ####
+#################################
+
+###    version control {2}    ### 
 .git                  38;5;197
 .gitignore            38;5;240
 .gitattributes        38;5;240
 .gitmodules           38;5;240
 
-# shell {{{2
+###        shell {2}         ###
 .awk                  38;5;172
 .bash                 38;5;172
 .bat                  38;5;172
@@ -348,80 +354,81 @@ CAPABILITY            38;5;17
 .vim                  38;5;172
 .kak                  38;5;172
 
-# interpreted {{{2
+###      interpreted {2}      ###
 .ahk                  38;5;41
-# python
+## python
 .py                   38;5;41
 .ipynb                38;5;41
-# ruby
+## ruby
 .rb                   38;5;41
 .gemspec              38;5;41
-# perl
+## perl
 .pl                   38;5;208
 .PL                   38;5;160
 .t                    38;5;114
-# sql
+## sql
 .msql                 38;5;222
 .mysql                38;5;222
 .pgsql                38;5;222
 .sql                  38;5;222
-#   Tool Command Language
+## Tool Command Language
 .tcl                  38;5;64;1
-# R language
+## R language
 .r                    38;5;49
 .R                    38;5;49
-# GrADS script
+## GrADS script
 .gs                   38;5;81
-# Clojure
+## Clojure
 .clj                  38;5;41
 .cljs                 38;5;41
 .cljc                 38;5;41
-# Clojure gorilla REPL worksheet
+## Clojure gorilla REPL worksheet
 .cljw                 38;5;41
-# Scala
+## Scala
 .scala                38;5;41
 .sc                   38;5;41
-# Dart
+## Dart
 .dart                 38;5;51
 
-# compiled {{{2
-#
-#   assembly language
+###       compiled {2}        ###
+## Assembly language
 .asm                  38;5;81
-#   LISP
+## Assembly (that needs pre-processing)
+.sx                   38;5;81
+## LISP
 .cl                   38;5;81
 .lisp                 38;5;81
 .rkt                  38;5;81
-#   lua
+## Lua
 .lua                  38;5;81
-#   Moonscript
+## Moonscript
 .moon                 38;5;81
-#   C
+## C
 .c                    38;5;81
 .C                    38;5;81
 .h                    38;5;110
 .H                    38;5;110
 .tcc                  38;5;110
-#   C++
+## C++
 .c++                  38;5;81
 .h++                  38;5;110
 .hpp                  38;5;110
 .hxx                  38;5;110
 .ii                   38;5;110
-#   method file for Objective C
+## method file for Objective C
 .M                    38;5;110
 .m                    38;5;110
-#   Csharp
+## C Sharp
 .cc                   38;5;81
 .cs                   38;5;81
 .cp                   38;5;81
 .cpp                  38;5;81
 .cxx                  38;5;81
-#   Crystal
+## Crystal
 .cr                   38;5;81
-#   Google golang
+## Google golang
 .go                   38;5;81
-#   fortran
+## Fortran
 .f                    38;5;81
 .F                    38;5;81
 .for                  38;5;81
@@ -434,24 +441,23 @@ CAPABILITY            38;5;17
 .F03                  38;5;81
 .f08                  38;5;81
 .F08                  38;5;81
-# Nim
+## Nim
 .nim                  38;5;81
 .nimble               38;5;81
-#   pascal
+## pascal
 .s                    38;5;110
 .S                    38;5;110
-#   Rust
+## Rust
 .rs                   38;5;81
-#   AppleScript
+## AppleScript
 .scpt                 38;5;219
-#   Swift
+## Swift
 .swift                38;5;219
-#   ?
-.sx                   38;5;81
-# Vala
+
+## Vala
 .vala                 38;5;81
 .vapi                 38;5;81
-#   interface file in GHC - https://github.com/trapd00r/LS_COLORS/pull/9
+## interface file in GHC - https://github.com/trapd00r/LS_COLORS/pull/9
 .hi                   38;5;110
 #   haskell
 .hs                   38;5;81
