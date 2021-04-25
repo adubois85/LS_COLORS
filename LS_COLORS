@@ -30,47 +30,172 @@
 # You should have received a copy of the Perl Artistic License along
 # with this program.  If not, see <http://www.perlfoundation.org/artistic_license_1_0>.
 
-# core {{{1
-BLK                   38;5;68
-CAPABILITY            38;5;17
-CHR                   38;5;113;1
-DIR                   38;5;30
-DOOR                  38;5;127
-EXEC                  38;5;208;1
-FIFO                  38;5;126
-FILE                  0
-LINK                  target
-MULTIHARDLINK         38;5;222;1
-# "NORMAL don't reset the bold attribute -
-# https://github.com/trapd00r/LS_COLORS/issues/11
-#NORMAL                38;5;254
-NORMAL                0
-ORPHAN                48;5;196;38;5;232;1
-OTHER_WRITABLE        38;5;220;1
-SETGID                48;5;3;38;5;0
-SETUID                38;5;220;1;3;100;1
-SOCK                  38;5;197
-STICKY                38;5;86;48;5;234
-STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
+## RBG values of my terminal theme for reference
+## Since using bold text also causes it to use the bright color, sometimes I have to hard-code
+## the RGB value so I can have both the base color and bold text
+# Background        #011627     (1;22;39)
+# Foreground        #d6deeb     (214;222;235)
+# Cursor            #7e57c2     (126;87;194)
+# Cursor Text       #ffffff     (255;255;255)
 
-*LS_COLORS 48;5;89;38;5;197;1;3;4;7 # :-)
+# Black             #011627     (1;22;39)
+# Red               #ef5350     (239;83;80)
+# Green             #22da6e     (34;218;110)
+# Yellow            #c5e478     (197;228;120)
+# Blue              #82aaff     (130;170;255)
+# Magenta           #c792ea     (199;146;234)
+# Cyan              #21c7a8     (33;199;168)
+# White             #d6deeb     (214;222;235)
+
+# Bright Black      #575656     (87;86;86)
+# Bright Red        #f78c6c     (247;140;108)
+# Bright Green      #4cff7d     (76;255;125)
+# Bright Yellow     #ffeb95     (255;235;149)
+# Bright Blue       #5ca7e4     (92;167;228)
+# Bright Magenta    #7e57c2     (126;87;194)
+# Bright Cyan       #7fdbca     (127;219;202)
+# Bright White      #ffffff     (255;255;255)
+
+## Color Reference
+# Text color codes:       Background color codes:       Attribute codes:
+#   30=black                40=black                      00=none
+#   31=red                  41=red                        01=bold
+#   32=green                42=green                      02=dim
+#   33=yellow               43=yellow                     03=italic
+#   34=blue                 44=blue                       04=underscore
+#   35=magenta              45=magenta                    05=blink
+#   36=cyan                 46=cyan                       07=reverse
+#   37=white                47=white                      
+
+## You can also get the bright colors without also making the text bold like this,
+## where "x" is one of the 256 ANSI colors.
+## In this case, 0-15 are the terminal's theme colors, so
+#   0=black        8=bright black
+#   1=red          9=bright red
+#   2=green       10=bright green
+#   3=yellow      11=bright yellow
+#   4=blue        12=bright blue
+#   5=magenta     13=bright magenta
+#   6=cyan        14=bright cyan
+#   7=white       15=bright white
+
+## Note that this doesn't really look good for green, blue, or white (and cyan
+## is sort of on the edge) as their bright colors are too similar and hard
+## to distinguish clearly from each other in such small bits of text
+
+# Foreground / Text
+#   38;5;x
+# Background
+#   48;5;x
+
+
+## To enter an RGB value directly, you need to enter it like this
+## where r;g;b are the color values in decimal (e.g. 0-255)
+# Foreground / Text
+#   38;2;r;g;b
+# Background
+#   48;2;r;g;b
+
+## General priciples guiding choices for color, text, etc.
+# Bold text is generally for things that are containers (e.g. directories, compressed files, etc.)
+# Bold text is also for common important files such as README, LICENSE, etc.
+# Italics are useful for emphasizing things without adding lots of visual noise from a new color
+#   though I should be judicious, as not all terminal emulators handle italics (iTerm2 does, though)
+# I generally find underlining either too cluttering with lots of the same files together, or not
+#   visually distinct enough to be useful, so it's only used sparingly, for rare and niche things
+# Blinking is just annoying, don't use that at all (and some terminal emulators don't handle it either)
+
+# In general, backgrounds are reserved for special cases and relatively rare file types
+# Putting a background on things that are even remotely common or where you are likely to find
+# a lot of them in one place leads to an explosion of color that's hard to parse
+# For example, if you put a background on symlinks and then did "ls /usr/local/bin"
+
+# Red text is for things that are executable
+# Red backgrounds are for errors, non-existant files, or otherwise need major attention
+
+# Green is [TODO]
+
+# Yellow is for source files for various programming languages
+
+# Blue text genrally for directories of all kinds, and similar things like device files
+
+# Magenta is for audiovisual media of all kinds
+
+# Cyan is generally for links and things join other things together, such as sockets
+
+# White is for otherwise unspecified things
+
+# Due to a quirk in exa, icons don't take on the bright color when using the bold marker
+# (neither the GNU ls nor LSDeluxe exibit this behavior), so I have to explicitly call
+# the bright color for things that I want to be bold so the colors match (e.g. 38;5;8-15)
+# This isn't too noticable for blue and white, but the other colors have very different
+# standard and bright colors and are easy to discern, depending on the icon
+# I don't need to change the following, though, because exa currently ignores them
+# STICKY, OTHER_WRITABLE, STICKY_OTHER_WRITABLE, DOOR, MULTIHARDLINK, SETUID, SETGID, CAPABILITY, MISSING
+
+# core {{{1
+# https://github.com/trapd00r/LS_COLORS/issues/11
+# "NORMAL don't reset the bold attribute -
+#NORMAL                38;5;254
+# Color of the non-filename text (e.g. permissions, date, etc. in long view)
+NORMAL                00
+# Color of files not otherwise specified
+FILE                  00
+# Color of directories
+DIR                   01;38;5;12
+# Directories with the sticky bit set (chmod +t)
+STICKY                01;34;48;5;10
+# Directories writable by others without sticky bit set(chmod o+w)
+OTHER_WRITABLE        01;34;48;5;13
+# Directories writable by others with stick bit set (chmod o+w && chmod +t)
+STICKY_OTHER_WRITABLE 01;34;48;5;130
+
+# Device files (e.g. hard drives, hardware devices, psuedo-devices, etc.)
+# Per Wikipedia, generally block devices are randomly accessible
+BLK                   03;30;48;5;4
+# While character devices only accept/provide a serial input/output
+CHR                   03;34
+# Unix domain sockets; file for inter-process communication
+# Using the inverse property so the icon is colored nicely instead of grey
+SOCK                  07;38;5;8;46
+# File for inter-process communication; Only present in Solaris 2.5+, I think
+DOOR                  04;07;38;5;8;48;5;14
+# Named pipes
+FIFO                  30;46
+# Symlinks; currently, neither exa nor LSDeluxe recognize the target keyword,
+#   which colors the file according to however the file it points to would be colored
+# LINK                  target
+LINK                  01;36
+# File with more than one hard link (since all files are technically hard links)
+#   In practice what this means is anythng that you make a hard link out of (ln sourcefile newlink)
+#   Colors both the source file and target link.  Ignored by both exa and LSDeluxe
+MULTIHARDLINK         01;03;04;36
+# Broken links.  Colors the file itself when the file it links to doesn't exist
+ORPHAN                03;37;41
+# Currently, both exa and LSDeluxe ignore this value and just use the ORPHAN color
+#   in long view for both the link and the missing file, though both do it slightly differently
+# Colors the non-existant file a link points to (as in long view)
+MISSING               03;37;41
+
+# Executable files; more generally, a file with any of the execute bits set
+EXEC                  31
+## Due to the anti-aliasing that iTerm2 uses, the usual red of my theme ends up
+## blending into the background too much and is hard to read, so I'm using a
+## more intense ANSI red that ends up looking about the same, but more legible
+# File with Set User ID bit set (chmod u+s)
+# The file executes with the owner's permissions instead of the user's
+SETUID                38;5;196;48;5;8
+# File with Set Group ID bit set (chmod g+s)
+# The file executes with the owner's group permissions instead of the user's group
+SETGID                38;5;196;42
+# Files with POSIX capabilities (see libcap); basically, instead of 
+# all-or-nothing elevated privileges, you can give programs only those 
+# privileges needed for them to function.
+# I don't think Mac OS has this ability out-of-the-box
+CAPABILITY            38;5;17
+
+
 # }}}
-# documents {{{1
-*README               38;5;220;1
-*README.rst           38;5;220;1
-*README.md            38;5;220;1
-*LICENSE              38;5;220;1
-*COPYING              38;5;220;1
-*INSTALL              38;5;220;1
-*COPYRIGHT            38;5;220;1
-*AUTHORS              38;5;220;1
-*HISTORY              38;5;220;1
-*CONTRIBUTORS         38;5;220;1
-*PATENTS              38;5;220;1
-*VERSION              38;5;220;1
-*NOTICE               38;5;220;1
-*CHANGES              38;5;220;1
-.log                  38;5;190
 # plain-text {{{2
 .txt                  38;5;253
 # markup {{{2
@@ -86,6 +211,24 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 .rst                  38;5;184
 .tex                  38;5;184
 .textile              38;5;184
+# documents {{{1
+# More specific rules need to be placed after more general rules
+# e.g. *README.md after *md
+*README               01;38;5;11
+*README.rst           01;38;5;11
+*README.md            01;38;5;11
+*LICENSE              01;38;5;11
+*COPYING              01;38;5;11
+*INSTALL              01;38;5;11
+*COPYRIGHT            01;38;5;11
+*AUTHORS              01;38;5;11
+*HISTORY              01;38;5;11
+*CONTRIBUTORS         01;38;5;11
+*PATENTS              01;38;5;11
+*VERSION              01;38;5;11
+*NOTICE               01;38;5;11
+*CHANGES              01;38;5;11
+.log                  01;38;5;11
 # key-value, non-relational data {{{2
 .bib                  38;5;178
 .json                 38;5;178
@@ -110,8 +253,6 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 .rnc                  38;5;178
 # }}}
 # binary {{{2
-.cbr                  38;5;141
-.cbz                  38;5;141
 .chm                  38;5;141
 .djvu                 38;5;141
 .pdf                  38;5;141
@@ -394,66 +535,66 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 .patch                48;5;197;38;5;232;1
 #}}}
 # graphics {{{1
-.bmp                  38;5;97
-.dicom                38;5;97
-.tiff                 38;5;97
-.tif                  38;5;97
-.TIFF                 38;5;97
-.cdr                  38;5;97
-.flif                 38;5;97
-.gif                  38;5;97
-.icns                 38;5;97
-.ico                  38;5;97
-.jpeg                 38;5;97
-.JPG                  38;5;97
-.jpg                  38;5;97
-.nth                  38;5;97
-.png                  38;5;97
-.psd                  38;5;97
-.pxd                  38;5;97
-.pxm                  38;5;97
-.xpm                  38;5;97
-.webp                 38;5;97
+.bmp                  35
+.dicom                35
+.tiff                 35
+.tif                  35
+.TIFF                 35
+.cdr                  35
+.flif                 35
+.gif                  35
+.icns                 35
+.ico                  35
+.jpeg                 35
+.JPG                  35
+.jpg                  35
+.nth                  35
+.png                  35
+.psd                  35
+.pxd                  35
+.pxm                  35
+.xpm                  35
+.webp                 35
 # }}}
 # vector {{{1
-.ai                   38;5;99
-.eps                  38;5;99
-.epsf                 38;5;99
-.drw                  38;5;99
-.ps                   38;5;99
-.svg                  38;5;99
+.ai                   35
+.eps                  35
+.epsf                 35
+.drw                  35
+.ps                   35
+.svg                  35
 # }}}
 # video {{{1
-.avi                  38;5;114
-.divx                 38;5;114
-.IFO                  38;5;114
-.m2v                  38;5;114
-.m4v                  38;5;114
-.mkv                  38;5;114
-.MOV                  38;5;114
-.mov                  38;5;114
-.mp4                  38;5;114
-.mpeg                 38;5;114
-.mpg                  38;5;114
-.ogm                  38;5;114
-.rmvb                 38;5;114
-.sample               38;5;114
-.wmv                  38;5;114
+.avi                  35
+.divx                 35
+.IFO                  35
+.m2v                  35
+.m4v                  35
+.mkv                  35
+.MOV                  35
+.mov                  35
+.mp4                  35
+.mpeg                 35
+.mpg                  35
+.ogm                  35
+.rmvb                 35
+.sample               35
+.wmv                  35
   # mobile/streaming {{{2
-.3g2                  38;5;115
-.3gp                  38;5;115
-.gp3                  38;5;115
-.webm                 38;5;115
-.gp4                  38;5;115
-.asf                  38;5;115
-.flv                  38;5;115
-.ts                   38;5;115
-.ogv                  38;5;115
-.f4v                  38;5;115
+.3g2                  35
+.3gp                  35
+.gp3                  35
+.webm                 35
+.gp4                  35
+.asf                  35
+.flv                  35
+.ts                   35
+.ogv                  35
+.f4v                  35
   # }}}
   # lossless {{{2
-.VOB                  38;5;115;1
-.vob                  38;5;115;1
+.VOB                  35
+.vob                  35
 # }}}
 # subtitles {{{1
 .ass                  38;5;117
@@ -464,37 +605,37 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 .vtt                  38;5;117
 #}}}
 # audio {{{1
-.3ga                  38;5;137;1
-.S3M                  38;5;137;1
-.aac                  38;5;137;1
-.amr                  38;5;137;1
-.au                   38;5;137;1
-.caf                  38;5;137;1
-.dat                  38;5;137;1
-.dts                  38;5;137;1
-.fcm                  38;5;137;1
-.m4a                  38;5;137;1
-.mod                  38;5;137;1
-.mp3                  38;5;137;1
-.mp4a                 38;5;137;1
-.oga                  38;5;137;1
-.ogg                  38;5;137;1
-.opus                 38;5;137;1
-.s3m                  38;5;137;1
-.sid                  38;5;137;1
-.wma                  38;5;137;1
+.3ga                  38;5;13
+.S3M                  38;5;13
+.aac                  38;5;13
+.amr                  38;5;13
+.au                   38;5;13
+.caf                  38;5;13
+.dat                  38;5;13
+.dts                  38;5;13
+.fcm                  38;5;13
+.m4a                  38;5;13
+.mod                  38;5;13
+.mp3                  38;5;13
+.mp4a                 38;5;13
+.oga                  38;5;13
+.ogg                  38;5;13
+.opus                 38;5;13
+.s3m                  38;5;13
+.sid                  38;5;13
+.wma                  38;5;13
 # lossless
-.ape                  38;5;136;1
-.aiff                 38;5;136;1
-.cda                  38;5;136;1
-.flac                 38;5;136;1
-.alac                 38;5;136;1
-.mid                  38;5;136;1
-.midi                 38;5;136;1
-.pcm                  38;5;136;1
-.wav                  38;5;136;1
-.wv                   38;5;136;1
-.wvc                  38;5;136;1
+.ape                  38;5;13
+.aiff                 38;5;13
+.cda                  38;5;13
+.flac                 38;5;13
+.alac                 38;5;13
+.mid                  38;5;13
+.midi                 38;5;13
+.pcm                  38;5;13
+.wav                  38;5;13
+.wv                   38;5;13
+.wvc                  38;5;13
 
 # }}}
 # fonts {{{1
@@ -513,32 +654,35 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 .pfa                  38;5;66
 # }}}
 # archives {{{1
-.7z                   38;5;40
-.a                    38;5;40
-.arj                  38;5;40
-.bz2                  38;5;40
-.cpio                 38;5;40
-.gz                   38;5;40
-.lrz                  38;5;40
-.lz                   38;5;40
-.lzma                 38;5;40
-.lzo                  38;5;40
-.rar                  38;5;40
-.s7z                  38;5;40
-.sz                   38;5;40
-.tar                  38;5;40
-.tgz                  38;5;40
-.warc                 38;5;40
-.WARC                 38;5;40
-.xz                   38;5;40
-.z                    38;5;40
-.zip                  38;5;40
-.zipx                 38;5;40
-.zoo                  38;5;40
-.zpaq                 38;5;40
-.zst                  38;5;40
-.zstd                 38;5;40
-.zz                   38;5;40
+.7z                   01;38;2;34;218;110
+.a                    01;38;2;34;218;110
+.arj                  01;38;2;34;218;110
+.bz2                  01;38;2;34;218;110
+.cbr                  01;38;2;34;218;110
+.cbz                  01;38;2;34;218;110
+.cpio                 01;38;2;34;218;110
+.dmg                  01;38;2;34;218;110
+.gz                   01;38;2;34;218;110
+.lrz                  01;38;2;34;218;110
+.lz                   01;38;2;34;218;110
+.lzma                 01;38;2;34;218;110
+.lzo                  01;38;2;34;218;110
+.rar                  01;38;2;34;218;110
+.s7z                  01;38;2;34;218;110
+.sz                   01;38;2;34;218;110
+.tar                  01;38;2;34;218;110
+.tgz                  01;38;2;34;218;110
+.warc                 01;38;2;34;218;110
+.WARC                 01;38;2;34;218;110
+.xz                   01;38;2;34;218;110
+.z                    01;38;2;34;218;110
+.zip                  01;38;2;34;218;110
+.zipx                 01;38;2;34;218;110
+.zoo                  01;38;2;34;218;110
+.zpaq                 01;38;2;34;218;110
+.zst                  01;38;2;34;218;110
+.zstd                 01;38;2;34;218;110
+.zz                   01;38;2;34;218;110
   # packaged apps {{{2
 .apk                  38;5;215
 .ipa                  38;5;215
@@ -552,7 +696,6 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 .vdf                  38;5;215
 .vpk                  38;5;215
 .bsp                  38;5;215
-.dmg                  38;5;215
 .crx                  38;5;215 # Google Chrome extension
 .xpi                  38;5;215 # Mozilla Firefox extension
   # }}}
@@ -564,14 +707,14 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 .part                 38;5;239
   # }}}
 # partition images {{{2
-.iso                  38;5;124
-.bin                  38;5;124
-.nrg                  38;5;124
-.qcow                 38;5;124
-.sparseimage          38;5;124
-.toast                38;5;124
-.vcd                  38;5;124
-.vmdk                 38;5;124
+.iso                  01;38;2;34;218;110
+.bin                  01;38;2;34;218;110
+.nrg                  01;38;2;34;218;110
+.qcow                 01;38;2;34;218;110
+.sparseimage          01;38;2;34;218;110
+.toast                01;38;2;34;218;110
+.vcd                  01;38;2;34;218;110
+.vmdk                 01;38;2;34;218;110
 # }}}
 # databases {{{2
 .accdb                38;5;60
@@ -795,6 +938,17 @@ STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
 #   AppCode files
 .iml                  38;5;166
 # }}}
+
+# Common executable formats
+# Note that .app will still show as a directory, at least on Mac OS X--
+#   because techincally it is
+.cmd 01;38;5;9  # Win
+.exe 01;38;5;9  # Win
+.com 01;38;5;9  # Win
+.bat 01;38;5;9  # Win
+.reg 01;38;5;9  # Win
+.app 01;38;5;9  # OSX
+
 # termcap {{{1
 TERM ansi
 TERM color-xterm
@@ -851,3 +1005,7 @@ TERM xterm-kitty
 
 
 # vim: ft=dircolors:fdm=marker:et:sw=2:
+
+# .fake 37;01;02
+# .ogg  38;5;8
+# .test 30;01
