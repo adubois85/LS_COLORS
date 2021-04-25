@@ -459,31 +459,31 @@ CAPABILITY            38;5;17
 .vapi                 38;5;81
 ## interface file in GHC - https://github.com/trapd00r/LS_COLORS/pull/9
 .hi                   38;5;110
-#   haskell
+## Haskell
 .hs                   38;5;81
 .lhs                  38;5;81
-#   agda
+## Agda
 .agda                 38;5;81
 .lagda                38;5;81
 .lagda.tex            38;5;81
 .lagda.rst            38;5;81
 .lagda.md             38;5;81
 .agdai                38;5;110
-#   Zig
+## Zig
 .zig                  38;5;81
-# V
+## V
 .v                    38;5;81
 
-# binaries {{{2
-# compiled apps for interpreted languages
+### binaries {{{2
+## compiled apps for interpreted languages
 .pyc                  38;5;240
 # }}}
-# orchestration {{{2
+## orchestration {{{2
 .tf                   38;5;168
 .tfstate              38;5;168
 .tfvars               38;5;168
-# orchestration 2}}}
-# html {{{2
+## orchestration 2}}}
+## html {{{2
 .css                  38;5;125;1
 .less                 38;5;125;1
 .sass                 38;5;125;1
@@ -494,39 +494,39 @@ CAPABILITY            38;5;17
 .mht                  38;5;125;1
 .eml                  38;5;125;1
 .mustache             38;5;125;1
-# }}}
-# java {{{2
+## }}}
+## java {{{2
 .coffee               38;5;074;1
 .java                 38;5;074;1
 .js                   38;5;074;1
 .mjs                  38;5;074;1
 .jsm                  38;5;074;1
 .jsp                  38;5;074;1
-# }}}
-# php {{{2
+## }}}
+## php {{{2
 .php                  38;5;81
-#   CakePHP view scripts and helpers
+##   CakePHP view scripts and helpers
 .ctp                  38;5;81
-#   Twig template engine
+##   Twig template engine
 .twig                 38;5;81
-# }}}
-# vb/a {{{2
+## }}}
+## vb/a {{{2
 .vb                   38;5;81
 .vba                  38;5;81
 .vbs                  38;5;81
-# 2}}}
-# Build stuff {{{2
+## 2}}}
+## Build stuff {{{2
 *Dockerfile           38;5;155
 .dockerignore         38;5;240
 *Makefile             38;5;155
 *MANIFEST             38;5;243
 *pm_to_blib           38;5;240
-# Functional Configuration
+## Functional Configuration
 .nix                  38;5;155
 .dhall                38;5;178
-# ruby rake
+## ruby rake
 .rake                 38;5;155
-# automake
+## automake
 .am                   38;5;242
 .in                   38;5;242
 .hin                  38;5;242
@@ -535,12 +535,12 @@ CAPABILITY            38;5;17
 .old                  38;5;242
 .out                  38;5;242
 .SKIP                 38;5;244
-# }}}
-# patch files {{{2
+## }}}
+## patch files {{{2
 .diff                 48;5;197;38;5;232
 .patch                48;5;197;38;5;232;1
 #}}}
-# graphics {{{1
+## graphics {{{1
 .bmp                  35
 .dicom                35
 .tiff                 35
@@ -561,16 +561,16 @@ CAPABILITY            38;5;17
 .pxm                  35
 .xpm                  35
 .webp                 35
-# }}}
-# vector {{{1
+## }}}
+## vector {{{1
 .ai                   35
 .eps                  35
 .epsf                 35
 .drw                  35
 .ps                   35
 .svg                  35
-# }}}
-# video {{{1
+## }}}
+## video {{{1
 .avi                  35
 .divx                 35
 .IFO                  35
@@ -586,7 +586,7 @@ CAPABILITY            38;5;17
 .rmvb                 35
 .sample               35
 .wmv                  35
-  # mobile/streaming {{{2
+## mobile/streaming {{{2
 .3g2                  35
 .3gp                  35
 .gp3                  35
@@ -597,20 +597,20 @@ CAPABILITY            38;5;17
 .ts                   35
 .ogv                  35
 .f4v                  35
-  # }}}
-  # lossless {{{2
+## }}}
+## lossless {{{2
 .VOB                  35
 .vob                  35
-# }}}
-# subtitles {{{1
+## }}}
+## subtitles {{{1
 .ass                  38;5;117
 .srt                  38;5;117
 .ssa                  38;5;117
 .sub                  38;5;117
 .sup                  38;5;117 # bitmap image track
 .vtt                  38;5;117
-#}}}
-# audio {{{1
+##}}}
+## audio {{{1
 .3ga                  38;5;13
 .S3M                  38;5;13
 .aac                  38;5;13
@@ -630,7 +630,7 @@ CAPABILITY            38;5;17
 .s3m                  38;5;13
 .sid                  38;5;13
 .wma                  38;5;13
-# lossless
+## lossless
 .ape                  38;5;13
 .aiff                 38;5;13
 .cda                  38;5;13
@@ -643,8 +643,8 @@ CAPABILITY            38;5;17
 .wv                   38;5;13
 .wvc                  38;5;13
 
-# }}}
-# fonts {{{1
+## }}}
+## fonts {{{1
 .afm                  38;5;66
 .fon                  38;5;66
 .fnt                  38;5;66
@@ -652,14 +652,14 @@ CAPABILITY            38;5;17
 .pfm                  38;5;66
 .ttf                  38;5;66
 .otf                  38;5;66
-# Web Open Font Format
+## Web Open Font Format
 .woff                 38;5;66
 .woff2                38;5;66
-#   postscript fonts
+## postscript fonts
 .PFA                  38;5;66
 .pfa                  38;5;66
-# }}}
-# archives {{{1
+## }}}
+## archives {{{1
 .7z                   01;38;2;34;218;110
 .a                    01;38;2;34;218;110
 .arj                  01;38;2;34;218;110
@@ -689,7 +689,7 @@ CAPABILITY            38;5;17
 .zst                  01;38;2;34;218;110
 .zstd                 01;38;2;34;218;110
 .zz                   01;38;2;34;218;110
-  # packaged apps {{{2
+## packaged apps {{{2
 .apk                  38;5;215
 .ipa                  38;5;215
 .deb                  38;5;215
@@ -704,15 +704,15 @@ CAPABILITY            38;5;17
 .bsp                  38;5;215
 .crx                  38;5;215 # Google Chrome extension
 .xpi                  38;5;215 # Mozilla Firefox extension
-  # }}}
-  # segments from 0 to three digits after first extension letter {{{2
+## }}}
+## segments from 0 to three digits after first extension letter {{{2
 .r[0-9]{0,2}          38;5;239
 .zx[0-9]{0,2}         38;5;239
 .z[0-9]{0,2}          38;5;239
-# partial files
+## partial files
 .part                 38;5;239
-  # }}}
-# partition images {{{2
+## }}}
+## partition images {{{2
 .iso                  01;38;2;34;218;110
 .bin                  01;38;2;34;218;110
 .nrg                  01;38;2;34;218;110
@@ -721,8 +721,8 @@ CAPABILITY            38;5;17
 .toast                01;38;2;34;218;110
 .vcd                  01;38;2;34;218;110
 .vmdk                 01;38;2;34;218;110
-# }}}
-# databases {{{2
+## }}}
+## databases {{{2
 .accdb                38;5;60
 .accde                38;5;60
 .accdr                38;5;60
@@ -735,15 +735,15 @@ CAPABILITY            38;5;17
 .mde                  38;5;60
 .sqlite               38;5;60
 .typelib              38;5;60
-# NetCDF database
+## NetCDF database
 .nc                   38;5;60
-# }}}
-# tempfiles {{{1
-# undo files
+## }}}
+## tempfiles {{{1
+## undo files
 .pacnew               38;5;33
 .un~                  38;5;241
 .orig                 38;5;241
-# backups
+## backups
 .BUP                  38;5;241
 .bak                  38;5;241
 .o                    38;5;241 #   *nix Object file (shared libraries, core dumps etc)
@@ -751,42 +751,42 @@ CAPABILITY            38;5;17
 .mdump                38;5;241 #   Mini DuMP crash report
 .rlib                 38;5;241 #   Static rust library
 .dll                  38;5;241 #   dynamic linked library
-# temporary files
+## temporary files
 .swp                  38;5;244
 .swo                  38;5;244
 .tmp                  38;5;244
 .sassc                38;5;244
-# state files
+## state files
 .pid                  38;5;248
 .state                38;5;248
 *lockfile             38;5;248
 *lock                 38;5;248
-# error logs
+## error logs
 .err                  38;5;160;1
 .error                38;5;160;1
 .stderr               38;5;160;1
-# state dumps
+## state dumps
 .aria2                38;5;241
 .dump                 38;5;241
 .stackdump            38;5;241
 .zcompdump            38;5;241
 .zwc                  38;5;241
-# tcpdump, network traffic capture
+## tcpdump, network traffic capture
 .pcap                 38;5;29
 .cap                  38;5;29
 .dmp                  38;5;29
-# macOS
+## macOS
 .DS_Store             38;5;239
 .localized            38;5;239
 .CFUserTextEncoding   38;5;239
-# }}}
-# hosts {{{1
-# /etc/hosts.{deny,allow}
+## }}}
+## hosts {{{1
+## /etc/hosts.{deny,allow}
 .allow                38;5;112
 .deny                 38;5;196
-# }}}
-# systemd {{{1
-# http://www.freedesktop.org/software/systemd/man/systemd.unit.html
+## }}}
+## systemd {{{1
+## http://www.freedesktop.org/software/systemd/man/systemd.unit.html
 .service              38;5;45
 *@.service            38;5;45
 .socket               38;5;45
@@ -798,8 +798,8 @@ CAPABILITY            38;5;17
 .path                 38;5;45
 .timer                38;5;45
 .snapshot             38;5;45
-# }}}
-# metadata {{{1
+## }}}
+## metadata {{{1
 .application          38;5;116
 .cue                  38;5;116
 .description          38;5;116
@@ -814,14 +814,14 @@ CAPABILITY            38;5;17
 .urlview              38;5;116
 .webloc               38;5;116
 .lnk                  38;5;39
-# }}}
+## }}}
 # macOS files {{{1
 *CodeResources        38;5;239 # code signing apps
 *PkgInfo              38;5;239 # app bundle id
 .nib                  38;5;57  # UI
 .car                  38;5;57  # asset catalog
 .dylib                38;5;241 # shared lib
-#   Xcode files {{{2
+##   Xcode files {{{2
 .entitlements         1
 .pbxproj              1
 .strings              1
@@ -831,9 +831,9 @@ CAPABILITY            38;5;17
 .xcuserstate          1
 .xcworkspacedata      1
 .xib                  38;5;208
-# }}}
-# }}}
-# encrypted data {{{1
+## }}}
+## }}}
+## encrypted data {{{1
 .asc                  38;5;192;3
 .bfe                  38;5;192;3
 .enc                  38;5;192;3
@@ -848,15 +848,15 @@ CAPABILITY            38;5;17
 *id_rsa                38;5;192;3
 *id_ecdsa              38;5;192;3
 *id_ed25519            38;5;192;3
-# 1}}}
-# emulators {{{1
+## 1}}}
+## emulators {{{1
 .32x                  38;5;213
 .cdi                  38;5;213
 .fm2                  38;5;213
 .rom                  38;5;213
 .sav                  38;5;213
 .st                   38;5;213
-  # atari
+## atari
 .a00                  38;5;213
 .a52                  38;5;213
 .A64                  38;5;213
@@ -864,7 +864,7 @@ CAPABILITY            38;5;17
 .a78                  38;5;213
 .adf                  38;5;213
 .atr                  38;5;213
-  # nintendo
+## nintendo
 .gb                   38;5;213
 .gba                  38;5;213
 .gbc                  38;5;213
@@ -875,40 +875,39 @@ CAPABILITY            38;5;17
 .j64                  38;5;213
 .nds                  38;5;213
 .nes                  38;5;213
-  # Sega
+## Sega
 .sms                  38;5;213
 # }}}
-#   Texas Instruments Calculator files {{{1
-# for more see http://tibasicdev.wikidot.com/file-extensions
+## Texas Instruments Calculator files {{{1
+## for more see http://tibasicdev.wikidot.com/file-extensions
 .8xp                  38;5;121
 .8eu                  38;5;121
 .82p                  38;5;121
 .83p                  38;5;121
 .8xe                  38;5;121
-# }}}
-# 3D printing {{{1
+## }}}
+## 3D printing {{{1
 .stl                  38;5;216
 .dwg                  38;5;216
 .ply                  38;5;216
 .wrl                  38;5;216
-# }}}
-# unsorted {{{1
-#
-#   Portable Object Translation for GNU Gettext
+## }}}
+## unsorted {{{1
+##   Portable Object Translation for GNU Gettext
 .pot                  38;5;7
-#   CAD files for printed circuit boards
+##   CAD files for printed circuit boards
 .pcb                  38;5;7
-#   groff (rendering app for texinfo)
+## groff (rendering app for texinfo)
 .mm                   38;5;7
-#   GIMP files
+## GIMP files
 .gbr                  38;5;7
 .scm                  38;5;7
 .xcf                  38;5;7
-# printer spool file
+## printer spool file
 .spl                  38;5;7
-# RStudio project file
+## RStudio project file
 .Rproj                38;5;11
-#   Nokia Symbian OS files
+## Nokia Symbian OS files
 .sis                  38;5;7
 
 .1p                   38;5;7
@@ -941,13 +940,13 @@ CAPABILITY            38;5;17
 .vcard                38;5;7
 .vcf                  38;5;7 #contact information
 .xln                  38;5;7
-#   AppCode files
+## AppCode files
 .iml                  38;5;166
-# }}}
+## }}}
 
-# Common executable formats
-# Note that .app will still show as a directory, at least on Mac OS X--
-#   because techincally it is
+## Common executable formats
+## Note that .app will still show as a directory, at least on Mac OS X--
+##   because techincally it is
 .cmd 01;38;5;9  # Win
 .exe 01;38;5;9  # Win
 .com 01;38;5;9  # Win
@@ -955,7 +954,7 @@ CAPABILITY            38;5;17
 .reg 01;38;5;9  # Win
 .app 01;38;5;9  # OSX
 
-# termcap {{{1
+## termcap {{{1
 TERM ansi
 TERM color-xterm
 TERM con132x25
@@ -1007,7 +1006,7 @@ TERM xterm-88color
 TERM xterm-color
 TERM xterm-debian
 TERM xterm-kitty
-# }}}
+## }}}
 
 
 # vim: ft=dircolors:fdm=marker:et:sw=2:
