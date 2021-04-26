@@ -369,6 +369,11 @@
   ###      interpreted          ###
     ## AutoHotkey script
         .ahk                  38;5;41
+    ## Javascript
+        .coffee               38;5;074;1
+        .js                   38;5;074;1
+        .jsm                  38;5;074;1
+        .mjs                  38;5;074;1    # Node ES6 module
     ## python
         .py                   38;5;41
         .ipynb                38;5;41
@@ -395,8 +400,7 @@
         .clj                  38;5;41
         .cljs                 38;5;41
         .cljc                 38;5;41
-    ## Clojure gorilla REPL worksheet
-        .cljw                 38;5;41
+        .cljw                 38;5;41   # Gorilla REPL worksheet
     ## Scala
         .scala                38;5;41
         .sc                   38;5;41
@@ -408,16 +412,14 @@
         .asm                  38;5;81
         .s                    38;5;110
         .S                    38;5;110
-    ## Assembly (that needs pre-processing)
-        .sx                   38;5;81
+        .sx                   38;5;81   # file that needs pre-processing
     ## LISP
         .cl                   38;5;81
         .lisp                 38;5;81
         .rkt                  38;5;81
     ## Lua
         .lua                  38;5;81
-    ## Moonscript
-        .moon                 38;5;81
+        .moon                 38;5;81   # MoonScript
     ## C
         .c                    38;5;81
         .C                    38;5;81
@@ -426,19 +428,19 @@
         .tcc                  38;5;110
     ## C++
         .c++                  38;5;81
+        .cp                   38;5;81
+        .cpp                  38;5;81
+        .cxx                  38;5;81
         .h++                  38;5;110
         .hpp                  38;5;110
         .hxx                  38;5;110
         .ii                   38;5;110
     ## method file for Objective C
-        .M                    38;5;110
         .m                    38;5;110
+        .M                    38;5;110
     ## C Sharp
         .cc                   38;5;81
         .cs                   38;5;81
-        .cp                   38;5;81
-        .cpp                  38;5;81
-        .cxx                  38;5;81
     ## Crystal
         .cr                   38;5;81
     ## Google golang
@@ -459,7 +461,7 @@
     ## Nim
         .nim                  38;5;81
         .nimble               38;5;81
-    ## pascal
+    ## Pascal
         .P                    38;5;81
         .pp                   38;5;81
         .pas                  38;5;81
@@ -467,6 +469,8 @@
         .rs                   38;5;81
     ## AppleScript
         .scpt                 38;5;219
+        .scptd                38;5;219
+        .applescript          38;5;219
     ## Swift
         .swift                38;5;219
     ## Vala
@@ -508,12 +512,8 @@
     .eml                  38;5;125;1
     .mustache             38;5;125;1
   ## java
-    .coffee               38;5;074;1
     .java                 38;5;074;1
-    .js                   38;5;074;1
-    .mjs                  38;5;074;1
-    .jsm                  38;5;074;1
-    .jsp                  38;5;074;1
+    .jsp                  38;5;074;1    # Jakarta Server Pages
   ## php
     .php                  38;5;81
     ##   CakePHP view scripts and helpers
@@ -636,7 +636,7 @@
     .s3m                  38;5;13
     .sid                  38;5;13
     .wma                  38;5;13
-  ## lossless
+  ## lossless audio
     .ape                  38;5;13
     .aiff                 38;5;13
     .cda                  38;5;13
