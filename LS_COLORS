@@ -349,154 +349,154 @@
 #################################
 ####       Code Files        ####
 #################################
-###       Source Files        ###
-    ## Agda
-        .agda                 38;5;81
-        .lagda                38;5;81   # Agda literate TeX file
-        .lagda.tex            38;5;81   # Agda literate TeX file
-        .lagda.rst            38;5;81
-        .lagda.md             38;5;81   # Agda literate Org file
-        .agdai                38;5;110
-    ## AppleScript
-        .scpt                 38;5;219
-        .scptd                38;5;219
-        .applescript          38;5;219
-    ## Assembly language
-        .asm                  38;5;81
-        .s                    38;5;110
-        .S                    38;5;110
-        .sx                   38;5;81   # file that needs pre-processing
-    ## AutoHotkey script
-        .ahk                  38;5;41
-    ## C
-        .c                    38;5;81
-        .C                    38;5;81
-        .h                    38;5;110
-        .H                    38;5;110
-        .tcc                  38;5;110
-    ## C++
-        .c++                  38;5;81
-        .cp                   38;5;81
-        .cpp                  38;5;81
-        .cxx                  38;5;81
-        .h++                  38;5;110
-        .hpp                  38;5;110
-        .hxx                  38;5;110
-        .ii                   38;5;110
-    ## Objective-C
-        .m                    38;5;110
-        .mm                   38;5;110
-        .M                    38;5;110
-    ## C Sharp
-        .cc                   38;5;81
-        .cs                   38;5;81
-    ## Clojure
-        .clj                  38;5;41
-        .cljs                 38;5;41
-        .cljc                 38;5;41
-        .cljw                 38;5;41   # Gorilla REPL worksheet
-    ## Crystal
-        .cr                   38;5;81
-    ## Dart
-        .dart                 38;5;51
-    ## Fortran
-        .f                    38;5;81
-        .F                    38;5;81
-        .for                  38;5;81
-        .ftn                  38;5;81
-        .f90                  38;5;81
-        .F90                  38;5;81
-        .f95                  38;5;81
-        .F95                  38;5;81
-        .f03                  38;5;81
-        .F03                  38;5;81
-        .f08                  38;5;81
-        .F08                  38;5;81
-    ## Go
-        .go                   38;5;81
-    ## GrADS script
-        .gs                   38;5;81
-    ## Haskell
-        .hs                   38;5;81
-        .lhs                  38;5;81   # literate Haskell
-    ## Java
-        .java                 38;5;074;1
-        .jsp                  38;5;074;1    # Jakarta Server Pages   
-    ## Javascript
-        .coffee               38;5;074;1
-        .js                   38;5;074;1
-        .jsm                  38;5;074;1
-        .mjs                  38;5;074;1    # Node ES6 module
-    ## LISP
-        .cl                   38;5;81
-        .lisp                 38;5;81
-        .rkt                  38;5;81
-    ## Lua
-        .lua                  38;5;81
-        .moon                 38;5;81   # MoonScript
-    ## Nim
-        .nim                  38;5;81
-        .nims                 38;5;81   # NimScript
-        .nimble               38;5;81   # Nimble package manager for Nim
-    ## Pascal
-        .P                    38;5;81
-        .pp                   38;5;81
-        .pas                  38;5;81
-    ## Perl
-        .pl                   38;5;208
-        .PL                   38;5;160
-        .t                    38;5;114
-    ## PHP
-        .php                  38;5;81
-        .ctp                  38;5;81   # CakePHP Template
-        .twig                 38;5;81   # Twig Template
-    ## Python
-        .py                   38;5;41
-        .ipynb                38;5;41   # Jupyter notebook
-    ## R language
-        .r                    38;5;49
-        .R                    38;5;49
-    ## Ruby
-        .rb                   38;5;41
-        .gemspec              38;5;41
-    ## Rust
-        .rs                   38;5;81
-    ## Scala
-        .scala                38;5;41
-        .sc                   38;5;41
-    ## SQL
-        .msql                 38;5;222
-        .mysql                38;5;222
-        .pgsql                38;5;222
-        .sql                  38;5;222
-    ## Swift
-        .swift                38;5;219
-    ## Tool Command Language
-        .tcl                  38;5;64;1
-    ## V language
-        .v                    38;5;81
-    ## Vala
-        .vala                 38;5;81
-        .vapi                 38;5;81
-    ## Zig
-        .zig                  38;5;81
+    ###       Source Files        ###
+        ## Agda
+            .agda                 38;5;81
+            .agdai                38;5;110  # Agda interface
+            .lagda.md             38;5;81   # Agda literate Org
+            .lagda                38;5;81   # Agda literate TeX
+            .lagda.tex            38;5;81   # Agda literate TeX
+            .lagda.rst            38;5;81   # Agda literate reStructuredText (documentation)
+        ## AppleScript
+            .scpt                 38;5;219
+            .scptd                38;5;219
+            .applescript          38;5;219
+        ## Assembly language
+            .asm                  38;5;81
+            .s                    38;5;110
+            .S                    38;5;110
+            .sx                   38;5;81   # file that needs pre-processing
+        ## AutoHotkey script
+            .ahk                  38;5;41
+        ## C
+            .c                    38;5;81
+            .C                    38;5;81
+            .h                    38;5;110
+            .H                    38;5;110
+            .tcc                  38;5;110
+        ## C++
+            .c++                  38;5;81
+            .cp                   38;5;81
+            .cpp                  38;5;81
+            .cxx                  38;5;81
+            .h++                  38;5;110
+            .hpp                  38;5;110
+            .hxx                  38;5;110
+            .ii                   38;5;110
+        ## Objective-C
+            .m                    38;5;110
+            .mm                   38;5;110
+            .M                    38;5;110
+        ## C Sharp
+            .cc                   38;5;81
+            .cs                   38;5;81
+        ## Clojure
+            .clj                  38;5;41
+            .cljs                 38;5;41
+            .cljc                 38;5;41
+            .cljw                 38;5;41   # Gorilla REPL worksheet
+        ## Crystal
+            .cr                   38;5;81
+        ## Dart
+            .dart                 38;5;51
+        ## Fortran
+            .f                    38;5;81
+            .F                    38;5;81
+            .for                  38;5;81
+            .ftn                  38;5;81
+            .f90                  38;5;81
+            .F90                  38;5;81
+            .f95                  38;5;81
+            .F95                  38;5;81
+            .f03                  38;5;81
+            .F03                  38;5;81
+            .f08                  38;5;81
+            .F08                  38;5;81
+        ## Go
+            .go                   38;5;81
+        ## GrADS script
+            .gs                   38;5;81
+        ## Haskell
+            .hs                   38;5;81
+            .lhs                  38;5;81   # literate Haskell
+        ## Java
+            .java                 38;5;074;1
+            .jsp                  38;5;074;1    # Jakarta Server Pages   
+        ## Javascript
+            .coffee               38;5;074;1
+            .js                   38;5;074;1
+            .jsm                  38;5;074;1
+            .mjs                  38;5;074;1    # Node ES6 module
+        ## LISP
+            .cl                   38;5;81
+            .lisp                 38;5;81
+            .rkt                  38;5;81
+        ## Lua
+            .lua                  38;5;81
+            .moon                 38;5;81   # MoonScript
+        ## Nim
+            .nim                  38;5;81
+            .nims                 38;5;81   # NimScript
+            .nimble               38;5;81   # Nimble package manager for Nim
+        ## Pascal
+            .P                    38;5;81
+            .pp                   38;5;81
+            .pas                  38;5;81
+        ## Perl
+            .pl                   38;5;208
+            .PL                   38;5;160
+            .t                    38;5;114
+        ## PHP
+            .php                  38;5;81
+            .ctp                  38;5;81   # CakePHP Template
+            .twig                 38;5;81   # Twig Template
+        ## Python
+            .py                   38;5;41
+            .ipynb                38;5;41   # Jupyter notebook
+        ## R language
+            .r                    38;5;49
+            .R                    38;5;49
+        ## Ruby
+            .rb                   38;5;41
+            .gemspec              38;5;41
+        ## Rust
+            .rs                   38;5;81
+        ## Scala
+            .scala                38;5;41
+            .sc                   38;5;41
+        ## SQL
+            .msql                 38;5;222
+            .mysql                38;5;222
+            .pgsql                38;5;222
+            .sql                  38;5;222
+        ## Swift
+            .swift                38;5;219
+        ## Tool Command Language
+            .tcl                  38;5;64;1
+        ## V language
+            .v                    38;5;81
+        ## Vala
+            .vala                 38;5;81
+            .vapi                 38;5;81
+        ## Zig
+            .zig                  38;5;81
 
-  ###    version control        ### 
-    .git                  38;5;197
-    .gitignore            38;5;240
-    .gitattributes        38;5;240
-    .gitmodules           38;5;240
+    ###    version control        ### 
+        .git                  38;5;197
+        .gitignore            38;5;240
+        .gitattributes        38;5;240
+        .gitmodules           38;5;240
 
-  ###        shell              ###
-    .awk                  38;5;172
-    .bash                 38;5;172
-    .bat                  38;5;172
-    .BAT                  38;5;172
-    .sed                  38;5;172
-    .sh                   38;5;172
-    .zsh                  38;5;172
-    .vim                  38;5;172
-    .kak                  38;5;172
+    ###        shell              ###
+        .awk                  38;5;172
+        .bash                 38;5;172
+        .bat                  38;5;172
+        .BAT                  38;5;172
+        .sed                  38;5;172
+        .sh                   38;5;172
+        .zsh                  38;5;172
+        .vim                  38;5;172
+        .kak                  38;5;172
 
 
   ### binaries
