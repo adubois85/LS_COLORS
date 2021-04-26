@@ -1,8 +1,8 @@
 #                                    LS_COLORS
-# Maintainers: Magnus Woldrich <m@japh.se>,
-#              Ryan Delaney <ryan.patrick.delaney@protonmail.com>
-#         URL: https://github.com/trapd00r/LS_COLORS
-#
+#######                 Original Maintainer Information                  #######
+# Maintainers:  Magnus Woldrich <m@japh.se>,
+#               Ryan Delaney <ryan.patrick.delaney@protonmail.com>
+# original URL: https://github.com/trapd00r/LS_COLORS
 #   This is a collection of extension:color mappings, suitable to use as your
 #   LS_COLORS environment variable. Most of them use the extended color map,
 #   described in the ECMA-48 document; in other words, you'll need a terminal
@@ -18,6 +18,21 @@
 #   For files that usually end up next to each other, like html, css and js,
 #   try to pick colors that fit nicely together. Filetypes with multiple
 #   possible extensions, like htm and html, should have the same color.
+################################################################################
+
+# Updated by : Alex DuBois
+# current URL: https://github.com/adubois85/LS_COLORS
+#   Unlike the original maintainers, I'm not interested in adding more and more
+#   niche file types that most people are unlikely to ever see.  Please don't ask
+#   me to add them because I won't.  Feel free to copy this add them yourself,
+#   though.  However, I did try to clean up the organization a bit, so it should be
+#   easy to find where to place anything you might want to add.
+
+#   I made this for myself, first and foremost.  The color choices were made based
+#   on the tools and themes I use and in a way that makes sense to me.  If you use
+#   this and find some color combinations are hard to read or distinguish from one
+#   another, then change them.  I've included the terminal theme I use if you want
+#   use it or just see how things "should" look.
 
 # This program is distributed in the hope that it will be useful, but WITHOUT ANY
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
