@@ -148,7 +148,9 @@
 # I don't need to change the following, though, because exa currently ignores them
 # STICKY, OTHER_WRITABLE, STICKY_OTHER_WRITABLE, DOOR, MULTIHARDLINK, SETUID, SETGID, CAPABILITY, MISSING
 
-# core {{{1
+#################################
+####          Core           ####
+#################################
   # https://github.com/trapd00r/LS_COLORS/issues/11
   # "NORMAL don't reset the bold attribute -
   #NORMAL                38;5;254
@@ -208,11 +210,11 @@
   # privileges needed for them to function.
   # I don't think Mac OS has this ability out-of-the-box
   CAPABILITY            38;5;17
-  # }}}
 
-# plain-text {{{2
+
+# plain-text
   .txt                  38;5;253
-# markup {{{2
+# markup
   .adoc                 38;5;184
   .asciidoc             38;5;184
   .etx                  38;5;184
@@ -225,336 +227,336 @@
   .rst                  38;5;184
   .tex                  38;5;184
   .textile              38;5;184
-# documents {{{1
-  # More specific rules need to be placed after more general rules
-  # e.g. *README.md after *md
-  *README               01;38;5;11
-  *README.rst           01;38;5;11
-  *README.md            01;38;5;11
-  *LICENSE              01;38;5;11
-  *COPYING              01;38;5;11
-  *INSTALL              01;38;5;11
-  *COPYRIGHT            01;38;5;11
-  *AUTHORS              01;38;5;11
-  *HISTORY              01;38;5;11
-  *CONTRIBUTORS         01;38;5;11
-  *PATENTS              01;38;5;11
-  *VERSION              01;38;5;11
-  *NOTICE               01;38;5;11
-  *CHANGES              01;38;5;11
-  .log                  01;38;5;11
-# key-value, non-relational data {{{2
-  .bib                  38;5;178
-  .json                 38;5;178
-  .jsonl                38;5;178
-  .jsonnet              38;5;178
-  .libsonnet            38;5;142
-  .ndjson               38;5;178
-  .msg                  38;5;178
-  .pgn                  38;5;178
-  .rss                  38;5;178
-  .xml                  38;5;178
-  .fxml                 38;5;178
-  .toml                 38;5;178
-  .yaml                 38;5;178
-  .yml                  38;5;178
-  .RData                38;5;178
-  .rdata                38;5;178
-  .xsd                  38;5;178
-  .dtd                  38;5;178
-  .sgml                 38;5;178
-  .rng                  38;5;178
-  .rnc                  38;5;178
+
+#################################
+####        Documents        ####
+#################################
+    # More specific rules need to be placed after more general rules
+    # e.g. *README.md after *md
+    *README               01;38;5;11
+    *README.rst           01;38;5;11
+    *README.md            01;38;5;11
+    *LICENSE              01;38;5;11
+    *COPYING              01;38;5;11
+    *INSTALL              01;38;5;11
+    *COPYRIGHT            01;38;5;11
+    *AUTHORS              01;38;5;11
+    *HISTORY              01;38;5;11
+    *CONTRIBUTORS         01;38;5;11
+    *PATENTS              01;38;5;11
+    *VERSION              01;38;5;11
+    *NOTICE               01;38;5;11
+    *CHANGES              01;38;5;11
+    .log                  01;38;5;11
+  ## key-value, non-relational data
+    .bib                  38;5;178
+    .json                 38;5;178
+    .jsonl                38;5;178
+    .jsonnet              38;5;178
+    .libsonnet            38;5;142
+    .ndjson               38;5;178
+    .msg                  38;5;178
+    .pgn                  38;5;178
+    .rss                  38;5;178
+    .xml                  38;5;178
+    .fxml                 38;5;178
+    .toml                 38;5;178
+    .yaml                 38;5;178
+    .yml                  38;5;178
+    .RData                38;5;178
+    .rdata                38;5;178
+    .xsd                  38;5;178
+    .dtd                  38;5;178
+    .sgml                 38;5;178
+    .rng                  38;5;178
+    .rnc                  38;5;178
+  ## binary
+    .chm                  38;5;141
+    .djvu                 38;5;141
+    .pdf                  38;5;141
+    .PDF                  38;5;141
+    .mobi                 38;5;141
+    .epub                 38;5;141
+  ## words
+    .docm                 38;5;111;4
+    .doc                  38;5;111
+    .docx                 38;5;111
+    .odb                  38;5;111
+    .odt                  38;5;111
+    .rtf                  38;5;111
+  ## presentation
+    .odp                  38;5;166
+    .pps                  38;5;166
+    .ppt                  38;5;166
+    .pptx                 38;5;166
+  ## Powerpoint show
+    .ppts                 38;5;166
+  ## Powerpoint with enabled macros
+    .pptxm                38;5;166;4
+  ## Powerpoint show with enabled macros
+    .pptsm                38;5;166;4
+  ## spreadsheet
+    .csv                  38;5;78
+    .tsv                  38;5;78
+  ## Open document spreadsheet
+    .ods                  38;5;112
+    .xla                  38;5;76
+  ## Excel spreadsheet
+    .xls                  38;5;112
+    .xlsx                 38;5;112
+  ## Excel spreadsheet with macros
+    .xlsxm                38;5;112;4
+  ## Excel module
+    .xltm                 38;5;73;4
+    .xltx                 38;5;73
+  ## macOS office suite
+    .pages                38;5;111
+    .numbers              38;5;112
+    .key                  38;5;166
+
+  ## configs
+    *config               1
+    *cfg                  1
+    *conf                 1
+    *rc                   1
+    *authorized_keys      1
+    *known_hosts          1
+    .ini                  1
+    .plist                1
+  ## vim
+    .viminfo              1
+  ## Cisco VPN client configuration
+    .pcf                  1
+  ## Adobe Photoshop proof settings file
+    .psf                  1
+  ## Sublime Text config
+    .hidden-color-scheme  1
+    .hidden-tmTheme       1
+    .last-run             1
+    .merged-ca-bundle     1
+    .sublime-build        1
+    .sublime-commands     1
+    .sublime-keymap       1
+    .sublime-settings     1
+    .sublime-snippet      1
+    .sublime-project      1
+    .sublime-workspace    1
+    .tmTheme              1
+    .user-ca-bundle       1
+  # eclipse
+    .epf                  1
+
+#################################
+####    Code Source Files    ####
+#################################
+  ###    version control        ### 
+    .git                  38;5;197
+    .gitignore            38;5;240
+    .gitattributes        38;5;240
+    .gitmodules           38;5;240
+
+  ###        shell              ###
+    .awk                  38;5;172
+    .bash                 38;5;172
+    .bat                  38;5;172
+    .BAT                  38;5;172
+    .sed                  38;5;172
+    .sh                   38;5;172
+    .zsh                  38;5;172
+    .vim                  38;5;172
+    .kak                  38;5;172
+
+  ###      interpreted          ###
+    ## AutoHotkey script
+      .ahk                  38;5;41
+    ## python
+      .py                   38;5;41
+      .ipynb                38;5;41
+    ## ruby
+      .rb                   38;5;41
+      .gemspec              38;5;41
+    ## perl
+      .pl                   38;5;208
+      .PL                   38;5;160
+      .t                    38;5;114
+    ## sql
+      .msql                 38;5;222
+      .mysql                38;5;222
+      .pgsql                38;5;222
+      .sql                  38;5;222
+    ## Tool Command Language
+      .tcl                  38;5;64;1
+    ## R language
+      .r                    38;5;49
+      .R                    38;5;49
+    ## GrADS script
+      .gs                   38;5;81
+    ## Clojure
+      .clj                  38;5;41
+      .cljs                 38;5;41
+      .cljc                 38;5;41
+    ## Clojure gorilla REPL worksheet
+      .cljw                 38;5;41
+    ## Scala
+      .scala                38;5;41
+      .sc                   38;5;41
+    ## Dart
+      .dart                 38;5;51
+
+  ###       compiled {2}        ###
+    ## Assembly language
+      .asm                  38;5;81
+    ## Assembly (that needs pre-processing)
+      .sx                   38;5;81
+    ## LISP
+      .cl                   38;5;81
+      .lisp                 38;5;81
+      .rkt                  38;5;81
+      ## Lua
+      .lua                  38;5;81
+    ## Moonscript
+    .moon                 38;5;81
+    ## C
+      .c                    38;5;81
+      .C                    38;5;81
+      .h                    38;5;110
+      .H                    38;5;110
+      .tcc                  38;5;110
+    ## C++
+      .c++                  38;5;81
+      .h++                  38;5;110
+      .hpp                  38;5;110
+      .hxx                  38;5;110
+      .ii                   38;5;110
+    ## method file for Objective C
+      .M                    38;5;110
+      .m                    38;5;110
+    ## C Sharp
+      .cc                   38;5;81
+      .cs                   38;5;81
+      .cp                   38;5;81
+      .cpp                  38;5;81
+      .cxx                  38;5;81
+    ## Crystal
+      .cr                   38;5;81
+    ## Google golang
+      .go                   38;5;81
+    ## Fortran
+      .f                    38;5;81
+      .F                    38;5;81
+      .for                  38;5;81
+      .ftn                  38;5;81
+      .f90                  38;5;81
+      .F90                  38;5;81
+      .f95                  38;5;81
+      .F95                  38;5;81
+      .f03                  38;5;81
+      .F03                  38;5;81
+      .f08                  38;5;81
+      .F08                  38;5;81
+    ## Nim
+      .nim                  38;5;81
+      .nimble               38;5;81
+    ## pascal
+      .s                    38;5;110
+      .S                    38;5;110
+    ## Rust
+      .rs                   38;5;81
+    ## AppleScript
+      .scpt                 38;5;219
+    ## Swift
+      .swift                38;5;219
+    ## Vala
+      .vala                 38;5;81
+      .vapi                 38;5;81
+    ## interface file in GHC - https://github.com/trapd00r/LS_COLORS/pull/9
+    .hi                   38;5;110
+    ## Haskell
+      .hs                   38;5;81
+      .lhs                  38;5;81
+    ## Agda
+      .agda                 38;5;81
+      .lagda                38;5;81
+      .lagda.tex            38;5;81
+      .lagda.rst            38;5;81
+      .lagda.md             38;5;81
+      .agdai                38;5;110
+    ## Zig
+      .zig                  38;5;81
+    ## V
+      .v                    38;5;81
+
+  ### binaries {{{2
+  ## compiled apps for interpreted languages
+  .pyc                  38;5;240
   # }}}
-# binary {{{2
-  .chm                  38;5;141
-  .djvu                 38;5;141
-  .pdf                  38;5;141
-  .PDF                  38;5;141
-  .mobi                 38;5;141
-  .epub                 38;5;141
-# words {{{3
-  .docm                 38;5;111;4
-  .doc                  38;5;111
-  .docx                 38;5;111
-  .odb                  38;5;111
-  .odt                  38;5;111
-  .rtf                  38;5;111
-# presentation {{{3
-  .odp                  38;5;166
-  .pps                  38;5;166
-  .ppt                  38;5;166
-  .pptx                 38;5;166
-#   Powerpoint show
-  .ppts                 38;5;166
-#   Powerpoint with enabled macros
-  .pptxm                38;5;166;4
-#   Powerpoint show with enabled macros
-  .pptsm                38;5;166;4
-# spreadsheet {{{3
-  .csv                  38;5;78
-  .tsv                  38;5;78
-#   Open document spreadsheet
-  .ods                  38;5;112
-  .xla                  38;5;76
-#   Excel spreadsheet
-  .xls                  38;5;112
-  .xlsx                 38;5;112
-#   Excel spreadsheet with macros
-  .xlsxm                38;5;112;4
-#   Excel module
-  .xltm                 38;5;73;4
-  .xltx                 38;5;73
-#   macOS office suite {{{3
-  .pages                38;5;111
-  .numbers              38;5;112
-  .key                  38;5;166
-# }}}
-# }}}
-# configs {{{2
-*config               1
-*cfg                  1
-*conf                 1
-*rc                   1
-*authorized_keys      1
-*known_hosts          1
-.ini                  1
-.plist                1
-#   vim
-  .viminfo              1
-#   cisco VPN client configuration
-  .pcf                  1
-#   adobe photoshop proof settings file
-  .psf                  1
-#   Sublime Text config
-  .hidden-color-scheme  1
-  .hidden-tmTheme       1
-  .last-run             1
-  .merged-ca-bundle     1
-  .sublime-build        1
-  .sublime-commands     1
-  .sublime-keymap       1
-  .sublime-settings     1
-  .sublime-snippet      1
-  .sublime-project      1
-  .sublime-workspace    1
-  .tmTheme              1
-  .user-ca-bundle       1
-# eclipse
-  .epf                  1
-# }}}
-# }}}
-
-
-
-#################################
-####  Code Source Files {1}  ####
-#################################
-
-###    version control {2}    ### 
-  .git                  38;5;197
-  .gitignore            38;5;240
-  .gitattributes        38;5;240
-  .gitmodules           38;5;240
-
-###        shell {2}         ###
-  .awk                  38;5;172
-  .bash                 38;5;172
-  .bat                  38;5;172
-  .BAT                  38;5;172
-  .sed                  38;5;172
-  .sh                   38;5;172
-  .zsh                  38;5;172
-  .vim                  38;5;172
-  .kak                  38;5;172
-
-###      interpreted {2}      ###
-  ## AutoHotkey script
-    .ahk                  38;5;41
-  ## python
-    .py                   38;5;41
-    .ipynb                38;5;41
-  ## ruby
-    .rb                   38;5;41
-    .gemspec              38;5;41
-  ## perl
-    .pl                   38;5;208
-    .PL                   38;5;160
-    .t                    38;5;114
-  ## sql
-    .msql                 38;5;222
-    .mysql                38;5;222
-    .pgsql                38;5;222
-    .sql                  38;5;222
-  ## Tool Command Language
-    .tcl                  38;5;64;1
-  ## R language
-    .r                    38;5;49
-    .R                    38;5;49
-  ## GrADS script
-    .gs                   38;5;81
-  ## Clojure
-    .clj                  38;5;41
-    .cljs                 38;5;41
-    .cljc                 38;5;41
-  ## Clojure gorilla REPL worksheet
-    .cljw                 38;5;41
-  ## Scala
-    .scala                38;5;41
-    .sc                   38;5;41
-  ## Dart
-    .dart                 38;5;51
-
-###       compiled {2}        ###
-  ## Assembly language
-    .asm                  38;5;81
-  ## Assembly (that needs pre-processing)
-    .sx                   38;5;81
-  ## LISP
-    .cl                   38;5;81
-    .lisp                 38;5;81
-    .rkt                  38;5;81
-    ## Lua
-    .lua                  38;5;81
-  ## Moonscript
-   .moon                 38;5;81
-  ## C
-    .c                    38;5;81
-    .C                    38;5;81
-    .h                    38;5;110
-    .H                    38;5;110
-    .tcc                  38;5;110
-  ## C++
-    .c++                  38;5;81
-    .h++                  38;5;110
-    .hpp                  38;5;110
-    .hxx                  38;5;110
-    .ii                   38;5;110
-  ## method file for Objective C
-    .M                    38;5;110
-    .m                    38;5;110
-  ## C Sharp
-    .cc                   38;5;81
-    .cs                   38;5;81
-    .cp                   38;5;81
-    .cpp                  38;5;81
-    .cxx                  38;5;81
-  ## Crystal
-    .cr                   38;5;81
-  ## Google golang
-    .go                   38;5;81
-  ## Fortran
-    .f                    38;5;81
-    .F                    38;5;81
-    .for                  38;5;81
-    .ftn                  38;5;81
-    .f90                  38;5;81
-    .F90                  38;5;81
-    .f95                  38;5;81
-    .F95                  38;5;81
-    .f03                  38;5;81
-    .F03                  38;5;81
-    .f08                  38;5;81
-    .F08                  38;5;81
-  ## Nim
-    .nim                  38;5;81
-    .nimble               38;5;81
-  ## pascal
-    .s                    38;5;110
-    .S                    38;5;110
-  ## Rust
-    .rs                   38;5;81
-  ## AppleScript
-    .scpt                 38;5;219
-  ## Swift
-    .swift                38;5;219
-  ## Vala
-    .vala                 38;5;81
-    .vapi                 38;5;81
-  ## interface file in GHC - https://github.com/trapd00r/LS_COLORS/pull/9
-   .hi                   38;5;110
-  ## Haskell
-    .hs                   38;5;81
-    .lhs                  38;5;81
-  ## Agda
-    .agda                 38;5;81
-    .lagda                38;5;81
-    .lagda.tex            38;5;81
-    .lagda.rst            38;5;81
-    .lagda.md             38;5;81
-    .agdai                38;5;110
-  ## Zig
-    .zig                  38;5;81
-  ## V
-    .v                    38;5;81
-
-### binaries {{{2
-## compiled apps for interpreted languages
-.pyc                  38;5;240
-# }}}
-## orchestration {{{2
-  .tf                   38;5;168
-  .tfstate              38;5;168
-  .tfvars               38;5;168
-  ## orchestration 2}}}
-## html {{{2
-  .css                  38;5;125;1
-  .less                 38;5;125;1
-  .sass                 38;5;125;1
-  .scss                 38;5;125;1
-  .htm                  38;5;125;1
-  .html                 38;5;125;1
-  .jhtm                 38;5;125;1
-  .mht                  38;5;125;1
-  .eml                  38;5;125;1
-  .mustache             38;5;125;1
-  ## }}}
-## java {{{2
-  .coffee               38;5;074;1
-  .java                 38;5;074;1
-  .js                   38;5;074;1
-  .mjs                  38;5;074;1
-  .jsm                  38;5;074;1
-  .jsp                  38;5;074;1
-  ## }}}
-## php {{{2
-  .php                  38;5;81
-  ##   CakePHP view scripts and helpers
-    .ctp                  38;5;81
-  ##   Twig template engine
-    .twig                 38;5;81
-  ## }}}
-## vb/a {{{2
-  .vb                   38;5;81
-  .vba                  38;5;81
-  .vbs                  38;5;81
-  ## 2}}}
-## Build stuff {{{2
-  *Dockerfile           38;5;155
-  .dockerignore         38;5;240
-  *Makefile             38;5;155
-  *MANIFEST             38;5;243
-  *pm_to_blib           38;5;240
-  ## Functional Configuration
-    .nix                  38;5;155
-    .dhall                38;5;178
-  ## ruby rake
-    .rake                 38;5;155
-  ## automake
-    .am                   38;5;242
-    .in                   38;5;242
-    .hin                  38;5;242
-    .scan                 38;5;242
-    .m4                   38;5;242
-    .old                  38;5;242
-    .out                  38;5;242
-    .SKIP                 38;5;244
+  ## orchestration {{{2
+    .tf                   38;5;168
+    .tfstate              38;5;168
+    .tfvars               38;5;168
+    ## orchestration 2}}}
+  ## html {{{2
+    .css                  38;5;125;1
+    .less                 38;5;125;1
+    .sass                 38;5;125;1
+    .scss                 38;5;125;1
+    .htm                  38;5;125;1
+    .html                 38;5;125;1
+    .jhtm                 38;5;125;1
+    .mht                  38;5;125;1
+    .eml                  38;5;125;1
+    .mustache             38;5;125;1
     ## }}}
-## patch files {{{2
-  .diff                 48;5;197;38;5;232
-  .patch                48;5;197;38;5;232;1
-  #}}}
-## graphics {{{1
+  ## java {{{2
+    .coffee               38;5;074;1
+    .java                 38;5;074;1
+    .js                   38;5;074;1
+    .mjs                  38;5;074;1
+    .jsm                  38;5;074;1
+    .jsp                  38;5;074;1
+    ## }}}
+  ## php {{{2
+    .php                  38;5;81
+    ##   CakePHP view scripts and helpers
+      .ctp                  38;5;81
+    ##   Twig template engine
+      .twig                 38;5;81
+    ## }}}
+  ## vb/a {{{2
+    .vb                   38;5;81
+    .vba                  38;5;81
+    .vbs                  38;5;81
+    ## 2}}}
+  ## Build stuff {{{2
+    *Dockerfile           38;5;155
+    .dockerignore         38;5;240
+    *Makefile             38;5;155
+    *MANIFEST             38;5;243
+    *pm_to_blib           38;5;240
+    ## Functional Configuration
+      .nix                  38;5;155
+      .dhall                38;5;178
+    ## ruby rake
+      .rake                 38;5;155
+    ## automake
+      .am                   38;5;242
+      .in                   38;5;242
+      .hin                  38;5;242
+      .scan                 38;5;242
+      .m4                   38;5;242
+      .old                  38;5;242
+      .out                  38;5;242
+      .SKIP                 38;5;244
+      ## }}}
+  ## patch files {{{2
+    .diff                 48;5;197;38;5;232
+    .patch                48;5;197;38;5;232;1
+    #}}}
+
+#################################
+####       Multimedia        ####
+#################################
+## graphics
   .bmp                  35
   .dicom                35
   .tiff                 35
@@ -575,16 +577,14 @@
   .pxm                  35
   .xpm                  35
   .webp                 35
-  ## }}}
-## vector {{{1
+## vector
   .ai                   35
   .eps                  35
   .epsf                 35
   .drw                  35
   .ps                   35
   .svg                  35
-  ## }}}
-## video {{{1
+## video
   .avi                  35
   .divx                 35
   .IFO                  35
@@ -600,7 +600,7 @@
   .rmvb                 35
   .sample               35
   .wmv                  35
-## mobile/streaming {{{2
+## mobile/streaming
   .3g2                  35
   .3gp                  35
   .gp3                  35
@@ -611,20 +611,17 @@
   .ts                   35
   .ogv                  35
   .f4v                  35
-  ## }}}
-## lossless {{{2
+## lossless
   .VOB                  35
   .vob                  35
-  ## }}}
-## subtitles {{{1
+## subtitles
   .ass                  38;5;117
   .srt                  38;5;117
   .ssa                  38;5;117
   .sub                  38;5;117
   .sup                  38;5;117 # bitmap image track
   .vtt                  38;5;117
-  ##}}}
-## audio {{{1
+## audio
   .3ga                  38;5;13
   .S3M                  38;5;13
   .aac                  38;5;13
@@ -656,8 +653,7 @@
   .wav                  38;5;13
   .wv                   38;5;13
   .wvc                  38;5;13
-  ## }}}
-## fonts {{{1
+## fonts
   .afm                  38;5;66
   .fon                  38;5;66
   .fnt                  38;5;66
@@ -671,8 +667,7 @@
   ## postscript fonts
     .PFA                  38;5;66
     .pfa                  38;5;66
-  ## }}}
-## archives {{{1
+## archives
   .7z                   01;38;2;34;218;110
   .a                    01;38;2;34;218;110
   .arj                  01;38;2;34;218;110
@@ -702,7 +697,7 @@
   .zst                  01;38;2;34;218;110
   .zstd                 01;38;2;34;218;110
   .zz                   01;38;2;34;218;110
-## packaged apps {{{2
+## packaged apps
   .apk                  38;5;215
   .ipa                  38;5;215
   .deb                  38;5;215
@@ -717,15 +712,13 @@
   .bsp                  38;5;215
   .crx                  38;5;215 # Google Chrome extension
   .xpi                  38;5;215 # Mozilla Firefox extension
-  ## }}}
-## segments from 0 to three digits after first extension letter {{{2
+## segments from 0 to three digits after first extension letter
   .r[0-9]{0,2}          38;5;239
   .zx[0-9]{0,2}         38;5;239
   .z[0-9]{0,2}          38;5;239
   ## partial files
   .part                 38;5;239
-  ## }}}
-## partition images {{{2
+## partition images
   .iso                  01;38;2;34;218;110
   .bin                  01;38;2;34;218;110
   .nrg                  01;38;2;34;218;110
@@ -734,8 +727,7 @@
   .toast                01;38;2;34;218;110
   .vcd                  01;38;2;34;218;110
   .vmdk                 01;38;2;34;218;110
-  ## }}}
-## databases {{{2
+## databases
   .accdb                38;5;60
   .accde                38;5;60
   .accdr                38;5;60
@@ -750,8 +742,7 @@
   .typelib              38;5;60
   ## NetCDF database
    .nc                   38;5;60
-  ## }}}
-## tempfiles {{{1
+## tempfiles
   ## undo files
     .pacnew               38;5;33
     .un~                  38;5;241
@@ -792,13 +783,11 @@
     .DS_Store             38;5;239
     .localized            38;5;239
     .CFUserTextEncoding   38;5;239
-    ## }}}
-## hosts {{{1
+## hosts
 ## /etc/hosts.{deny,allow}
   .allow                38;5;112
   .deny                 38;5;196
-  ## }}}
-## systemd {{{1
+## systemd
 ## http://www.freedesktop.org/software/systemd/man/systemd.unit.html
   .service              38;5;45
   *@.service            38;5;45
@@ -811,8 +800,7 @@
   .path                 38;5;45
   .timer                38;5;45
   .snapshot             38;5;45
-  ## }}}
-## metadata {{{1
+## metadata
   .application          38;5;116
   .cue                  38;5;116
   .description          38;5;116
@@ -827,14 +815,13 @@
   .urlview              38;5;116
   .webloc               38;5;116
   .lnk                  38;5;39
-  ## }}}
-# macOS files {{{1
+## macOS files
   *CodeResources        38;5;239 # code signing apps
   *PkgInfo              38;5;239 # app bundle id
   .nib                  38;5;57  # UI
   .car                  38;5;57  # asset catalog
   .dylib                38;5;241 # shared lib
-  ##   Xcode files {{{2
+  ## Xcode files
     .entitlements         1
     .pbxproj              1
     .strings              1
@@ -844,10 +831,8 @@
     .xcuserstate          1
     .xcworkspacedata      1
     .xib                  38;5;208
-  ## }}}
-  ## }}}
 
-## encrypted data {{{1
+## encrypted data
   .asc                  38;5;192;3
   .bfe                  38;5;192;3
   .enc                  38;5;192;3
@@ -862,8 +847,7 @@
   *id_rsa                38;5;192;3
   *id_ecdsa              38;5;192;3
   *id_ed25519            38;5;192;3
-  ## 1}}}
-## emulators {{{1
+## emulators
   .32x                  38;5;213
   .cdi                  38;5;213
   .fm2                  38;5;213
@@ -891,23 +875,20 @@
   .nes                  38;5;213
   ## Sega
   .sms                  38;5;213
-  # }}}
-## Texas Instruments Calculator files {{{1
+## Texas Instruments Calculator files
 ## for more see http://tibasicdev.wikidot.com/file-extensions
   .8xp                  38;5;121
   .8eu                  38;5;121
   .82p                  38;5;121
   .83p                  38;5;121
   .8xe                  38;5;121
-  ## }}}
-## 3D printing {{{1
+## 3D printing
   .stl                  38;5;216
   .dwg                  38;5;216
   .ply                  38;5;216
   .wrl                  38;5;216
-  ## }}}
 
-## unsorted {{{1
+## unsorted
   ##   Portable Object Translation for GNU Gettext
     .pot                  38;5;7
   ##   CAD files for printed circuit boards
@@ -957,7 +938,6 @@
     .xln                  38;5;7
   ## AppCode files
     .iml                  38;5;166
-    ## }}}
 
 ## Common executable formats
 ## Note that .app will still show as a directory, at least on Mac OS X--
@@ -969,60 +949,58 @@
 .reg 01;38;5;9  # Win
 .app 01;38;5;9  # OSX
 
-## termcap {{{1
-TERM ansi
-TERM color-xterm
-TERM con132x25
-TERM con132x30
-TERM con132x43
-TERM con132x60
-TERM con80x25
-TERM con80x28
-TERM con80x30
-TERM con80x43
-TERM con80x50
-TERM con80x60
-TERM cons25
-TERM console
-TERM cygwin
-TERM dtterm
-TERM Eterm
-TERM eterm-color
-TERM gnome
-TERM gnome-256color
-TERM jfbterm
-TERM konsole
-TERM kterm
-TERM linux
-TERM linux-c
-TERM mach-color
-TERM mlterm
-TERM putty
-TERM rxvt
-TERM rxvt-256color
-TERM rxvt-cygwin
-TERM rxvt-cygwin-native
-TERM rxvt-unicode
-TERM rxvt-unicode-256color
-TERM rxvt-unicode256
-TERM screen
-TERM screen-256color
-TERM screen-256color-bce
-TERM screen-bce
-TERM screen-w
-TERM screen.linux
-TERM screen.rxvt
-TERM terminator
-TERM vt100
-TERM xterm
-TERM xterm-16color
-TERM xterm-256color
-TERM xterm-88color
-TERM xterm-color
-TERM xterm-debian
-TERM xterm-kitty
-## }}}
-
+## termcap
+  TERM ansi
+  TERM color-xterm
+  TERM con132x25
+  TERM con132x30
+  TERM con132x43
+  TERM con132x60
+  TERM con80x25
+  TERM con80x28
+  TERM con80x30
+  TERM con80x43
+  TERM con80x50
+  TERM con80x60
+  TERM cons25
+  TERM console
+  TERM cygwin
+  TERM dtterm
+  TERM Eterm
+  TERM eterm-color
+  TERM gnome
+  TERM gnome-256color
+  TERM jfbterm
+  TERM konsole
+  TERM kterm
+  TERM linux
+  TERM linux-c
+  TERM mach-color
+  TERM mlterm
+  TERM putty
+  TERM rxvt
+  TERM rxvt-256color
+  TERM rxvt-cygwin
+  TERM rxvt-cygwin-native
+  TERM rxvt-unicode
+  TERM rxvt-unicode-256color
+  TERM rxvt-unicode256
+  TERM screen
+  TERM screen-256color
+  TERM screen-256color-bce
+  TERM screen-bce
+  TERM screen-w
+  TERM screen.linux
+  TERM screen.rxvt
+  TERM terminator
+  TERM vt100
+  TERM xterm
+  TERM xterm-16color
+  TERM xterm-256color
+  TERM xterm-88color
+  TERM xterm-color
+  TERM xterm-debian
+  TERM xterm-kitty
 
 # vim: ft=dircolors:fdm=marker:et:sw=2:
 
