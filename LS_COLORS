@@ -460,7 +460,9 @@
         .nim                  38;5;81
         .nimble               38;5;81
     ## pascal
-
+        .P                    38;5;81
+        .pp                   38;5;81
+        .pas                  38;5;81
     ## Rust
         .rs                   38;5;81
     ## AppleScript
