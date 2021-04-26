@@ -151,82 +151,82 @@
 #################################
 ####          Core           ####
 #################################
-  # https://github.com/trapd00r/LS_COLORS/issues/11
-  # "NORMAL don't reset the bold attribute -
-  #NORMAL                38;5;254
-  # Color of the non-filename text (e.g. permissions, date, etc. in long view)
-  NORMAL                00
-  # Color of files not otherwise specified
-  FILE                  00
-  # Color of directories
-  DIR                   01;38;5;12
-  # Directories with the sticky bit set (chmod +t)
-  STICKY                01;34;48;5;10
-  # Directories writable by others without sticky bit set(chmod o+w)
-  OTHER_WRITABLE        01;34;48;5;13
-  # Directories writable by others with stick bit set (chmod o+w && chmod +t)
-  STICKY_OTHER_WRITABLE 01;34;48;5;130
+    # https://github.com/trapd00r/LS_COLORS/issues/11
+    # "NORMAL don't reset the bold attribute -
+    #NORMAL                38;5;254
+    # Color of the non-filename text (e.g. permissions, date, etc. in long view)
+    NORMAL                00
+    # Color of files not otherwise specified
+    FILE                  00
+    # Color of directories
+    DIR                   01;38;5;12
+    # Directories with the sticky bit set (chmod +t)
+    STICKY                01;34;48;5;10
+    # Directories writable by others without sticky bit set(chmod o+w)
+    OTHER_WRITABLE        01;34;48;5;13
+    # Directories writable by others with stick bit set (chmod o+w && chmod +t)
+    STICKY_OTHER_WRITABLE 01;34;48;5;130
 
-  # Device files (e.g. hard drives, hardware devices, psuedo-devices, etc.)
-  # Per Wikipedia, generally block devices are randomly accessible
-  BLK                   03;30;48;5;4
-  # While character devices only accept/provide a serial input/output
-  CHR                   03;34
-  # Unix domain sockets; file for inter-process communication
-  # Using the inverse property so the icon is colored nicely instead of grey
-  SOCK                  07;38;5;8;46
-  # File for inter-process communication; Only present in Solaris 2.5+, I think
-  DOOR                  04;07;38;5;8;48;5;14
-  # Named pipes
-  FIFO                  30;46
-  # Symlinks; currently, neither exa nor LSDeluxe recognize the target keyword,
-  #   which colors the file according to however the file it points to would be colored
-  # LINK                  target
-  LINK                  01;36
-  # File with more than one hard link (since all files are technically hard links)
-  #   In practice what this means is anythng that you make a hard link out of (ln sourcefile newlink)
-  #   Colors both the source file and target link.  Ignored by both exa and LSDeluxe
-  MULTIHARDLINK         01;03;04;36
-  # Broken links.  Colors the file itself when the file it links to doesn't exist
-  ORPHAN                03;37;41
-  # Currently, both exa and LSDeluxe ignore this value and just use the ORPHAN color
-  #   in long view for both the link and the missing file, though both do it slightly differently
-  # Colors the non-existant file a link points to (as in long view)
-  MISSING               03;37;41
+    # Device files (e.g. hard drives, hardware devices, psuedo-devices, etc.)
+    # Per Wikipedia, generally block devices are randomly accessible
+    BLK                   03;30;48;5;4
+    # While character devices only accept/provide a serial input/output
+    CHR                   03;34
+    # Unix domain sockets; file for inter-process communication
+    # Using the inverse property so the icon is colored nicely instead of grey
+    SOCK                  07;38;5;8;46
+    # File for inter-process communication; Only present in Solaris 2.5+, I think
+    DOOR                  04;07;38;5;8;48;5;14
+    # Named pipes
+    FIFO                  30;46
+    # Symlinks; currently, neither exa nor LSDeluxe recognize the target keyword,
+    #   which colors the file according to however the file it points to would be colored
+    # LINK                  target
+    LINK                  01;36
+    # File with more than one hard link (since all files are technically hard links)
+    #   In practice what this means is anythng that you make a hard link out of (ln sourcefile newlink)
+    #   Colors both the source file and target link.  Ignored by both exa and LSDeluxe
+    MULTIHARDLINK         01;03;04;36
+    # Broken links.  Colors the file itself when the file it links to doesn't exist
+    ORPHAN                03;37;41
+    # Currently, both exa and LSDeluxe ignore this value and just use the ORPHAN color
+    #   in long view for both the link and the missing file, though both do it slightly differently
+    # Colors the non-existant file a link points to (as in long view)
+    MISSING               03;37;41
 
-  # Executable files; more generally, a file with any of the execute bits set
-  EXEC                  31
-  ## Due to the anti-aliasing that iTerm2 uses, the usual red of my theme ends up
-  ## blending into the background too much and is hard to read, so I'm using a
-  ## more intense ANSI red that ends up looking about the same, but more legible
-  # File with Set User ID bit set (chmod u+s)
-  # The file executes with the owner's permissions instead of the user's
-  SETUID                38;5;196;48;5;8
-  # File with Set Group ID bit set (chmod g+s)
-  # The file executes with the owner's group permissions instead of the user's group
-  SETGID                38;5;196;42
-  # Files with POSIX capabilities (see libcap); basically, instead of 
-  # all-or-nothing elevated privileges, you can give programs only those 
-  # privileges needed for them to function.
-  # I don't think Mac OS has this ability out-of-the-box
-  CAPABILITY            38;5;17
+    # Executable files; more generally, a file with any of the execute bits set
+    EXEC                  31
+    ## Due to the anti-aliasing that iTerm2 uses, the usual red of my theme ends up
+    ## blending into the background too much and is hard to read, so I'm using a
+    ## more intense ANSI red that ends up looking about the same, but more legible
+    # File with Set User ID bit set (chmod u+s)
+    # The file executes with the owner's permissions instead of the user's
+    SETUID                38;5;196;48;5;8
+    # File with Set Group ID bit set (chmod g+s)
+    # The file executes with the owner's group permissions instead of the user's group
+    SETGID                38;5;196;42
+    # Files with POSIX capabilities (see libcap); basically, instead of 
+    # all-or-nothing elevated privileges, you can give programs only those 
+    # privileges needed for them to function.
+    # I don't think Mac OS has this ability out-of-the-box
+    CAPABILITY            38;5;17
 
 
 # plain-text
-  .txt                  38;5;253
+    .txt                  38;5;253
 # markup
-  .adoc                 38;5;184
-  .asciidoc             38;5;184
-  .etx                  38;5;184
-  .info                 38;5;184
-  .markdown             38;5;184
-  .md                   38;5;184
-  .mkd                  38;5;184
-  .nfo                  38;5;184
-  .pod                  38;5;184
-  .rst                  38;5;184
-  .tex                  38;5;184
-  .textile              38;5;184
+    .adoc                 38;5;184
+    .asciidoc             38;5;184
+    .etx                  38;5;184
+    .info                 38;5;184
+    .markdown             38;5;184
+    .md                   38;5;184
+    .mkd                  38;5;184
+    .nfo                  38;5;184
+    .pod                  38;5;184
+    .rst                  38;5;184
+    .tex                  38;5;184
+    .textile              38;5;184
 
 #################################
 ####        Documents        ####
@@ -368,134 +368,133 @@
 
   ###      interpreted          ###
     ## AutoHotkey script
-      .ahk                  38;5;41
+        .ahk                  38;5;41
     ## python
-      .py                   38;5;41
-      .ipynb                38;5;41
+        .py                   38;5;41
+        .ipynb                38;5;41
     ## ruby
-      .rb                   38;5;41
-      .gemspec              38;5;41
+        .rb                   38;5;41
+        .gemspec              38;5;41
     ## perl
-      .pl                   38;5;208
-      .PL                   38;5;160
-      .t                    38;5;114
+        .pl                   38;5;208
+        .PL                   38;5;160
+        .t                    38;5;114
     ## sql
-      .msql                 38;5;222
-      .mysql                38;5;222
-      .pgsql                38;5;222
-      .sql                  38;5;222
+        .msql                 38;5;222
+        .mysql                38;5;222
+        .pgsql                38;5;222
+        .sql                  38;5;222
     ## Tool Command Language
-      .tcl                  38;5;64;1
+        .tcl                  38;5;64;1
     ## R language
-      .r                    38;5;49
-      .R                    38;5;49
+        .r                    38;5;49
+        .R                    38;5;49
     ## GrADS script
-      .gs                   38;5;81
+        .gs                   38;5;81
     ## Clojure
-      .clj                  38;5;41
-      .cljs                 38;5;41
-      .cljc                 38;5;41
+        .clj                  38;5;41
+        .cljs                 38;5;41
+        .cljc                 38;5;41
     ## Clojure gorilla REPL worksheet
-      .cljw                 38;5;41
+        .cljw                 38;5;41
     ## Scala
-      .scala                38;5;41
-      .sc                   38;5;41
+        .scala                38;5;41
+        .sc                   38;5;41
     ## Dart
-      .dart                 38;5;51
+        .dart                 38;5;51
 
-  ###       compiled {2}        ###
+  ###       compiled            ###
     ## Assembly language
-      .asm                  38;5;81
+        .asm                  38;5;81
+        .s                    38;5;110
+        .S                    38;5;110
     ## Assembly (that needs pre-processing)
-      .sx                   38;5;81
+        .sx                   38;5;81
     ## LISP
-      .cl                   38;5;81
-      .lisp                 38;5;81
-      .rkt                  38;5;81
-      ## Lua
-      .lua                  38;5;81
+        .cl                   38;5;81
+        .lisp                 38;5;81
+        .rkt                  38;5;81
+    ## Lua
+        .lua                  38;5;81
     ## Moonscript
-    .moon                 38;5;81
+        .moon                 38;5;81
     ## C
-      .c                    38;5;81
-      .C                    38;5;81
-      .h                    38;5;110
-      .H                    38;5;110
-      .tcc                  38;5;110
+        .c                    38;5;81
+        .C                    38;5;81
+        .h                    38;5;110
+        .H                    38;5;110
+        .tcc                  38;5;110
     ## C++
-      .c++                  38;5;81
-      .h++                  38;5;110
-      .hpp                  38;5;110
-      .hxx                  38;5;110
-      .ii                   38;5;110
+        .c++                  38;5;81
+        .h++                  38;5;110
+        .hpp                  38;5;110
+        .hxx                  38;5;110
+        .ii                   38;5;110
     ## method file for Objective C
-      .M                    38;5;110
-      .m                    38;5;110
+        .M                    38;5;110
+        .m                    38;5;110
     ## C Sharp
-      .cc                   38;5;81
-      .cs                   38;5;81
-      .cp                   38;5;81
-      .cpp                  38;5;81
-      .cxx                  38;5;81
+        .cc                   38;5;81
+        .cs                   38;5;81
+        .cp                   38;5;81
+        .cpp                  38;5;81
+        .cxx                  38;5;81
     ## Crystal
-      .cr                   38;5;81
+        .cr                   38;5;81
     ## Google golang
-      .go                   38;5;81
+        .go                   38;5;81
     ## Fortran
-      .f                    38;5;81
-      .F                    38;5;81
-      .for                  38;5;81
-      .ftn                  38;5;81
-      .f90                  38;5;81
-      .F90                  38;5;81
-      .f95                  38;5;81
-      .F95                  38;5;81
-      .f03                  38;5;81
-      .F03                  38;5;81
-      .f08                  38;5;81
-      .F08                  38;5;81
+        .f                    38;5;81
+        .F                    38;5;81
+        .for                  38;5;81
+        .ftn                  38;5;81
+        .f90                  38;5;81
+        .F90                  38;5;81
+        .f95                  38;5;81
+        .F95                  38;5;81
+        .f03                  38;5;81
+        .F03                  38;5;81
+        .f08                  38;5;81
+        .F08                  38;5;81
     ## Nim
-      .nim                  38;5;81
-      .nimble               38;5;81
+        .nim                  38;5;81
+        .nimble               38;5;81
     ## pascal
-      .s                    38;5;110
-      .S                    38;5;110
-    ## Rust
-      .rs                   38;5;81
-    ## AppleScript
-      .scpt                 38;5;219
-    ## Swift
-      .swift                38;5;219
-    ## Vala
-      .vala                 38;5;81
-      .vapi                 38;5;81
-    ## interface file in GHC - https://github.com/trapd00r/LS_COLORS/pull/9
-    .hi                   38;5;110
-    ## Haskell
-      .hs                   38;5;81
-      .lhs                  38;5;81
-    ## Agda
-      .agda                 38;5;81
-      .lagda                38;5;81
-      .lagda.tex            38;5;81
-      .lagda.rst            38;5;81
-      .lagda.md             38;5;81
-      .agdai                38;5;110
-    ## Zig
-      .zig                  38;5;81
-    ## V
-      .v                    38;5;81
 
-  ### binaries {{{2
+    ## Rust
+        .rs                   38;5;81
+    ## AppleScript
+        .scpt                 38;5;219
+    ## Swift
+        .swift                38;5;219
+    ## Vala
+        .vala                 38;5;81
+        .vapi                 38;5;81
+    ## interface file in GHC - https://github.com/trapd00r/LS_COLORS/pull/9
+        .hi                   38;5;110
+    ## Haskell
+        .hs                   38;5;81
+        .lhs                  38;5;81
+    ## Agda
+        .agda                 38;5;81
+        .lagda                38;5;81
+        .lagda.tex            38;5;81
+        .lagda.rst            38;5;81
+        .lagda.md             38;5;81
+        .agdai                38;5;110
+    ## Zig
+        .zig                  38;5;81
+    ## V
+        .v                    38;5;81
+
+  ### binaries
   ## compiled apps for interpreted languages
-  .pyc                  38;5;240
-  # }}}
-  ## orchestration {{{2
+    .pyc                  38;5;240
+  ## orchestration
     .tf                   38;5;168
     .tfstate              38;5;168
     .tfvars               38;5;168
-    ## orchestration 2}}}
-  ## html {{{2
+  ## html
     .css                  38;5;125;1
     .less                 38;5;125;1
     .sass                 38;5;125;1
@@ -506,161 +505,155 @@
     .mht                  38;5;125;1
     .eml                  38;5;125;1
     .mustache             38;5;125;1
-    ## }}}
-  ## java {{{2
+  ## java
     .coffee               38;5;074;1
     .java                 38;5;074;1
     .js                   38;5;074;1
     .mjs                  38;5;074;1
     .jsm                  38;5;074;1
     .jsp                  38;5;074;1
-    ## }}}
-  ## php {{{2
+  ## php
     .php                  38;5;81
     ##   CakePHP view scripts and helpers
-      .ctp                  38;5;81
+        .ctp                  38;5;81
     ##   Twig template engine
-      .twig                 38;5;81
-    ## }}}
-  ## vb/a {{{2
+        .twig                 38;5;81
+  ## vb/a
     .vb                   38;5;81
     .vba                  38;5;81
     .vbs                  38;5;81
-    ## 2}}}
-  ## Build stuff {{{2
+  ## Build stuff
     *Dockerfile           38;5;155
     .dockerignore         38;5;240
     *Makefile             38;5;155
     *MANIFEST             38;5;243
     *pm_to_blib           38;5;240
     ## Functional Configuration
-      .nix                  38;5;155
-      .dhall                38;5;178
+        .nix                  38;5;155
+        .dhall                38;5;178
     ## ruby rake
-      .rake                 38;5;155
+        .rake                 38;5;155
     ## automake
-      .am                   38;5;242
-      .in                   38;5;242
-      .hin                  38;5;242
-      .scan                 38;5;242
-      .m4                   38;5;242
-      .old                  38;5;242
-      .out                  38;5;242
-      .SKIP                 38;5;244
-      ## }}}
-  ## patch files {{{2
+        .am                   38;5;242
+        .in                   38;5;242
+        .hin                  38;5;242
+        .scan                 38;5;242
+        .m4                   38;5;242
+        .old                  38;5;242
+        .out                  38;5;242
+        .SKIP                 38;5;244
+  ## patch files
     .diff                 48;5;197;38;5;232
     .patch                48;5;197;38;5;232;1
-    #}}}
 
 #################################
 ####       Multimedia        ####
 #################################
-## graphics
-  .bmp                  35
-  .dicom                35
-  .tiff                 35
-  .tif                  35
-  .TIFF                 35
-  .cdr                  35
-  .flif                 35
-  .gif                  35
-  .icns                 35
-  .ico                  35
-  .jpeg                 35
-  .JPG                  35
-  .jpg                  35
-  .nth                  35
-  .png                  35
-  .psd                  35
-  .pxd                  35
-  .pxm                  35
-  .xpm                  35
-  .webp                 35
-## vector
-  .ai                   35
-  .eps                  35
-  .epsf                 35
-  .drw                  35
-  .ps                   35
-  .svg                  35
-## video
-  .avi                  35
-  .divx                 35
-  .IFO                  35
-  .m2v                  35
-  .m4v                  35
-  .mkv                  35
-  .MOV                  35
-  .mov                  35
-  .mp4                  35
-  .mpeg                 35
-  .mpg                  35
-  .ogm                  35
-  .rmvb                 35
-  .sample               35
-  .wmv                  35
-## mobile/streaming
-  .3g2                  35
-  .3gp                  35
-  .gp3                  35
-  .webm                 35
-  .gp4                  35
-  .asf                  35
-  .flv                  35
-  .ts                   35
-  .ogv                  35
-  .f4v                  35
-## lossless
-  .VOB                  35
-  .vob                  35
-## subtitles
-  .ass                  38;5;117
-  .srt                  38;5;117
-  .ssa                  38;5;117
-  .sub                  38;5;117
-  .sup                  38;5;117 # bitmap image track
-  .vtt                  38;5;117
-## audio
-  .3ga                  38;5;13
-  .S3M                  38;5;13
-  .aac                  38;5;13
-  .amr                  38;5;13
-  .au                   38;5;13
-  .caf                  38;5;13
-  .dat                  38;5;13
-  .dts                  38;5;13
-  .fcm                  38;5;13
-  .m4a                  38;5;13
-  .mod                  38;5;13
-  .mp3                  38;5;13
-  .mp4a                 38;5;13
-  .oga                  38;5;13
-  .ogg                  38;5;13
-  .opus                 38;5;13
-  .s3m                  38;5;13
-  .sid                  38;5;13
-  .wma                  38;5;13
-## lossless
-  .ape                  38;5;13
-  .aiff                 38;5;13
-  .cda                  38;5;13
-  .flac                 38;5;13
-  .alac                 38;5;13
-  .mid                  38;5;13
-  .midi                 38;5;13
-  .pcm                  38;5;13
-  .wav                  38;5;13
-  .wv                   38;5;13
-  .wvc                  38;5;13
+  ## graphics
+    .bmp                  35
+    .dicom                35
+    .tiff                 35
+    .tif                  35
+    .TIFF                 35
+    .cdr                  35
+    .flif                 35
+    .gif                  35
+    .icns                 35
+    .ico                  35
+    .jpeg                 35
+    .JPG                  35
+    .jpg                  35
+    .nth                  35
+    .png                  35
+    .psd                  35
+    .pxd                  35
+    .pxm                  35
+    .xpm                  35
+    .webp                 35
+  ## vector
+    .ai                   35
+    .eps                  35
+    .epsf                 35
+    .drw                  35
+    .ps                   35
+    .svg                  35
+  ## video
+    .avi                  35
+    .divx                 35
+    .IFO                  35
+    .m2v                  35
+    .m4v                  35
+    .mkv                  35
+    .MOV                  35
+    .mov                  35
+    .mp4                  35
+    .mpeg                 35
+    .mpg                  35
+    .ogm                  35
+    .rmvb                 35
+    .sample               35
+    .wmv                  35
+  ## mobile/streaming
+    .3g2                  35
+    .3gp                  35
+    .gp3                  35
+    .webm                 35
+    .gp4                  35
+    .asf                  35
+    .flv                  35
+    .ts                   35
+    .ogv                  35
+    .f4v                  35
+  ## lossless
+    .VOB                  35
+    .vob                  35
+  ## subtitles
+    .ass                  38;5;117
+    .srt                  38;5;117
+    .ssa                  38;5;117
+    .sub                  38;5;117
+    .sup                  38;5;117 # bitmap image track
+    .vtt                  38;5;117
+  ## audio
+    .3ga                  38;5;13
+    .S3M                  38;5;13
+    .aac                  38;5;13
+    .amr                  38;5;13
+    .au                   38;5;13
+    .caf                  38;5;13
+    .dat                  38;5;13
+    .dts                  38;5;13
+    .fcm                  38;5;13
+    .m4a                  38;5;13
+    .mod                  38;5;13
+    .mp3                  38;5;13
+    .mp4a                 38;5;13
+    .oga                  38;5;13
+    .ogg                  38;5;13
+    .opus                 38;5;13
+    .s3m                  38;5;13
+    .sid                  38;5;13
+    .wma                  38;5;13
+  ## lossless
+    .ape                  38;5;13
+    .aiff                 38;5;13
+    .cda                  38;5;13
+    .flac                 38;5;13
+    .alac                 38;5;13
+    .mid                  38;5;13
+    .midi                 38;5;13
+    .pcm                  38;5;13
+    .wav                  38;5;13
+    .wv                   38;5;13
+    .wvc                  38;5;13
 ## fonts
-  .afm                  38;5;66
-  .fon                  38;5;66
-  .fnt                  38;5;66
-  .pfb                  38;5;66
-  .pfm                  38;5;66
-  .ttf                  38;5;66
-  .otf                  38;5;66
+    .afm                  38;5;66
+    .fon                  38;5;66
+    .fnt                  38;5;66
+    .pfb                  38;5;66
+    .pfm                  38;5;66
+    .ttf                  38;5;66
+    .otf                  38;5;66
   ## Web Open Font Format
     .woff                 38;5;66
     .woff2                38;5;66
@@ -668,85 +661,85 @@
     .PFA                  38;5;66
     .pfa                  38;5;66
 ## archives
-  .7z                   01;38;2;34;218;110
-  .a                    01;38;2;34;218;110
-  .arj                  01;38;2;34;218;110
-  .bz2                  01;38;2;34;218;110
-  .cbr                  01;38;2;34;218;110
-  .cbz                  01;38;2;34;218;110
-  .cpio                 01;38;2;34;218;110
-  .dmg                  01;38;2;34;218;110
-  .gz                   01;38;2;34;218;110
-  .lrz                  01;38;2;34;218;110
-  .lz                   01;38;2;34;218;110
-  .lzma                 01;38;2;34;218;110
-  .lzo                  01;38;2;34;218;110
-  .rar                  01;38;2;34;218;110
-  .s7z                  01;38;2;34;218;110
-  .sz                   01;38;2;34;218;110
-  .tar                  01;38;2;34;218;110
-  .tgz                  01;38;2;34;218;110
-  .warc                 01;38;2;34;218;110
-  .WARC                 01;38;2;34;218;110
-  .xz                   01;38;2;34;218;110
-  .z                    01;38;2;34;218;110
-  .zip                  01;38;2;34;218;110
-  .zipx                 01;38;2;34;218;110
-  .zoo                  01;38;2;34;218;110
-  .zpaq                 01;38;2;34;218;110
-  .zst                  01;38;2;34;218;110
-  .zstd                 01;38;2;34;218;110
-  .zz                   01;38;2;34;218;110
+    .7z                   01;38;2;34;218;110
+    .a                    01;38;2;34;218;110
+    .arj                  01;38;2;34;218;110
+    .bz2                  01;38;2;34;218;110
+    .cbr                  01;38;2;34;218;110
+    .cbz                  01;38;2;34;218;110
+    .cpio                 01;38;2;34;218;110
+    .dmg                  01;38;2;34;218;110
+    .gz                   01;38;2;34;218;110
+    .lrz                  01;38;2;34;218;110
+    .lz                   01;38;2;34;218;110
+    .lzma                 01;38;2;34;218;110
+    .lzo                  01;38;2;34;218;110
+    .rar                  01;38;2;34;218;110
+    .s7z                  01;38;2;34;218;110
+    .sz                   01;38;2;34;218;110
+    .tar                  01;38;2;34;218;110
+    .tgz                  01;38;2;34;218;110
+    .warc                 01;38;2;34;218;110
+    .WARC                 01;38;2;34;218;110
+    .xz                   01;38;2;34;218;110
+    .z                    01;38;2;34;218;110
+    .zip                  01;38;2;34;218;110
+    .zipx                 01;38;2;34;218;110
+    .zoo                  01;38;2;34;218;110
+    .zpaq                 01;38;2;34;218;110
+    .zst                  01;38;2;34;218;110
+    .zstd                 01;38;2;34;218;110
+    .zz                   01;38;2;34;218;110
 ## packaged apps
-  .apk                  38;5;215
-  .ipa                  38;5;215
-  .deb                  38;5;215
-  .rpm                  38;5;215
-  .jad                  38;5;215
-  .jar                  38;5;215
-  .cab                  38;5;215
-  .pak                  38;5;215
-  .pk3                  38;5;215
-  .vdf                  38;5;215
-  .vpk                  38;5;215
-  .bsp                  38;5;215
-  .crx                  38;5;215 # Google Chrome extension
-  .xpi                  38;5;215 # Mozilla Firefox extension
+    .apk                  38;5;215
+    .ipa                  38;5;215
+    .deb                  38;5;215
+    .rpm                  38;5;215
+    .jad                  38;5;215
+    .jar                  38;5;215
+    .cab                  38;5;215
+    .pak                  38;5;215
+    .pk3                  38;5;215
+    .vdf                  38;5;215
+    .vpk                  38;5;215
+    .bsp                  38;5;215
+    .crx                  38;5;215 # Google Chrome extension
+    .xpi                  38;5;215 # Mozilla Firefox extension
 ## segments from 0 to three digits after first extension letter
-  .r[0-9]{0,2}          38;5;239
-  .zx[0-9]{0,2}         38;5;239
-  .z[0-9]{0,2}          38;5;239
+    .r[0-9]{0,2}          38;5;239
+    .zx[0-9]{0,2}         38;5;239
+    .z[0-9]{0,2}          38;5;239
   ## partial files
-  .part                 38;5;239
+    .part                 38;5;239
 ## partition images
-  .iso                  01;38;2;34;218;110
-  .bin                  01;38;2;34;218;110
-  .nrg                  01;38;2;34;218;110
-  .qcow                 01;38;2;34;218;110
-  .sparseimage          01;38;2;34;218;110
-  .toast                01;38;2;34;218;110
-  .vcd                  01;38;2;34;218;110
-  .vmdk                 01;38;2;34;218;110
+    .iso                  01;38;2;34;218;110
+    .bin                  01;38;2;34;218;110
+    .nrg                  01;38;2;34;218;110
+    .qcow                 01;38;2;34;218;110
+    .sparseimage          01;38;2;34;218;110
+    .toast                01;38;2;34;218;110
+    .vcd                  01;38;2;34;218;110
+    .vmdk                 01;38;2;34;218;110
 ## databases
-  .accdb                38;5;60
-  .accde                38;5;60
-  .accdr                38;5;60
-  .accdt                38;5;60
-  .db                   38;5;60
-  .fmp12                38;5;60
-  .fp7                  38;5;60
-  .localstorage         38;5;60
-  .mdb                  38;5;60
-  .mde                  38;5;60
-  .sqlite               38;5;60
-  .typelib              38;5;60
+    .accdb                38;5;60
+    .accde                38;5;60
+    .accdr                38;5;60
+    .accdt                38;5;60
+    .db                   38;5;60
+    .fmp12                38;5;60
+    .fp7                  38;5;60
+    .localstorage         38;5;60
+    .mdb                  38;5;60
+    .mde                  38;5;60
+    .sqlite               38;5;60
+    .typelib              38;5;60
   ## NetCDF database
-   .nc                   38;5;60
+    .nc                   38;5;60
 ## tempfiles
-  ## undo files
-    .pacnew               38;5;33
-    .un~                  38;5;241
-    .orig                 38;5;241
+    ## undo files
+        .pacnew               38;5;33
+        .un~                  38;5;241
+        .orig                 38;5;241
   ## backups
     .BUP                  38;5;241
     .bak                  38;5;241
@@ -785,108 +778,108 @@
     .CFUserTextEncoding   38;5;239
 ## hosts
 ## /etc/hosts.{deny,allow}
-  .allow                38;5;112
-  .deny                 38;5;196
+    .allow                38;5;112
+    .deny                 38;5;196
 ## systemd
 ## http://www.freedesktop.org/software/systemd/man/systemd.unit.html
-  .service              38;5;45
-  *@.service            38;5;45
-  .socket               38;5;45
-  .swap                 38;5;45
-  .device               38;5;45
-  .mount                38;5;45
-  .automount            38;5;45
-  .target               38;5;45
-  .path                 38;5;45
-  .timer                38;5;45
-  .snapshot             38;5;45
+    .service              38;5;45
+    *@.service            38;5;45
+    .socket               38;5;45
+    .swap                 38;5;45
+    .device               38;5;45
+    .mount                38;5;45
+    .automount            38;5;45
+    .target               38;5;45
+    .path                 38;5;45
+    .timer                38;5;45
+    .snapshot             38;5;45
 ## metadata
-  .application          38;5;116
-  .cue                  38;5;116
-  .description          38;5;116
-  .directory            38;5;116
-  .m3u                  38;5;116
-  .m3u8                 38;5;116
-  .md5                  38;5;116
-  .properties           38;5;116
-  .sfv                  38;5;116
-  .theme                38;5;116
-  .torrent              38;5;116
-  .urlview              38;5;116
-  .webloc               38;5;116
-  .lnk                  38;5;39
+    .application          38;5;116
+    .cue                  38;5;116
+    .description          38;5;116
+    .directory            38;5;116
+    .m3u                  38;5;116
+    .m3u8                 38;5;116
+    .md5                  38;5;116
+    .properties           38;5;116
+    .sfv                  38;5;116
+    .theme                38;5;116
+    .torrent              38;5;116
+    .urlview              38;5;116
+    .webloc               38;5;116
+    .lnk                  38;5;39
 ## macOS files
-  *CodeResources        38;5;239 # code signing apps
-  *PkgInfo              38;5;239 # app bundle id
-  .nib                  38;5;57  # UI
-  .car                  38;5;57  # asset catalog
-  .dylib                38;5;241 # shared lib
-  ## Xcode files
-    .entitlements         1
-    .pbxproj              1
-    .strings              1
-    .storyboard           38;5;196
-    .xcconfig             1
-    .xcsettings           1
-    .xcuserstate          1
-    .xcworkspacedata      1
-    .xib                  38;5;208
+    *CodeResources        38;5;239 # code signing apps
+    *PkgInfo              38;5;239 # app bundle id
+    .nib                  38;5;57  # UI
+    .car                  38;5;57  # asset catalog
+    .dylib                38;5;241 # shared lib
+    ## Xcode files
+        .entitlements         1
+        .pbxproj              1
+        .strings              1
+        .storyboard           38;5;196
+        .xcconfig             1
+        .xcsettings           1
+        .xcuserstate          1
+        .xcworkspacedata      1
+        .xib                  38;5;208
 
 ## encrypted data
-  .asc                  38;5;192;3
-  .bfe                  38;5;192;3
-  .enc                  38;5;192;3
-  .gpg                  38;5;192;3
-  .signature            38;5;192;3
-  .sig                  38;5;192;3
-  .p12                  38;5;192;3
-  .pem                  38;5;192;3
-  .pgp                  38;5;192;3
-  .p7s                  38;5;192;3
-  *id_dsa                38;5;192;3
-  *id_rsa                38;5;192;3
-  *id_ecdsa              38;5;192;3
-  *id_ed25519            38;5;192;3
+    .asc                  38;5;192;3
+    .bfe                  38;5;192;3
+    .enc                  38;5;192;3
+    .gpg                  38;5;192;3
+    .signature            38;5;192;3
+    .sig                  38;5;192;3
+    .p12                  38;5;192;3
+    .pem                  38;5;192;3
+    .pgp                  38;5;192;3
+    .p7s                  38;5;192;3
+    *id_dsa                38;5;192;3
+    *id_rsa                38;5;192;3
+    *id_ecdsa              38;5;192;3
+    *id_ed25519            38;5;192;3
 ## emulators
-  .32x                  38;5;213
-  .cdi                  38;5;213
-  .fm2                  38;5;213
-  .rom                  38;5;213
-  .sav                  38;5;213
-  .st                   38;5;213
+    .32x                  38;5;213
+    .cdi                  38;5;213
+    .fm2                  38;5;213
+    .rom                  38;5;213
+    .sav                  38;5;213
+    .st                   38;5;213
   ## atari
-  .a00                  38;5;213
-  .a52                  38;5;213
-  .A64                  38;5;213
-  .a64                  38;5;213
-  .a78                  38;5;213
-  .adf                  38;5;213
-  .atr                  38;5;213
+    .a00                  38;5;213
+    .a52                  38;5;213
+    .A64                  38;5;213
+    .a64                  38;5;213
+    .a78                  38;5;213
+    .adf                  38;5;213
+    .atr                  38;5;213
   ## nintendo
-  .gb                   38;5;213
-  .gba                  38;5;213
-  .gbc                  38;5;213
-  .gel                  38;5;213
-  .gg                   38;5;213
-  .ggl                  38;5;213
-  .ipk                  38;5;213 # Nintendo (DS Packed Images)
-  .j64                  38;5;213
-  .nds                  38;5;213
-  .nes                  38;5;213
+    .gb                   38;5;213
+    .gba                  38;5;213
+    .gbc                  38;5;213
+    .gel                  38;5;213
+    .gg                   38;5;213
+    .ggl                  38;5;213
+    .ipk                  38;5;213 # Nintendo (DS Packed Images)
+    .j64                  38;5;213
+    .nds                  38;5;213
+    .nes                  38;5;213
   ## Sega
-  .sms                  38;5;213
+    .sms                  38;5;213
 ## Texas Instruments Calculator files
 ## for more see http://tibasicdev.wikidot.com/file-extensions
-  .8xp                  38;5;121
-  .8eu                  38;5;121
-  .82p                  38;5;121
-  .83p                  38;5;121
-  .8xe                  38;5;121
+    .8xp                  38;5;121
+    .8eu                  38;5;121
+    .82p                  38;5;121
+    .83p                  38;5;121
+    .8xe                  38;5;121
 ## 3D printing
-  .stl                  38;5;216
-  .dwg                  38;5;216
-  .ply                  38;5;216
-  .wrl                  38;5;216
+    .stl                  38;5;216
+    .dwg                  38;5;216
+    .ply                  38;5;216
+    .wrl                  38;5;216
 
 ## unsorted
   ##   Portable Object Translation for GNU Gettext
