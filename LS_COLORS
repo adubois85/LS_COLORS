@@ -285,43 +285,31 @@
         .PDF                  38;5;141
         .mobi                 38;5;141
         .epub                 38;5;141
-    ## Words
-        .docm                 38;5;111;4
-        .doc                  38;5;111
-        .docx                 38;5;111
-        .odb                  38;5;111
-        .odt                  38;5;111
-        .rtf                  38;5;111
-    ## Presentation
+    ## Presentations
+        .key                  38;5;166
         .odp                  38;5;166
         .pps                  38;5;166
         .ppt                  38;5;166
         .pptx                 38;5;166
-    ## Powerpoint show
-        .ppts                 38;5;166
-    ## Powerpoint with enabled macros
-        .pptxm                38;5;166;4
-    ## Powerpoint show with enabled macros
-        .pptsm                38;5;166;4
-    ## Spreadsheet
-        .csv                  38;5;78
-        .tsv                  38;5;78
-    ## Open document spreadsheet
-        .ods                  38;5;112
-        .xla                  38;5;76
-    ## Excel spreadsheet
-        .xls                  38;5;112
-        .xlsx                 38;5;112
-    ## Excel spreadsheet with macros
-        .xlsxm                38;5;112;4
-    ## Excel module
-        .xltm                 38;5;73;4
-        .xltx                 38;5;73
-    ## macOS office suite
-        .pages                38;5;111
+        .ppts                 38;5;166      # Powerpoint show
+        .pptsm                38;5;166;4    # Powerpoint show with enabled macros
+        .pptxm                38;5;166;4    # Powerpoint with enabled macros
+    ## Spreadsheets
         .numbers              38;5;112
-        .key                  38;5;166
-
+        .ods                  38;5;112
+        .xls                  38;5;112
+        .xlsm                 38;5;112;4    # Macro-enabled Excel spreadsheet
+        .xlsx                 38;5;112
+        .xla                  38;5;76
+        .xltm                 38;5;73;4     # Macro-enabled Excel template
+        .xltx                 38;5;73       # Excel template
+    ## Word Processor
+        .doc                  38;5;111
+        .docm                 38;5;111;4
+        .docx                 38;5;111
+        .odt                  38;5;111
+        .pages                38;5;111
+        .rtf                  38;5;111
     ## Configs
         *config               1
         *cfg                  1
@@ -737,6 +725,7 @@
     .localstorage         38;5;60
     .mdb                  38;5;60
     .mde                  38;5;60
+    .odb                  38;5;111  # OpenDocument Database
     .sqlite               38;5;60
     .typelib              38;5;60
     .nc                   38;5;60   # NetCDF database
@@ -936,11 +925,12 @@
         .vcf                  38;5;7 #contact information
         .xln                  38;5;7
 
-
+### [TODO] Stuff to be sorted
         .dat                  38;5;13   # No idea why this was in audio; will move later [TODO]
         .cda                  38;5;13   # CD Audio Track Shortcut
         .IFO                  35    # DVD information (chapters, file locations, etc.)
-
+        .csv                  38;5;78
+        .tsv                  38;5;78
 
 
     ## AppCode Files
