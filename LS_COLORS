@@ -211,6 +211,16 @@
     # I don't think Mac OS has this ability out-of-the-box
     CAPABILITY            38;5;17
 
+#### Notes ####
+    ## Files are colored based solely on their extension; there is no logic to determine
+    ## what kind of data is contained in a given file.  So in cases where there are
+    ## collisions between two different file types (e.g. MPEG transport streams and
+    ## TypeScript both use .ts), you'll have to determine which is more important or
+    ## common and deal with the other being colored incorrectly.
+
+    ## More specific rules need to be placed after more general rules.
+    ## e.g. *README.md has to come after *md
+    ## Otherwise, the first rule will just be overwritten.
 
 # plain-text
     .txt                  38;5;253
@@ -231,8 +241,7 @@
 #################################
 ####        Documents        ####
 #################################
-    # More specific rules need to be placed after more general rules
-    # e.g. *README.md after *md
+
     *README               01;38;5;11
     *README.rst           01;38;5;11
     *README.md            01;38;5;11
