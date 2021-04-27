@@ -222,25 +222,24 @@
     ## e.g. *README.md has to come after *md
     ## Otherwise, the first rule will just be overwritten.
 
-# plain-text
-    .txt                  38;5;253
-# markup
-    .adoc                 38;5;184
-    .asciidoc             38;5;184
-    .etx                  38;5;184
-    .info                 38;5;184
-    .markdown             38;5;184
-    .md                   38;5;184
-    .mkd                  38;5;184
-    .nfo                  38;5;184
-    .pod                  38;5;184
-    .rst                  38;5;184
-    .tex                  38;5;184
-    .textile              38;5;184
-
 #################################
 ####        Documents        ####
 #################################
+    # Plain-text
+        .txt                  38;5;253
+    # Markup
+        .adoc                 38;5;184
+        .asciidoc             38;5;184
+        .etx                  38;5;184
+        .info                 38;5;184
+        .markdown             38;5;184
+        .md                   38;5;184
+        .mkd                  38;5;184
+        .nfo                  38;5;184
+        .pod                  38;5;184
+        .rst                  38;5;184
+        .tex                  38;5;184
+        .textile              38;5;184
 
     *README               01;38;5;11
     *README.rst           01;38;5;11
@@ -257,7 +256,7 @@
     *NOTICE               01;38;5;11
     *CHANGES              01;38;5;11
     .log                  01;38;5;11
-    ## key-value, non-relational data
+    ## Key-value, non-relational data
         .bib                  38;5;178
         .json                 38;5;178
         .jsonl                38;5;178
@@ -279,21 +278,21 @@
         .sgml                 38;5;178
         .rng                  38;5;178
         .rnc                  38;5;178
-    ## binary
+    ## Binary
         .chm                  38;5;141
         .djvu                 38;5;141
         .pdf                  38;5;141
         .PDF                  38;5;141
         .mobi                 38;5;141
         .epub                 38;5;141
-    ## words
+    ## Words
         .docm                 38;5;111;4
         .doc                  38;5;111
         .docx                 38;5;111
         .odb                  38;5;111
         .odt                  38;5;111
         .rtf                  38;5;111
-    ## presentation
+    ## Presentation
         .odp                  38;5;166
         .pps                  38;5;166
         .ppt                  38;5;166
@@ -304,7 +303,7 @@
         .pptxm                38;5;166;4
     ## Powerpoint show with enabled macros
         .pptsm                38;5;166;4
-    ## spreadsheet
+    ## Spreadsheet
         .csv                  38;5;78
         .tsv                  38;5;78
     ## Open document spreadsheet
@@ -323,7 +322,7 @@
         .numbers              38;5;112
         .key                  38;5;166
 
-    ## configs
+    ## Configs
         *config               1
         *cfg                  1
         *conf                 1
@@ -332,13 +331,13 @@
         *known_hosts          1
         .ini                  1
         .plist                1
-    ## vim
+    ## Vim
         .viminfo              1
     ## Cisco VPN client configuration
         .pcf                  1
     ## Adobe Photoshop proof settings file
         .psf                  1
-    ## Sublime Text config
+    ## Sublime Text Config
         .hidden-color-scheme  1
         .hidden-tmTheme       1
         .last-run             1
@@ -352,7 +351,7 @@
         .sublime-workspace    1
         .tmTheme              1
         .user-ca-bundle       1
-    # eclipse
+    # Eclipse
         .epf                  1
 
 #################################
@@ -370,12 +369,12 @@
             .scpt                 38;5;219
             .scptd                38;5;219
             .applescript          38;5;219
-        ## Assembly language
+        ## Assembly Language
             .asm                  38;5;81
             .s                    38;5;110
             .S                    38;5;110
             .sx                   38;5;81   # file that needs pre-processing
-        ## AutoHotkey script
+        ## AutoHotkey Script
             .ahk                  38;5;41
         ## C
             .c                    38;5;81
@@ -423,7 +422,7 @@
             .F08                  38;5;81
         ## Go
             .go                   38;5;81
-        ## GrADS script
+        ## GrADS Script
             .gs                   38;5;81
         ## Haskell
             .hs                   38;5;81
@@ -487,16 +486,20 @@
         ## Vala
             .vala                 38;5;81
             .vapi                 38;5;81
+        ## Visual Basic
+            .vb                   38;5;81
+            .vba                  38;5;81   # Visual Basic for Applications
+            .vbs                  38;5;81   # VBScript
         ## Zig
             .zig                  38;5;81
 
-    ###    version control        ### 
+    ###    Version Control        ### 
         .git                  38;5;197
         .gitignore            38;5;240
         .gitattributes        38;5;240
         .gitmodules           38;5;240
 
-    ###        shell              ###
+    ###        Shell              ###
         .awk                  38;5;172
         .bash                 38;5;172
         .bat                  38;5;172
@@ -508,14 +511,14 @@
         .kak                  38;5;172
 
 
-    ### binaries
-    ## compiled apps for interpreted languages
+    ### Binaries
+    ## Compiled apps for interpreted languages
         .pyc                  38;5;240
-    ## orchestration
+    ## Orchestration
         .tf                   38;5;168
         .tfstate              38;5;168
         .tfvars               38;5;168
-    ## html
+    ## HTML
         .css                  38;5;125;1
         .less                 38;5;125;1
         .sass                 38;5;125;1
@@ -527,12 +530,7 @@
         .eml                  38;5;125;1
         .mustache             38;5;125;1
 
-
-    ## vb/a
-        .vb                   38;5;81
-        .vba                  38;5;81
-        .vbs                  38;5;81
-    ## Build stuff
+    ## Build Stuff
         *Dockerfile           38;5;155
         .dockerignore         38;5;240
         *Makefile             38;5;155
@@ -541,9 +539,9 @@
         ## Functional Configuration
             .nix                  38;5;155
             .dhall                38;5;178
-        ## ruby rake
+        ## Ruby Rake
             .rake                 38;5;155
-        ## automake
+        ## Automake
             .am                   38;5;242
             .in                   38;5;242
             .hin                  38;5;242
@@ -552,7 +550,7 @@
             .old                  38;5;242
             .out                  38;5;242
             .SKIP                 38;5;244
-    ## patch files
+    ## Patch Files
         .diff                 48;5;197;38;5;232
         .patch                48;5;197;38;5;232;1
 
@@ -606,7 +604,7 @@
             .vob                  35
             .VOB                  35
             .wmv                  35
-        ## Mobile/streaming
+        ## Mobile/Streaming
             .3g2                  35
             .3gp                  35
             .asf                  35
@@ -617,7 +615,7 @@
             .ts                   35    # MPEG transport stream (also TypeScript...)
             .ogv                  35
             .webm                 35
-        ## subtitles
+        ## Subtitles
             .ass                  38;5;117
             .srt                  38;5;117
             .ssa                  38;5;117
@@ -656,7 +654,7 @@
             .wav                  38;5;13
             .wvc                  38;5;13
 
-## fonts
+## Fonts
     .afm                  38;5;66
     .fon                  38;5;66
     .fnt                  38;5;66
@@ -667,10 +665,10 @@
     ## Web Open Font Format
         .woff                 38;5;66
         .woff2                38;5;66
-    ## postscript fonts
+    ## PostScript Fonts
         .PFA                  38;5;66
         .pfa                  38;5;66
-## archives
+## Archives
     .7z                   01;38;2;34;218;110
     .a                    01;38;2;34;218;110
     .arj                  01;38;2;34;218;110
@@ -700,7 +698,7 @@
     .zst                  01;38;2;34;218;110
     .zstd                 01;38;2;34;218;110
     .zz                   01;38;2;34;218;110
-## packaged apps
+## Packaged Apps
     .apk                  38;5;215
     .ipa                  38;5;215
     .deb                  38;5;215
@@ -715,13 +713,13 @@
     .bsp                  38;5;215
     .crx                  38;5;215 # Google Chrome extension
     .xpi                  38;5;215 # Mozilla Firefox extension
-## segments from 0 to three digits after first extension letter
+## Segments from 0 to three digits after first extension letter
     .r[0-9]{0,2}          38;5;239
     .zx[0-9]{0,2}         38;5;239
     .z[0-9]{0,2}          38;5;239
-    ## partial files
+    ## Partial Files
         .part                 38;5;239
-## partition images
+## Partition Images
     .iso                  01;38;2;34;218;110
     .bin                  01;38;2;34;218;110
     .nrg                  01;38;2;34;218;110
@@ -730,7 +728,7 @@
     .toast                01;38;2;34;218;110
     .vcd                  01;38;2;34;218;110
     .vmdk                 01;38;2;34;218;110
-## databases
+## Databases
     .accdb                38;5;60
     .accde                38;5;60
     .accdr                38;5;60
@@ -743,14 +741,13 @@
     .mde                  38;5;60
     .sqlite               38;5;60
     .typelib              38;5;60
-    ## NetCDF database
-        .nc                   38;5;60
-## tempfiles
-    ## undo files
+    .nc                   38;5;60   # NetCDF database
+## Tempfiles
+    ## Undo Files
         .pacnew               38;5;33
         .un~                  38;5;241
         .orig                 38;5;241
-    ## backups
+    ## Backups
         .BUP                  38;5;241
         .bak                  38;5;241
         .hi                   38;5;110  # Glasgow Haskell Compiler interface file
@@ -759,27 +756,27 @@
         .mdump                38;5;241  # Mini DuMP crash report
         .rlib                 38;5;241  # Static rust library
         .dll                  38;5;241  # dynamic linked library
-    ## temporary files
+    ## Temporary Files
         .swp                  38;5;244
         .swo                  38;5;244
         .tmp                  38;5;244
         .sassc                38;5;244
-    ## state files
+    ## State Files
         .pid                  38;5;248
         .state                38;5;248
         *lockfile             38;5;248
         *lock                 38;5;248
-    ## error logs
+    ## Error Logs
         .err                  38;5;160;1
         .error                38;5;160;1
         .stderr               38;5;160;1
-    ## state dumps
+    ## State Dumps
         .aria2                38;5;241
         .dump                 38;5;241
         .stackdump            38;5;241
         .zcompdump            38;5;241
         .zwc                  38;5;241
-    ## tcpdump, network traffic capture
+    ## TCP Dump, Network Traffic Capture
         .pcap                 38;5;29
         .cap                  38;5;29
         .dmp                  38;5;29
@@ -804,7 +801,7 @@
     .path                 38;5;45
     .timer                38;5;45
     .snapshot             38;5;45
-## metadata
+## Metadata
     .application          38;5;116
     .cue                  38;5;116
     .description          38;5;116
@@ -819,13 +816,13 @@
     .urlview              38;5;116
     .webloc               38;5;116
     .lnk                  38;5;39
-## macOS files
+## macOS Files
     *CodeResources        38;5;239 # code signing apps
     *PkgInfo              38;5;239 # app bundle id
     .nib                  38;5;57  # UI
     .car                  38;5;57  # asset catalog
     .dylib                38;5;241 # shared lib
-    ## Xcode files
+    ## Xcode Files
         .entitlements         1
         .pbxproj              1
         .strings              1
@@ -836,7 +833,7 @@
         .xcworkspacedata      1
         .xib                  38;5;208
 
-## encrypted data
+## Encrypted Aata
     .asc                  38;5;192;3
     .bfe                  38;5;192;3
     .enc                  38;5;192;3
@@ -851,14 +848,14 @@
     *id_rsa                38;5;192;3
     *id_ecdsa              38;5;192;3
     *id_ed25519            38;5;192;3
-## emulators
+## Emulators
     .32x                  38;5;213
     .cdi                  38;5;213
     .fm2                  38;5;213
     .rom                  38;5;213
     .sav                  38;5;213
     .st                   38;5;213
-    ## atari
+    ## Atari
         .a00                  38;5;213
         .a52                  38;5;213
         .A64                  38;5;213
@@ -866,7 +863,7 @@
         .a78                  38;5;213
         .adf                  38;5;213
         .atr                  38;5;213
-    ## nintendo
+    ## Nintendo
         .gb                   38;5;213
         .gba                  38;5;213
         .gbc                  38;5;213
@@ -879,35 +876,35 @@
         .nes                  38;5;213
     ## Sega
         .sms                  38;5;213
-## Texas Instruments Calculator files
+## Texas Instruments Calculator Files
 ## for more see http://tibasicdev.wikidot.com/file-extensions
     .8xp                  38;5;121
     .8eu                  38;5;121
     .82p                  38;5;121
     .83p                  38;5;121
     .8xe                  38;5;121
-## 3D printing
+## 3D Printing
     .stl                  38;5;216
     .dwg                  38;5;216
     .ply                  38;5;216
     .wrl                  38;5;216
 
-## unsorted
+## Unsorted
     ##   Portable Object Translation for GNU Gettext
         .pot                  38;5;7
     ##   CAD files for printed circuit boards
         .pcb                  38;5;7
     ## groff (rendering app for texinfo)
-        .mm                   38;5;7
-    ## GIMP files
+        # .mm                   38;5;7  This isn't correct, I'll fix it later [TODO]
+    ## GIMP Files
         .gbr                  38;5;7
         .scm                  38;5;7
         .xcf                  38;5;7
-    ## printer spool file
+    ## Printer Spool File
         .spl                  38;5;7
-    ## RStudio project file
+    ## RStudio Project File
         .Rproj                38;5;11
-    ## Nokia Symbian OS files
+    ## Nokia Symbian OS Files
         .sis                  38;5;7
     ## Others
         .1p                   38;5;7
@@ -948,12 +945,12 @@
 
 
 
-    ## AppCode files
+    ## AppCode Files
         .iml                  38;5;166
 
-## Common executable formats
-## Note that .app will still show as a directory, at least on Mac OS X--
-##   because techincally it is
+## Common Executable Formats
+## Note that .app will still show as a directory, at least on macOS--
+##   because technically it is
 .cmd 01;38;5;9  # Win
 .exe 01;38;5;9  # Win
 .com 01;38;5;9  # Win
