@@ -285,24 +285,24 @@
         .PDF                  38;5;141
         .mobi                 38;5;141
         .epub                 38;5;141
+        .xps                  38;5;141      # XML Paper Specification
     ## Presentations
         .key                  38;5;166
         .odp                  38;5;166
-        .pps                  38;5;166
-        .ppt                  38;5;166
+        .pps                  38;5;166      # PowerPoint show (legacy)
+        .ppsm                 38;5;166;4    # Macro-enabled PowerPoint show
+        .ppsx                 38;5;166      # PowerPoint show
+        .ppt                  38;5;166      # PowerPoint presentation (legacy)
+        .pptm                 38;5;166;4    # Macro-enabled PowerPoint presentation
         .pptx                 38;5;166
-        .ppts                 38;5;166      # Powerpoint show
-        .pptsm                38;5;166;4    # Powerpoint show with enabled macros
-        .pptxm                38;5;166;4    # Powerpoint with enabled macros
     ## Spreadsheets
         .numbers              38;5;112
         .ods                  38;5;112
+        .xla                  38;5;76       # Excel Add-In
         .xls                  38;5;112
+        .xlsb                 38;5;112      # Excel binary workbook
         .xlsm                 38;5;112;4    # Macro-enabled Excel spreadsheet
         .xlsx                 38;5;112
-        .xla                  38;5;76
-        .xltm                 38;5;73;4     # Macro-enabled Excel template
-        .xltx                 38;5;73       # Excel template
     ## Word Processor
         .doc                  38;5;111
         .docm                 38;5;111;4
@@ -931,7 +931,8 @@
         .IFO                  35    # DVD information (chapters, file locations, etc.)
         .csv                  38;5;78
         .tsv                  38;5;78
-
+        .xltm                 38;5;73;4     # Macro-enabled Excel template
+        .xltx                 38;5;73       # Excel template
 
     ## AppCode Files
         .iml                  38;5;166
