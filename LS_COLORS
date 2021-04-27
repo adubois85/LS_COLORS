@@ -230,61 +230,62 @@
     # Markup
         .adoc                 38;5;184
         .asciidoc             38;5;184
-        .etx                  38;5;184
+        .etx                  38;5;184      # Setext
         .info                 38;5;184
-        .markdown             38;5;184
         .md                   38;5;184
         .mkd                  38;5;184
+        .markdown             38;5;184
         .nfo                  38;5;184
         .pod                  38;5;184
         .rst                  38;5;184
         .tex                  38;5;184
         .textile              38;5;184
 
-    *README               01;38;5;11
-    *README.rst           01;38;5;11
-    *README.md            01;38;5;11
-    *LICENSE              01;38;5;11
-    *COPYING              01;38;5;11
-    *INSTALL              01;38;5;11
-    *COPYRIGHT            01;38;5;11
     *AUTHORS              01;38;5;11
-    *HISTORY              01;38;5;11
-    *CONTRIBUTORS         01;38;5;11
-    *PATENTS              01;38;5;11
-    *VERSION              01;38;5;11
-    *NOTICE               01;38;5;11
     *CHANGES              01;38;5;11
+    *CONTRIBUTORS         01;38;5;11
+    *COPYING              01;38;5;11
+    *COPYRIGHT            01;38;5;11
+    *HISTORY              01;38;5;11
+    *INSTALL              01;38;5;11
+    *LICENSE              01;38;5;11
+    *NOTICE               01;38;5;11
+    *PATENTS              01;38;5;11
+    *README               01;38;5;11
+    *README.md            01;38;5;11
+    *README.rst           01;38;5;11
+    *VERSION              01;38;5;11
+    
     .log                  01;38;5;11
     ## Key-value, non-relational data
         .bib                  38;5;178
+        .dtd                  38;5;178
+        .fxml                 38;5;178
         .json                 38;5;178
         .jsonl                38;5;178
         .jsonnet              38;5;178
         .libsonnet            38;5;142
-        .ndjson               38;5;178
         .msg                  38;5;178
+        .ndjson               38;5;178
         .pgn                  38;5;178
+        .rdata                38;5;178
+        .RData                38;5;178
+        .rnc                  38;5;178
+        .rng                  38;5;178
         .rss                  38;5;178
-        .xml                  38;5;178
-        .fxml                 38;5;178
+        .sgml                 38;5;178
         .toml                 38;5;178
+        .xml                  38;5;178
+        .xsd                  38;5;178
         .yaml                 38;5;178
         .yml                  38;5;178
-        .RData                38;5;178
-        .rdata                38;5;178
-        .xsd                  38;5;178
-        .dtd                  38;5;178
-        .sgml                 38;5;178
-        .rng                  38;5;178
-        .rnc                  38;5;178
     ## Binary
         .chm                  38;5;141
         .djvu                 38;5;141
+        .epub                 38;5;141
+        .mobi                 38;5;141
         .pdf                  38;5;141
         .PDF                  38;5;141
-        .mobi                 38;5;141
-        .epub                 38;5;141
         .xps                  38;5;141      # XML Paper Specification
     ## Presentations
         .key                  38;5;166
@@ -311,14 +312,14 @@
         .pages                38;5;111
         .rtf                  38;5;111
     ## Configs
-        *config               1
+        *authorized_keys      1
         *cfg                  1
         *conf                 1
-        *rc                   1
-        *authorized_keys      1
-        *known_hosts          1
+        *config               1
         .ini                  1
+        *known_hosts          1
         .plist                1
+        *rc                   1
     ## Vim
         .viminfo              1
     ## Cisco VPN client configuration
@@ -333,9 +334,9 @@
         .sublime-build        1
         .sublime-commands     1
         .sublime-keymap       1
+        .sublime-project      1
         .sublime-settings     1
         .sublime-snippet      1
-        .sublime-project      1
         .sublime-workspace    1
         .tmTheme              1
         .user-ca-bundle       1
@@ -354,9 +355,9 @@
             .lagda.tex            38;5;81   # Agda literate TeX
             .lagda.rst            38;5;81   # Agda literate reStructuredText (documentation)
         ## AppleScript
+            .applescript          38;5;219
             .scpt                 38;5;219
             .scptd                38;5;219
-            .applescript          38;5;219
         ## Assembly Language
             .asm                  38;5;81
             .s                    38;5;110
@@ -381,15 +382,15 @@
             .ii                   38;5;110
         ## Objective-C
             .m                    38;5;110
-            .mm                   38;5;110
             .M                    38;5;110
+            .mm                   38;5;110
         ## C Sharp
             .cc                   38;5;81
             .cs                   38;5;81
         ## Clojure
             .clj                  38;5;41
-            .cljs                 38;5;41
             .cljc                 38;5;41
+            .cljs                 38;5;41
             .cljw                 38;5;41   # Gorilla REPL worksheet
         ## Crystal
             .cr                   38;5;81
@@ -398,16 +399,16 @@
         ## Fortran
             .f                    38;5;81
             .F                    38;5;81
-            .for                  38;5;81
-            .ftn                  38;5;81
-            .f90                  38;5;81
-            .F90                  38;5;81
-            .f95                  38;5;81
-            .F95                  38;5;81
             .f03                  38;5;81
             .F03                  38;5;81
             .f08                  38;5;81
             .F08                  38;5;81
+            .f90                  38;5;81
+            .F90                  38;5;81
+            .f95                  38;5;81
+            .F95                  38;5;81
+            .for                  38;5;81
+            .ftn                  38;5;81
         ## Go
             .go                   38;5;81
         ## GrADS Script
@@ -432,8 +433,8 @@
             .moon                 38;5;81   # MoonScript
         ## Nim
             .nim                  38;5;81
-            .nims                 38;5;81   # NimScript
             .nimble               38;5;81   # Nimble package manager for Nim
+            .nims                 38;5;81   # NimScript
         ## Pascal
             .P                    38;5;81
             .pp                   38;5;81
@@ -443,23 +444,23 @@
             .PL                   38;5;160
             .t                    38;5;114
         ## PHP
-            .php                  38;5;81
             .ctp                  38;5;81   # CakePHP Template
+            .php                  38;5;81
             .twig                 38;5;81   # Twig Template
         ## Python
-            .py                   38;5;41
             .ipynb                38;5;41   # Jupyter notebook
+            .py                   38;5;41
         ## R language
             .r                    38;5;49
             .R                    38;5;49
         ## Ruby
-            .rb                   38;5;41
             .gemspec              38;5;41
+            .rb                   38;5;41
         ## Rust
             .rs                   38;5;81
         ## Scala
-            .scala                38;5;41
             .sc                   38;5;41
+            .scala                38;5;41
         ## SQL
             .msql                 38;5;222
             .mysql                38;5;222
@@ -483,8 +484,8 @@
 
     ###    Version Control        ### 
         .git                  38;5;197
-        .gitignore            38;5;240
         .gitattributes        38;5;240
+        .gitignore            38;5;240
         .gitmodules           38;5;240
 
     ###        Shell              ###
@@ -492,11 +493,11 @@
         .bash                 38;5;172
         .bat                  38;5;172
         .BAT                  38;5;172
+        .kak                  38;5;172      # Kakoune plug-ins
         .sed                  38;5;172
         .sh                   38;5;172
-        .zsh                  38;5;172
         .vim                  38;5;172
-        .kak                  38;5;172
+        .zsh                  38;5;172
 
 
     ### Binaries
@@ -525,18 +526,18 @@
         *MANIFEST             38;5;243
         *pm_to_blib           38;5;240
         ## Functional Configuration
-            .nix                  38;5;155
             .dhall                38;5;178
+            .nix                  38;5;155
         ## Ruby Rake
             .rake                 38;5;155
         ## Automake
             .am                   38;5;242
-            .in                   38;5;242
             .hin                  38;5;242
-            .scan                 38;5;242
+            .in                   38;5;242
             .m4                   38;5;242
             .old                  38;5;242
             .out                  38;5;242
+            .scan                 38;5;242
             .SKIP                 38;5;244
     ## Patch Files
         .diff                 48;5;197;38;5;232
@@ -686,28 +687,28 @@
     .zz                   01;38;2;34;218;110
 ## Packaged Apps
     .apk                  38;5;215
-    .ipa                  38;5;215
+    .bsp                  38;5;215
+    .cab                  38;5;215
+    .crx                  38;5;215 # Google Chrome extension
     .deb                  38;5;215
-    .rpm                  38;5;215
+    .ipa                  38;5;215
     .jad                  38;5;215
     .jar                  38;5;215
-    .cab                  38;5;215
     .pak                  38;5;215
     .pk3                  38;5;215
+    .rpm                  38;5;215
     .vdf                  38;5;215
     .vpk                  38;5;215
-    .bsp                  38;5;215
-    .crx                  38;5;215 # Google Chrome extension
     .xpi                  38;5;215 # Mozilla Firefox extension
 ## Segments from 0 to three digits after first extension letter
     .r[0-9]{0,2}          38;5;239
-    .zx[0-9]{0,2}         38;5;239
     .z[0-9]{0,2}          38;5;239
+    .zx[0-9]{0,2}         38;5;239
     ## Partial Files
         .part                 38;5;239
 ## Partition Images
-    .iso                  01;38;2;34;218;110
     .bin                  01;38;2;34;218;110
+    .iso                  01;38;2;34;218;110
     .nrg                  01;38;2;34;218;110
     .qcow                 01;38;2;34;218;110
     .sparseimage          01;38;2;34;218;110
@@ -725,34 +726,34 @@
     .localstorage         38;5;60
     .mdb                  38;5;60
     .mde                  38;5;60
+    .nc                   38;5;60   # NetCDF database
     .odb                  38;5;111  # OpenDocument Database
     .sqlite               38;5;60
     .typelib              38;5;60
-    .nc                   38;5;60   # NetCDF database
 ## Tempfiles
     ## Undo Files
+        .orig                 38;5;241
         .pacnew               38;5;33
         .un~                  38;5;241
-        .orig                 38;5;241
     ## Backups
-        .BUP                  38;5;241
         .bak                  38;5;241
-        .hi                   38;5;110  # Glasgow Haskell Compiler nterface
-        .o                    38;5;241  # *nix Object file (shared libraries, core dumps etc)
+        .BUP                  38;5;241
         *core                 38;5;241  # Linux user core dump file (from /proc/sys/kernel/core_pattern)
-        .mdump                38;5;241  # Mini DuMP crash report
-        .rlib                 38;5;241  # Static rust library
         .dll                  38;5;241  # dynamic linked library
+        .hi                   38;5;110  # Glasgow Haskell Compiler nterface
+        .mdmp                 38;5;241  # Minidump crash report
+        .o                    38;5;241  # *nix Object file (shared libraries, core .dmps etc)
+        .rlib                 38;5;241  # Static rust library
     ## Temporary Files
-        .swp                  38;5;244
-        .swo                  38;5;244
-        .tmp                  38;5;244
         .sassc                38;5;244
+        .swo                  38;5;244
+        .swp                  38;5;244
+        .tmp                  38;5;244
     ## State Files
+        *lock                 38;5;248
+        *lockfile             38;5;248
         .pid                  38;5;248
         .state                38;5;248
-        *lockfile             38;5;248
-        *lock                 38;5;248
     ## Error Logs
         .err                  38;5;160;1
         .error                38;5;160;1
@@ -764,35 +765,36 @@
         .zcompdump            38;5;241
         .zwc                  38;5;241
     ## TCP Dump, Network Traffic Capture
-        .pcap                 38;5;29
         .cap                  38;5;29
         .dmp                  38;5;29
+        .pcap                 38;5;29
     ## macOS
+        .CFUserTextEncoding   38;5;239
         .DS_Store             38;5;239
         .localized            38;5;239
-        .CFUserTextEncoding   38;5;239
 ## hosts
 ## /etc/hosts.{deny,allow}
     .allow                38;5;112
     .deny                 38;5;196
 ## systemd
 ## http://www.freedesktop.org/software/systemd/man/systemd.unit.html
-    .service              38;5;45
     *@.service            38;5;45
-    .socket               38;5;45
-    .swap                 38;5;45
+    .automount            38;5;45
     .device               38;5;45
     .mount                38;5;45
-    .automount            38;5;45
-    .target               38;5;45
     .path                 38;5;45
-    .timer                38;5;45
+    .service              38;5;45
     .snapshot             38;5;45
+    .socket               38;5;45
+    .swap                 38;5;45
+    .target               38;5;45
+    .timer                38;5;45
 ## Metadata
     .application          38;5;116
     .cue                  38;5;116
     .description          38;5;116
     .directory            38;5;116
+    .lnk                  38;5;39
     .m3u                  38;5;116
     .m3u8                 38;5;116
     .md5                  38;5;116
@@ -802,13 +804,12 @@
     .torrent              38;5;116
     .urlview              38;5;116
     .webloc               38;5;116
-    .lnk                  38;5;39
 ## macOS Files
+    .car                  38;5;57  # asset catalog
     *CodeResources        38;5;239 # code signing apps
+    .dylib                38;5;241 # shared lib
     *PkgInfo              38;5;239 # app bundle id
     .nib                  38;5;57  # UI
-    .car                  38;5;57  # asset catalog
-    .dylib                38;5;241 # shared lib
     ## Xcode Files
         .entitlements         1
         .pbxproj              1
@@ -820,21 +821,21 @@
         .xcworkspacedata      1
         .xib                  38;5;208
 
-## Encrypted Aata
+## Encrypted Data
     .asc                  38;5;192;3
     .bfe                  38;5;192;3
     .enc                  38;5;192;3
     .gpg                  38;5;192;3
-    .signature            38;5;192;3
-    .sig                  38;5;192;3
-    .p12                  38;5;192;3
-    .pem                  38;5;192;3
-    .pgp                  38;5;192;3
-    .p7s                  38;5;192;3
     *id_dsa                38;5;192;3
-    *id_rsa                38;5;192;3
     *id_ecdsa              38;5;192;3
     *id_ed25519            38;5;192;3
+    *id_rsa                38;5;192;3
+    .p12                  38;5;192;3
+    .p7s                  38;5;192;3
+    .pem                  38;5;192;3
+    .pgp                  38;5;192;3
+    .sig                  38;5;192;3
+    .signature            38;5;192;3
 ## Emulators
     .32x                  38;5;213
     .cdi                  38;5;213
@@ -845,8 +846,8 @@
     ## Atari
         .a00                  38;5;213
         .a52                  38;5;213
-        .A64                  38;5;213
         .a64                  38;5;213
+        .A64                  38;5;213
         .a78                  38;5;213
         .adf                  38;5;213
         .atr                  38;5;213
@@ -865,15 +866,15 @@
         .sms                  38;5;213
 ## Texas Instruments Calculator Files
 ## for more see http://tibasicdev.wikidot.com/file-extensions
-    .8xp                  38;5;121
-    .8eu                  38;5;121
     .82p                  38;5;121
     .83p                  38;5;121
+    .8eu                  38;5;121
     .8xe                  38;5;121
+    .8xp                  38;5;121
 ## 3D Printing
-    .stl                  38;5;216
     .dwg                  38;5;216
     .ply                  38;5;216
+    .stl                  38;5;216
     .wrl                  38;5;216
 
 ## Unsorted
