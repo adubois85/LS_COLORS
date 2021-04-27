@@ -557,6 +557,49 @@
 #################################
 ####       Multimedia        ####
 #################################
+    ### Audio
+        ## Lossy
+            .3ga                  38;5;13
+            .aac                  38;5;13
+            .amr                  38;5;13   # Adaptive Multi-Rate ACELP Codec
+            .au                   38;5;13   # Audacity
+            .caf                  38;5;13   # Apple Core Audio
+            .dts                  38;5;13
+            .fcm                  38;5;13
+            .m4a                  38;5;13
+            .mid                  38;5;13
+            .midi                 38;5;13
+            .mod                  38;5;13   # Music Module
+            .mp3                  38;5;13
+            .mp4a                 38;5;13
+            .oga                  38;5;13
+            .ogg                  38;5;13
+            .opus                 38;5;13
+            .s3m                  38;5;13   # ScreamTracker 3 Module
+            .S3M                  38;5;13
+            .sid                  38;5;13   # Sound Interface Device (Commodore 64)
+            .wma                  38;5;13
+        ## Lossless
+            .aiff                 38;5;13
+            .alac                 38;5;13
+            .ape                  38;5;13   # Monkey's Audio
+            .flac                 38;5;13
+            .pcm                  38;5;13
+            .wv                   38;5;13
+            .wav                  38;5;13
+            .wvc                  38;5;13
+    ## Fonts
+        .afm                  38;5;66   # Adobe Font Metrics
+        .fnt                  38;5;66   # Windows Font
+        .fon                  38;5;66   # Windows 3.X Font Library
+        .otf                  38;5;66
+        .pfa                  38;5;66   # Printer Font ASCII
+        .PFA                  38;5;66
+        .pfb                  38;5;66   # Printer Font Binary
+        .pfm                  38;5;66   # Printer Font Metrics
+        .ttf                  38;5;66
+        .woff                 38;5;66   # Web Open Font Format
+        .woff2                38;5;66
     ### Images
         ## Raster
             .bmp                  35
@@ -622,52 +665,7 @@
             .sub                  38;5;117
             .sup                  38;5;117  # bitmap image track
             .vtt                  38;5;117
-    ### Audio
-        ## Lossy
-            .3ga                  38;5;13
-            .aac                  38;5;13
-            .amr                  38;5;13   # Adaptive Multi-Rate ACELP Codec
-            .au                   38;5;13   # Audacity
-            .caf                  38;5;13   # Apple Core Audio
-            .dts                  38;5;13
-            .fcm                  38;5;13
-            .m4a                  38;5;13
-            .mid                  38;5;13
-            .midi                 38;5;13
-            .mod                  38;5;13   # Music Module
-            .mp3                  38;5;13
-            .mp4a                 38;5;13
-            .oga                  38;5;13
-            .ogg                  38;5;13
-            .opus                 38;5;13
-            .s3m                  38;5;13   # ScreamTracker 3 Module
-            .S3M                  38;5;13
-            .sid                  38;5;13   # Sound Interface Device (Commodore 64)
-            .wma                  38;5;13
-        ## Lossless
-            .aiff                 38;5;13
-            .alac                 38;5;13
-            .ape                  38;5;13   # Monkey's Audio
-            .flac                 38;5;13
-            .pcm                  38;5;13
-            .wv                   38;5;13
-            .wav                  38;5;13
-            .wvc                  38;5;13
 
-## Fonts
-    .afm                  38;5;66
-    .fon                  38;5;66
-    .fnt                  38;5;66
-    .pfb                  38;5;66
-    .pfm                  38;5;66
-    .ttf                  38;5;66
-    .otf                  38;5;66
-    ## Web Open Font Format
-        .woff                 38;5;66
-        .woff2                38;5;66
-    ## PostScript Fonts
-        .PFA                  38;5;66
-        .pfa                  38;5;66
 ## Archives
     .7z                   01;38;2;34;218;110
     .a                    01;38;2;34;218;110
@@ -750,7 +748,7 @@
     ## Backups
         .BUP                  38;5;241
         .bak                  38;5;241
-        .hi                   38;5;110  # Glasgow Haskell Compiler interface file
+        .hi                   38;5;110  # Glasgow Haskell Compiler nterface
         .o                    38;5;241  # *nix Object file (shared libraries, core dumps etc)
         *core                 38;5;241  # Linux user core dump file (from /proc/sys/kernel/core_pattern)
         .mdump                38;5;241  # Mini DuMP crash report
