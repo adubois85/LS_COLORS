@@ -257,103 +257,103 @@
     *NOTICE               01;38;5;11
     *CHANGES              01;38;5;11
     .log                  01;38;5;11
-  ## key-value, non-relational data
-    .bib                  38;5;178
-    .json                 38;5;178
-    .jsonl                38;5;178
-    .jsonnet              38;5;178
-    .libsonnet            38;5;142
-    .ndjson               38;5;178
-    .msg                  38;5;178
-    .pgn                  38;5;178
-    .rss                  38;5;178
-    .xml                  38;5;178
-    .fxml                 38;5;178
-    .toml                 38;5;178
-    .yaml                 38;5;178
-    .yml                  38;5;178
-    .RData                38;5;178
-    .rdata                38;5;178
-    .xsd                  38;5;178
-    .dtd                  38;5;178
-    .sgml                 38;5;178
-    .rng                  38;5;178
-    .rnc                  38;5;178
-  ## binary
-    .chm                  38;5;141
-    .djvu                 38;5;141
-    .pdf                  38;5;141
-    .PDF                  38;5;141
-    .mobi                 38;5;141
-    .epub                 38;5;141
-  ## words
-    .docm                 38;5;111;4
-    .doc                  38;5;111
-    .docx                 38;5;111
-    .odb                  38;5;111
-    .odt                  38;5;111
-    .rtf                  38;5;111
-  ## presentation
-    .odp                  38;5;166
-    .pps                  38;5;166
-    .ppt                  38;5;166
-    .pptx                 38;5;166
-  ## Powerpoint show
-    .ppts                 38;5;166
-  ## Powerpoint with enabled macros
-    .pptxm                38;5;166;4
-  ## Powerpoint show with enabled macros
-    .pptsm                38;5;166;4
-  ## spreadsheet
-    .csv                  38;5;78
-    .tsv                  38;5;78
-  ## Open document spreadsheet
-    .ods                  38;5;112
-    .xla                  38;5;76
-  ## Excel spreadsheet
-    .xls                  38;5;112
-    .xlsx                 38;5;112
-  ## Excel spreadsheet with macros
-    .xlsxm                38;5;112;4
-  ## Excel module
-    .xltm                 38;5;73;4
-    .xltx                 38;5;73
-  ## macOS office suite
-    .pages                38;5;111
-    .numbers              38;5;112
-    .key                  38;5;166
+    ## key-value, non-relational data
+        .bib                  38;5;178
+        .json                 38;5;178
+        .jsonl                38;5;178
+        .jsonnet              38;5;178
+        .libsonnet            38;5;142
+        .ndjson               38;5;178
+        .msg                  38;5;178
+        .pgn                  38;5;178
+        .rss                  38;5;178
+        .xml                  38;5;178
+        .fxml                 38;5;178
+        .toml                 38;5;178
+        .yaml                 38;5;178
+        .yml                  38;5;178
+        .RData                38;5;178
+        .rdata                38;5;178
+        .xsd                  38;5;178
+        .dtd                  38;5;178
+        .sgml                 38;5;178
+        .rng                  38;5;178
+        .rnc                  38;5;178
+    ## binary
+        .chm                  38;5;141
+        .djvu                 38;5;141
+        .pdf                  38;5;141
+        .PDF                  38;5;141
+        .mobi                 38;5;141
+        .epub                 38;5;141
+    ## words
+        .docm                 38;5;111;4
+        .doc                  38;5;111
+        .docx                 38;5;111
+        .odb                  38;5;111
+        .odt                  38;5;111
+        .rtf                  38;5;111
+    ## presentation
+        .odp                  38;5;166
+        .pps                  38;5;166
+        .ppt                  38;5;166
+        .pptx                 38;5;166
+    ## Powerpoint show
+        .ppts                 38;5;166
+    ## Powerpoint with enabled macros
+        .pptxm                38;5;166;4
+    ## Powerpoint show with enabled macros
+        .pptsm                38;5;166;4
+    ## spreadsheet
+        .csv                  38;5;78
+        .tsv                  38;5;78
+    ## Open document spreadsheet
+        .ods                  38;5;112
+        .xla                  38;5;76
+    ## Excel spreadsheet
+        .xls                  38;5;112
+        .xlsx                 38;5;112
+    ## Excel spreadsheet with macros
+        .xlsxm                38;5;112;4
+    ## Excel module
+        .xltm                 38;5;73;4
+        .xltx                 38;5;73
+    ## macOS office suite
+        .pages                38;5;111
+        .numbers              38;5;112
+        .key                  38;5;166
 
-  ## configs
-    *config               1
-    *cfg                  1
-    *conf                 1
-    *rc                   1
-    *authorized_keys      1
-    *known_hosts          1
-    .ini                  1
-    .plist                1
-  ## vim
-    .viminfo              1
-  ## Cisco VPN client configuration
-    .pcf                  1
-  ## Adobe Photoshop proof settings file
-    .psf                  1
-  ## Sublime Text config
-    .hidden-color-scheme  1
-    .hidden-tmTheme       1
-    .last-run             1
-    .merged-ca-bundle     1
-    .sublime-build        1
-    .sublime-commands     1
-    .sublime-keymap       1
-    .sublime-settings     1
-    .sublime-snippet      1
-    .sublime-project      1
-    .sublime-workspace    1
-    .tmTheme              1
-    .user-ca-bundle       1
-  # eclipse
-    .epf                  1
+    ## configs
+        *config               1
+        *cfg                  1
+        *conf                 1
+        *rc                   1
+        *authorized_keys      1
+        *known_hosts          1
+        .ini                  1
+        .plist                1
+    ## vim
+        .viminfo              1
+    ## Cisco VPN client configuration
+        .pcf                  1
+    ## Adobe Photoshop proof settings file
+        .psf                  1
+    ## Sublime Text config
+        .hidden-color-scheme  1
+        .hidden-tmTheme       1
+        .last-run             1
+        .merged-ca-bundle     1
+        .sublime-build        1
+        .sublime-commands     1
+        .sublime-keymap       1
+        .sublime-settings     1
+        .sublime-snippet      1
+        .sublime-project      1
+        .sublime-workspace    1
+        .tmTheme              1
+        .user-ca-bundle       1
+    # eclipse
+        .epf                  1
 
 #################################
 ####       Code Files        ####
@@ -508,53 +508,53 @@
         .kak                  38;5;172
 
 
-  ### binaries
-  ## compiled apps for interpreted languages
-    .pyc                  38;5;240
-  ## orchestration
-    .tf                   38;5;168
-    .tfstate              38;5;168
-    .tfvars               38;5;168
-  ## html
-    .css                  38;5;125;1
-    .less                 38;5;125;1
-    .sass                 38;5;125;1
-    .scss                 38;5;125;1
-    .htm                  38;5;125;1
-    .html                 38;5;125;1
-    .jhtm                 38;5;125;1
-    .mht                  38;5;125;1
-    .eml                  38;5;125;1
-    .mustache             38;5;125;1
+    ### binaries
+    ## compiled apps for interpreted languages
+        .pyc                  38;5;240
+    ## orchestration
+        .tf                   38;5;168
+        .tfstate              38;5;168
+        .tfvars               38;5;168
+    ## html
+        .css                  38;5;125;1
+        .less                 38;5;125;1
+        .sass                 38;5;125;1
+        .scss                 38;5;125;1
+        .htm                  38;5;125;1
+        .html                 38;5;125;1
+        .jhtm                 38;5;125;1
+        .mht                  38;5;125;1
+        .eml                  38;5;125;1
+        .mustache             38;5;125;1
 
 
-  ## vb/a
-    .vb                   38;5;81
-    .vba                  38;5;81
-    .vbs                  38;5;81
-  ## Build stuff
-    *Dockerfile           38;5;155
-    .dockerignore         38;5;240
-    *Makefile             38;5;155
-    *MANIFEST             38;5;243
-    *pm_to_blib           38;5;240
-    ## Functional Configuration
-        .nix                  38;5;155
-        .dhall                38;5;178
-    ## ruby rake
-        .rake                 38;5;155
-    ## automake
-        .am                   38;5;242
-        .in                   38;5;242
-        .hin                  38;5;242
-        .scan                 38;5;242
-        .m4                   38;5;242
-        .old                  38;5;242
-        .out                  38;5;242
-        .SKIP                 38;5;244
-  ## patch files
-    .diff                 48;5;197;38;5;232
-    .patch                48;5;197;38;5;232;1
+    ## vb/a
+        .vb                   38;5;81
+        .vba                  38;5;81
+        .vbs                  38;5;81
+    ## Build stuff
+        *Dockerfile           38;5;155
+        .dockerignore         38;5;240
+        *Makefile             38;5;155
+        *MANIFEST             38;5;243
+        *pm_to_blib           38;5;240
+        ## Functional Configuration
+            .nix                  38;5;155
+            .dhall                38;5;178
+        ## ruby rake
+            .rake                 38;5;155
+        ## automake
+            .am                   38;5;242
+            .in                   38;5;242
+            .hin                  38;5;242
+            .scan                 38;5;242
+            .m4                   38;5;242
+            .old                  38;5;242
+            .out                  38;5;242
+            .SKIP                 38;5;244
+    ## patch files
+        .diff                 48;5;197;38;5;232
+        .patch                48;5;197;38;5;232;1
 
 #################################
 ####       Multimedia        ####
@@ -667,12 +667,12 @@
     .pfm                  38;5;66
     .ttf                  38;5;66
     .otf                  38;5;66
-  ## Web Open Font Format
-    .woff                 38;5;66
-    .woff2                38;5;66
-  ## postscript fonts
-    .PFA                  38;5;66
-    .pfa                  38;5;66
+    ## Web Open Font Format
+        .woff                 38;5;66
+        .woff2                38;5;66
+    ## postscript fonts
+        .PFA                  38;5;66
+        .pfa                  38;5;66
 ## archives
     .7z                   01;38;2;34;218;110
     .a                    01;38;2;34;218;110
@@ -722,8 +722,8 @@
     .r[0-9]{0,2}          38;5;239
     .zx[0-9]{0,2}         38;5;239
     .z[0-9]{0,2}          38;5;239
-  ## partial files
-    .part                 38;5;239
+    ## partial files
+        .part                 38;5;239
 ## partition images
     .iso                  01;38;2;34;218;110
     .bin                  01;38;2;34;218;110
@@ -746,50 +746,50 @@
     .mde                  38;5;60
     .sqlite               38;5;60
     .typelib              38;5;60
-  ## NetCDF database
-    .nc                   38;5;60
+    ## NetCDF database
+        .nc                   38;5;60
 ## tempfiles
     ## undo files
         .pacnew               38;5;33
         .un~                  38;5;241
         .orig                 38;5;241
-  ## backups
-    .BUP                  38;5;241
-    .bak                  38;5;241
-    .hi                   38;5;110  # Glasgow Haskell Compiler interface file
-    .o                    38;5;241  # *nix Object file (shared libraries, core dumps etc)
-    *core                 38;5;241  # Linux user core dump file (from /proc/sys/kernel/core_pattern)
-    .mdump                38;5;241  # Mini DuMP crash report
-    .rlib                 38;5;241  # Static rust library
-    .dll                  38;5;241  # dynamic linked library
-  ## temporary files
-    .swp                  38;5;244
-    .swo                  38;5;244
-    .tmp                  38;5;244
-    .sassc                38;5;244
-  ## state files
-    .pid                  38;5;248
-    .state                38;5;248
-    *lockfile             38;5;248
-    *lock                 38;5;248
-  ## error logs
-    .err                  38;5;160;1
-    .error                38;5;160;1
-    .stderr               38;5;160;1
-  ## state dumps
-    .aria2                38;5;241
-    .dump                 38;5;241
-    .stackdump            38;5;241
-    .zcompdump            38;5;241
-    .zwc                  38;5;241
-  ## tcpdump, network traffic capture
-    .pcap                 38;5;29
-    .cap                  38;5;29
-    .dmp                  38;5;29
-  ## macOS
-    .DS_Store             38;5;239
-    .localized            38;5;239
-    .CFUserTextEncoding   38;5;239
+    ## backups
+        .BUP                  38;5;241
+        .bak                  38;5;241
+        .hi                   38;5;110  # Glasgow Haskell Compiler interface file
+        .o                    38;5;241  # *nix Object file (shared libraries, core dumps etc)
+        *core                 38;5;241  # Linux user core dump file (from /proc/sys/kernel/core_pattern)
+        .mdump                38;5;241  # Mini DuMP crash report
+        .rlib                 38;5;241  # Static rust library
+        .dll                  38;5;241  # dynamic linked library
+    ## temporary files
+        .swp                  38;5;244
+        .swo                  38;5;244
+        .tmp                  38;5;244
+        .sassc                38;5;244
+    ## state files
+        .pid                  38;5;248
+        .state                38;5;248
+        *lockfile             38;5;248
+        *lock                 38;5;248
+    ## error logs
+        .err                  38;5;160;1
+        .error                38;5;160;1
+        .stderr               38;5;160;1
+    ## state dumps
+        .aria2                38;5;241
+        .dump                 38;5;241
+        .stackdump            38;5;241
+        .zcompdump            38;5;241
+        .zwc                  38;5;241
+    ## tcpdump, network traffic capture
+        .pcap                 38;5;29
+        .cap                  38;5;29
+        .dmp                  38;5;29
+    ## macOS
+        .DS_Store             38;5;239
+        .localized            38;5;239
+        .CFUserTextEncoding   38;5;239
 ## hosts
 ## /etc/hosts.{deny,allow}
     .allow                38;5;112
@@ -861,27 +861,27 @@
     .rom                  38;5;213
     .sav                  38;5;213
     .st                   38;5;213
-  ## atari
-    .a00                  38;5;213
-    .a52                  38;5;213
-    .A64                  38;5;213
-    .a64                  38;5;213
-    .a78                  38;5;213
-    .adf                  38;5;213
-    .atr                  38;5;213
-  ## nintendo
-    .gb                   38;5;213
-    .gba                  38;5;213
-    .gbc                  38;5;213
-    .gel                  38;5;213
-    .gg                   38;5;213
-    .ggl                  38;5;213
-    .ipk                  38;5;213 # Nintendo (DS Packed Images)
-    .j64                  38;5;213
-    .nds                  38;5;213
-    .nes                  38;5;213
-  ## Sega
-    .sms                  38;5;213
+    ## atari
+        .a00                  38;5;213
+        .a52                  38;5;213
+        .A64                  38;5;213
+        .a64                  38;5;213
+        .a78                  38;5;213
+        .adf                  38;5;213
+        .atr                  38;5;213
+    ## nintendo
+        .gb                   38;5;213
+        .gba                  38;5;213
+        .gbc                  38;5;213
+        .gel                  38;5;213
+        .gg                   38;5;213
+        .ggl                  38;5;213
+        .ipk                  38;5;213 # Nintendo (DS Packed Images)
+        .j64                  38;5;213
+        .nds                  38;5;213
+        .nes                  38;5;213
+    ## Sega
+        .sms                  38;5;213
 ## Texas Instruments Calculator files
 ## for more see http://tibasicdev.wikidot.com/file-extensions
     .8xp                  38;5;121
@@ -896,55 +896,55 @@
     .wrl                  38;5;216
 
 ## unsorted
-  ##   Portable Object Translation for GNU Gettext
-    .pot                  38;5;7
-  ##   CAD files for printed circuit boards
-    .pcb                  38;5;7
-  ## groff (rendering app for texinfo)
-    .mm                   38;5;7
-  ## GIMP files
-    .gbr                  38;5;7
-    .scm                  38;5;7
-    .xcf                  38;5;7
-  ## printer spool file
-    .spl                  38;5;7
-  ## RStudio project file
-    .Rproj                38;5;11
-  ## Nokia Symbian OS files
-    .sis                  38;5;7
-  ## Others
-    .1p                   38;5;7
-    .3p                   38;5;7
-    .cnc                  38;5;7
-    .def                  38;5;7
-    .ex                   38;5;7
-    .example              38;5;7
-    .feature              38;5;7
-    .ger                  38;5;7
-    .ics                  38;5;7 # calendar information
-    .map                  38;5;7
-    .mf                   38;5;7
-    .mfasl                38;5;7
-    .mi                   38;5;7
-    .mtx                  38;5;7
-    .pc                   38;5;7
-    .pi                   38;5;7
-    .plt                  38;5;7
-    .pm                   38;5;7
-    .rdf                  38;5;7
-    .ru                   38;5;7
-    .sch                  38;5;7
-    .sty                  38;5;7
-    .sug                  38;5;7
-    .tdy                  38;5;7
-    .tfm                  38;5;7
-    .tfnt                 38;5;7
-    .tg                   38;5;7
-    .vcard                38;5;7
-    .vcf                  38;5;7 #contact information
-    .xln                  38;5;7
-  ## AppCode files
-    .iml                  38;5;166
+    ##   Portable Object Translation for GNU Gettext
+        .pot                  38;5;7
+    ##   CAD files for printed circuit boards
+        .pcb                  38;5;7
+    ## groff (rendering app for texinfo)
+        .mm                   38;5;7
+    ## GIMP files
+        .gbr                  38;5;7
+        .scm                  38;5;7
+        .xcf                  38;5;7
+    ## printer spool file
+        .spl                  38;5;7
+    ## RStudio project file
+        .Rproj                38;5;11
+    ## Nokia Symbian OS files
+        .sis                  38;5;7
+    ## Others
+        .1p                   38;5;7
+        .3p                   38;5;7
+        .cnc                  38;5;7
+        .def                  38;5;7
+        .ex                   38;5;7
+        .example              38;5;7
+        .feature              38;5;7
+        .ger                  38;5;7
+        .ics                  38;5;7 # calendar information
+        .map                  38;5;7
+        .mf                   38;5;7
+        .mfasl                38;5;7
+        .mi                   38;5;7
+        .mtx                  38;5;7
+        .pc                   38;5;7
+        .pi                   38;5;7
+        .plt                  38;5;7
+        .pm                   38;5;7
+        .rdf                  38;5;7
+        .ru                   38;5;7
+        .sch                  38;5;7
+        .sty                  38;5;7
+        .sug                  38;5;7
+        .tdy                  38;5;7
+        .tfm                  38;5;7
+        .tfnt                 38;5;7
+        .tg                   38;5;7
+        .vcard                38;5;7
+        .vcf                  38;5;7 #contact information
+        .xln                  38;5;7
+    ## AppCode files
+        .iml                  38;5;166
 
 ## Common executable formats
 ## Note that .app will still show as a directory, at least on Mac OS X--
@@ -956,58 +956,58 @@
 .reg 01;38;5;9  # Win
 .app 01;38;5;9  # OSX
 
-## termcap
-  TERM ansi
-  TERM color-xterm
-  TERM con132x25
-  TERM con132x30
-  TERM con132x43
-  TERM con132x60
-  TERM con80x25
-  TERM con80x28
-  TERM con80x30
-  TERM con80x43
-  TERM con80x50
-  TERM con80x60
-  TERM cons25
-  TERM console
-  TERM cygwin
-  TERM dtterm
-  TERM Eterm
-  TERM eterm-color
-  TERM gnome
-  TERM gnome-256color
-  TERM jfbterm
-  TERM konsole
-  TERM kterm
-  TERM linux
-  TERM linux-c
-  TERM mach-color
-  TERM mlterm
-  TERM putty
-  TERM rxvt
-  TERM rxvt-256color
-  TERM rxvt-cygwin
-  TERM rxvt-cygwin-native
-  TERM rxvt-unicode
-  TERM rxvt-unicode-256color
-  TERM rxvt-unicode256
-  TERM screen
-  TERM screen-256color
-  TERM screen-256color-bce
-  TERM screen-bce
-  TERM screen-w
-  TERM screen.linux
-  TERM screen.rxvt
-  TERM terminator
-  TERM vt100
-  TERM xterm
-  TERM xterm-16color
-  TERM xterm-256color
-  TERM xterm-88color
-  TERM xterm-color
-  TERM xterm-debian
-  TERM xterm-kitty
+    ## termcap
+    TERM ansi
+    TERM color-xterm
+    TERM con132x25
+    TERM con132x30
+    TERM con132x43
+    TERM con132x60
+    TERM con80x25
+    TERM con80x28
+    TERM con80x30
+    TERM con80x43
+    TERM con80x50
+    TERM con80x60
+    TERM cons25
+    TERM console
+    TERM cygwin
+    TERM dtterm
+    TERM Eterm
+    TERM eterm-color
+    TERM gnome
+    TERM gnome-256color
+    TERM jfbterm
+    TERM konsole
+    TERM kterm
+    TERM linux
+    TERM linux-c
+    TERM mach-color
+    TERM mlterm
+    TERM putty
+    TERM rxvt
+    TERM rxvt-256color
+    TERM rxvt-cygwin
+    TERM rxvt-cygwin-native
+    TERM rxvt-unicode
+    TERM rxvt-unicode-256color
+    TERM rxvt-unicode256
+    TERM screen
+    TERM screen-256color
+    TERM screen-256color-bce
+    TERM screen-bce
+    TERM screen-w
+    TERM screen.linux
+    TERM screen.rxvt
+    TERM terminator
+    TERM vt100
+    TERM xterm
+    TERM xterm-16color
+    TERM xterm-256color
+    TERM xterm-88color
+    TERM xterm-color
+    TERM xterm-debian
+    TERM xterm-kitty
 
 # vim: ft=dircolors:fdm=marker:et:sw=2:
 
