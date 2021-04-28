@@ -237,6 +237,7 @@
         .md                   38;5;184
         .mkd                  38;5;184
         .markdown             38;5;184
+        .mustache             38;5;125;1
         .nfo                  38;5;184
         .pod                  38;5;184
         .rst                  38;5;184
@@ -392,6 +393,11 @@
             .cljw                 38;5;41   # Gorilla REPL worksheet
         ## Crystal
             .cr                   38;5;81
+        ## CSS
+            .css                  38;5;125;1
+            .less                 38;5;125;1
+            .sass                 38;5;125;1
+            .scss                 38;5;125;1
         ## Dart
             .dart                 38;5;51
         ## Fortran
@@ -409,7 +415,12 @@
             .gs                   38;5;81
         ## Haskell
             .hs                   38;5;81
-            .lhs                  38;5;81   # literate Haskell
+            .lhs                  38;5;81       # literate Haskell
+        ## HTML
+            .htm                  38;5;125;1
+            .html                 38;5;125;1
+            .jhtm                 38;5;125;1    # HTML with Java
+            .mht                  38;5;125;1    # MIME HTML
         ## Java
             .java                 38;5;074;1
             .jsp                  38;5;074;1    # Jakarta Server Pages   
@@ -499,17 +510,7 @@
         .tf                   38;5;168
         .tfstate              38;5;168
         .tfvars               38;5;168
-    ## HTML
-        .css                  38;5;125;1
-        .less                 38;5;125;1
-        .sass                 38;5;125;1
-        .scss                 38;5;125;1
-        .htm                  38;5;125;1
-        .html                 38;5;125;1
-        .jhtm                 38;5;125;1
-        .mht                  38;5;125;1
-        .eml                  38;5;125;1
-        .mustache             38;5;125;1
+
 
     ## Build Stuff
         *Dockerfile           38;5;155
@@ -916,13 +917,14 @@
         .xln                  38;5;7
 
 ### [TODO] Stuff to be sorted
-        .dat                  38;5;13   # No idea why this was in audio; will move later [TODO]
-        .cda                  38;5;13   # CD Audio Track Shortcut
-        .IFO                  35    # DVD information (chapters, file locations, etc.)
+        .dat                  38;5;13       # No idea why this was in audio; will move later [TODO]
+        .cda                  38;5;13       # CD Audio Track Shortcut
+        .IFO                  35            # DVD information (chapters, file locations, etc.)
         .csv                  38;5;78
         .tsv                  38;5;78
         .xltm                 38;5;73;4     # Macro-enabled Excel template
         .xltx                 38;5;73       # Excel template
+        .eml                  38;5;125;1    # Electronic Mail Format
 
     ## AppCode Files
         .iml                  38;5;166
