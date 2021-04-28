@@ -323,8 +323,6 @@
         *rc                   1
     ## Vim
         .viminfo              1
-    ## Adobe Photoshop proof settings file
-        .psf                  1
     ## Sublime Text Config
         .hidden-color-scheme  1
         .hidden-tmTheme       1
@@ -571,6 +569,7 @@
         .pfa                  38;5;66   # Printer Font ASCII
         .pfb                  38;5;66   # Printer Font Binary
         .pfm                  38;5;66   # Printer Font Metrics
+        .psf                  38;5;66   # PC Screen Font (Also Photoshop Proof Setup)
         .ttf                  38;5;66
         .woff                 38;5;66   # Web Open Font Format
         .woff2                38;5;66
