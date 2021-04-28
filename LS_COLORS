@@ -312,7 +312,11 @@
         .odt                  38;5;111
         .pages                38;5;111
         .rtf                  38;5;111
-    ## Configs
+
+#################################
+####   Configuration Files   ####
+#################################
+    ## General
         *authorized_keys      1
         *cfg                  1
         *conf                 1
@@ -323,7 +327,7 @@
         *rc                   1
     ## Vim
         .viminfo              1
-    ## Sublime Text Config
+    ## Sublime Text
         .hidden-color-scheme  1
         .hidden-tmTheme       1
         .last-run             1
