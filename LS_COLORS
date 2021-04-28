@@ -323,8 +323,6 @@
         *rc                   1
     ## Vim
         .viminfo              1
-    ## Cisco VPN client configuration
-        .pcf                  1
     ## Adobe Photoshop proof settings file
         .psf                  1
     ## Sublime Text Config
@@ -401,7 +399,6 @@
             .dart                 38;5;51
         ## Fortran
             .f                    38;5;81
-            .F                    38;5;81
             .f03                  38;5;81
             .f08                  38;5;81
             .f90                  38;5;81
@@ -440,7 +437,7 @@
             .nimble               38;5;81   # Nimble package manager for Nim
             .nims                 38;5;81   # NimScript
         ## Pascal
-            .P                    38;5;81
+            .p                    38;5;81
             .pp                   38;5;81
             .pas                  38;5;81
         ## Perl
@@ -455,7 +452,6 @@
             .py                   38;5;41
         ## R language
             .r                    38;5;49
-            .R                    38;5;49
         ## Ruby
             .gemspec              38;5;41
             .rb                   38;5;41
@@ -571,8 +567,8 @@
         .fnt                  38;5;66   # Windows Font
         .fon                  38;5;66   # Windows 3.X Font Library
         .otf                  38;5;66
+        .pcf                  38;5;66   # Portable Compiled Format
         .pfa                  38;5;66   # Printer Font ASCII
-        .PFA                  38;5;66
         .pfb                  38;5;66   # Printer Font Binary
         .pfm                  38;5;66   # Printer Font Metrics
         .ttf                  38;5;66
