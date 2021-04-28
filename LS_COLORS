@@ -260,7 +260,7 @@
     *VERSION              01;38;5;11
 
     .log                  01;38;5;11
-    ## Key-value, non-relational data
+    ## Structured Data
         .bib                  38;5;178
         .dtd                  38;5;178
         .fxml                 38;5;178
@@ -502,15 +502,8 @@
         .vim                  38;5;172
         .zsh                  38;5;172
 
-
-    ### Binaries
-    ## Compiled apps for interpreted languages
+    ### Bytecode
         .pyc                  38;5;240
-    ## Orchestration
-        .tf                   38;5;168
-        .tfstate              38;5;168
-        .tfvars               38;5;168
-
 
     ## Build Stuff
         *Dockerfile           38;5;155
@@ -532,6 +525,10 @@
             .out                  38;5;242
             .scan                 38;5;242
             .SKIP                 38;5;244
+        ## Terraform
+            .tf                   38;5;168
+            .tfstate              38;5;168
+            .tfvars               38;5;168
     ## Patch Files
         .diff                 48;5;197;38;5;232
         .patch                48;5;197;38;5;232;1
