@@ -260,34 +260,12 @@
     *VERSION              01;38;5;11
 
     .log                  01;38;5;11
-    ## Structured Data
-        .bib                  38;5;178
-        .dtd                  38;5;178      # Document Type Definition
-        .fxml                 38;5;178
-        .json                 38;5;178
-        .jsonl                38;5;178      # JSON Lines
-        .jsonnet              38;5;178
-        .libsonnet            38;5;142
-        .ndjson               38;5;178      # Newline Delimited JSON
-        .pgn                  38;5;178      # Portable Game Notation (chess)
-        .rda                  38;5;178      # R Workspace (legacy)
-        .RData                38;5;178      # R Workspace
-        .rnc                  38;5;178      # RELAX NG Compact
-        .rng                  38;5;178      # RELAX NG
-        .rss                  38;5;178
-        .sgml                 38;5;178
-        .toml                 38;5;178
-        .xml                  38;5;178
-        .xsd                  38;5;178
-        .yaml                 38;5;178
-        .yml                  38;5;178
     ## Binary
-        .chm                  38;5;141
+        .chm                  38;5;141      # Microsoft Compiled HTML Help
         .djvu                 38;5;141
         .epub                 38;5;141
         .mobi                 38;5;141
         .pdf                  38;5;141
-        .PDF                  38;5;141
         .xps                  38;5;141      # XML Paper Specification
     ## Presentations
         .key                  38;5;166
@@ -306,6 +284,27 @@
         .xlsb                 38;5;112      # Excel binary workbook
         .xlsm                 38;5;112;4    # Macro-enabled Excel spreadsheet
         .xlsx                 38;5;112
+    ## Structured Data
+        .bib                  38;5;178
+        .dtd                  38;5;178      # Document Type Definition
+        .fxml                 38;5;178
+        .json                 38;5;178
+        .jsonl                38;5;178      # JSON Lines
+        .jsonnet              38;5;178
+        .libsonnet            38;5;142
+        .ndjson               38;5;178      # Newline Delimited JSON
+        .pgn                  38;5;178      # Portable Game Notation (chess)
+        .rda                  38;5;178      # R Workspace (legacy)
+        .RData                38;5;178      # R Workspace
+        .rnc                  38;5;178      # RELAX NG Compact
+        .rng                  38;5;178      # RELAX NG
+        .rss                  38;5;178
+        .sgml                 38;5;178
+        .toml                 38;5;178
+        .xml                  38;5;178
+        .xsd                  38;5;178      # XML Schema Definition
+        .yaml                 38;5;178
+        .yml                  38;5;178
     ## Word Processor
         .doc                  38;5;111
         .docm                 38;5;111;4
