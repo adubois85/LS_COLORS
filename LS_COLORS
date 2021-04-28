@@ -262,18 +262,18 @@
     .log                  01;38;5;11
     ## Structured Data
         .bib                  38;5;178
-        .dtd                  38;5;178
+        .dtd                  38;5;178      # Document Type Definition
         .fxml                 38;5;178
         .json                 38;5;178
-        .jsonl                38;5;178
+        .jsonl                38;5;178      # JSON Lines
         .jsonnet              38;5;178
         .libsonnet            38;5;142
-        .msg                  38;5;178
-        .ndjson               38;5;178
-        .pgn                  38;5;178
-        .rdata                38;5;178
-        .rnc                  38;5;178
-        .rng                  38;5;178
+        .ndjson               38;5;178      # Newline Delimited JSON
+        .pgn                  38;5;178      # Portable Game Notation (chess)
+        .rda                  38;5;178      # R Workspace (legacy)
+        .RData                38;5;178      # R Workspace
+        .rnc                  38;5;178      # RELAX NG Compact
+        .rng                  38;5;178      # RELAX NG
         .rss                  38;5;178
         .sgml                 38;5;178
         .toml                 38;5;178
@@ -922,6 +922,7 @@
         .xltm                 38;5;73;4     # Macro-enabled Excel template
         .xltx                 38;5;73       # Excel template
         .eml                  38;5;125;1    # Electronic Mail Format
+        .msg                  38;5;178      # Outlook Message item
 
     ## AppCode Files
         .iml                  38;5;166
