@@ -644,7 +644,7 @@
     ## Archives
         .7z                   01;38;2;34;218;110
         .a                    01;38;2;34;218;110
-        .arj                  01;38;2;34;218;110
+        .arj                  01;38;2;34;218;110    # Archived by Robert Jung
         .bz2                  01;38;2;34;218;110
         .cbr                  01;38;2;34;218;110
         .cbz                  01;38;2;34;218;110
@@ -660,31 +660,31 @@
         .sz                   01;38;2;34;218;110
         .tar                  01;38;2;34;218;110
         .tgz                  01;38;2;34;218;110
-        .warc                 01;38;2;34;218;110
+        .warc                 01;38;2;34;218;110    # Web Archive
         .xz                   01;38;2;34;218;110
         .z                    01;38;2;34;218;110
         .zip                  01;38;2;34;218;110
         .zipx                 01;38;2;34;218;110
         .zoo                  01;38;2;34;218;110
         .zpaq                 01;38;2;34;218;110
-        .zst                  01;38;2;34;218;110
+        .zst                  01;38;2;34;218;110    # Zstandard
         .zstd                 01;38;2;34;218;110
         .zz                   01;38;2;34;218;110
     ## Packaged Apps
-        .apk                  38;5;215
-        .bsp                  38;5;215
-        .cab                  38;5;215
-        .crx                  38;5;215 # Google Chrome extension
-        .deb                  38;5;215
-        .ipa                  38;5;215
-        .jad                  38;5;215
+        .apk                  38;5;215      # Android Package
+        .bsp                  38;5;215      # Binary Space Partition
+        .cab                  38;5;215      # Windows Cabinet
+        .crx                  38;5;215      # Google Chrome extension
+        .deb                  38;5;215      # Debian
+        .ipa                  38;5;215      # iOS App Store Package
+        .jad                  38;5;215      # Java Application Descriptor
         .jar                  38;5;215
-        .pak                  38;5;215
-        .pk3                  38;5;215
-        .rpm                  38;5;215
-        .vdf                  38;5;215
-        .vpk                  38;5;215
-        .xpi                  38;5;215 # Mozilla Firefox extension
+        .pak                  38;5;215      # Package (lots of video games)
+        .pk3                  38;5;215      # id Tech 3 Package (renamed zip)
+        .rpm                  38;5;215      # Red Hat Package Manager
+        .vdf                  38;5;215      # Valve Data File (Source Engine games)
+        .vpk                  38;5;215      # Valve Pak (Source Engine games)
+        .xpi                  38;5;215      # Mozilla Firefox extension
 ## Segments from 0 to three digits after first extension letter
     .r[0-9]{0,2}          38;5;239
     .z[0-9]{0,2}          38;5;239
