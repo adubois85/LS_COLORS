@@ -701,20 +701,20 @@
     ## Partial Files
         .part                 38;5;239
 ## Databases
-    .accdb                38;5;60
-    .accde                38;5;60
-    .accdr                38;5;60
-    .accdt                38;5;60
-    .db                   38;5;60
-    .fmp12                38;5;60
-    .fp7                  38;5;60
+    .accdb                38;5;60       # Microsoft Access Database (2007+)
+    .accde                38;5;60       # Microsoft Access Database Execute Only (2007+)
+    .accdr                38;5;60       # Microsoft Access Database Runtime (2007+)
+    .accdt                38;5;60       # Microsfot Access Database Template (2007+)
+    .db                   38;5;60       
+    .fmp12                38;5;60       # FileMaker Pro 12+
+    .fp7                  38;5;60       # FileMaker Pro 7+
     .localstorage         38;5;60
-    .mdb                  38;5;60
-    .mde                  38;5;60
-    .nc                   38;5;60   # NetCDF database
-    .odb                  38;5;111  # OpenDocument Database
+    .mdb                  38;5;60       # Microsoft Access Database (legacy)
+    .mde                  38;5;60       # Microsfot Access Database Execute Only (legacy)
+    .nc                   38;5;60       # NetCDF database
+    .odb                  38;5;111      # OpenDocument Database
     .sqlite               38;5;60
-    .typelib              38;5;60
+    .typelib              38;5;60       # GObject Introspection Repository Type Library (Gnome)
 ## Tempfiles
     ## Undo Files
         .orig                 38;5;241
