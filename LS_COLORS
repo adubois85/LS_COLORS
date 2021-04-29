@@ -670,6 +670,15 @@
         .zst                  01;38;2;34;218;110    # Zstandard
         .zstd                 01;38;2;34;218;110
         .zz                   01;38;2;34;218;110
+    ## Disk Images
+        .bin                  01;38;2;34;218;110
+        .iso                  01;38;2;34;218;110
+        .nrg                  01;38;2;34;218;110    # Nero disc image
+        .qcow                 01;38;2;34;218;110    # QEMU Copy On Write
+        .sparseimage          01;38;2;34;218;110    # macOS Sparse Disk Image
+        .toast                01;38;2;34;218;110    # Roxio Toast disc image
+        .vcd                  01;38;2;34;218;110    # Virtual CD
+        .vmdk                 01;38;2;34;218;110    # Virtual Machine Disk
     ## Packaged Apps
         .apk                  38;5;215      # Android Package
         .bsp                  38;5;215      # Binary Space Partition
@@ -691,15 +700,6 @@
     .zx[0-9]{0,2}         38;5;239
     ## Partial Files
         .part                 38;5;239
-## Partition Images
-    .bin                  01;38;2;34;218;110
-    .iso                  01;38;2;34;218;110
-    .nrg                  01;38;2;34;218;110
-    .qcow                 01;38;2;34;218;110
-    .sparseimage          01;38;2;34;218;110
-    .toast                01;38;2;34;218;110
-    .vcd                  01;38;2;34;218;110
-    .vmdk                 01;38;2;34;218;110
 ## Databases
     .accdb                38;5;60
     .accde                38;5;60
