@@ -267,6 +267,22 @@
         .mobi                 38;5;141
         .pdf                  38;5;141
         .xps                  38;5;141      # XML Paper Specification
+
+    ## Databases
+        .accdb                38;5;60       # Microsoft Access Database (2007+)
+        .accde                38;5;60       # Microsoft Access Database Execute Only (2007+)
+        .accdr                38;5;60       # Microsoft Access Database Runtime (2007+)
+        .accdt                38;5;60       # Microsfot Access Database Template (2007+)
+        .db                   38;5;60       
+        .fmp12                38;5;60       # FileMaker Pro 12+
+        .fp7                  38;5;60       # FileMaker Pro 7+
+        .localstorage         38;5;60
+        .mdb                  38;5;60       # Microsoft Access Database (legacy)
+        .mde                  38;5;60       # Microsfot Access Database Execute Only (legacy)
+        .nc                   38;5;60       # NetCDF database
+        .odb                  38;5;111      # OpenDocument Database
+        .sqlite               38;5;60
+        .typelib              38;5;60       # GObject Introspection Repository Type Library (Gnome)
     ## Presentations
         .key                  38;5;166
         .odp                  38;5;166
@@ -286,6 +302,7 @@
         .xlsx                 38;5;112
     ## Structured Data
         .bib                  38;5;178
+        .csv                  38;5;78       # Comma-separated Values
         .dtd                  38;5;178      # Document Type Definition
         .fxml                 38;5;178
         .json                 38;5;178
@@ -301,6 +318,7 @@
         .rss                  38;5;178
         .sgml                 38;5;178
         .toml                 38;5;178
+        .tsv                  38;5;78       # Tab-separated Values
         .xml                  38;5;178
         .xsd                  38;5;178      # XML Schema Definition
         .yaml                 38;5;178
@@ -702,28 +720,14 @@
         .8eu                  38;5;121      # TI-84+ CE Operating System
         .8xe                  38;5;121      # TI-83+ Program
         .8xp                  38;5;121      # TI-83+/84+ Program
-        
+
 ## Segments from 0 to three digits after first extension letter
     .r[0-9]{0,2}          38;5;239
     .z[0-9]{0,2}          38;5;239
     .zx[0-9]{0,2}         38;5;239
     ## Partial Files
         .part                 38;5;239
-## Databases
-    .accdb                38;5;60       # Microsoft Access Database (2007+)
-    .accde                38;5;60       # Microsoft Access Database Execute Only (2007+)
-    .accdr                38;5;60       # Microsoft Access Database Runtime (2007+)
-    .accdt                38;5;60       # Microsfot Access Database Template (2007+)
-    .db                   38;5;60       
-    .fmp12                38;5;60       # FileMaker Pro 12+
-    .fp7                  38;5;60       # FileMaker Pro 7+
-    .localstorage         38;5;60
-    .mdb                  38;5;60       # Microsoft Access Database (legacy)
-    .mde                  38;5;60       # Microsfot Access Database Execute Only (legacy)
-    .nc                   38;5;60       # NetCDF database
-    .odb                  38;5;111      # OpenDocument Database
-    .sqlite               38;5;60
-    .typelib              38;5;60       # GObject Introspection Repository Type Library (Gnome)
+
 ## Tempfiles
     ## Undo Files
         .orig                 38;5;241
@@ -880,12 +884,10 @@
     .wrl                  38;5;216      # Virtual Reality Modeling Language (VRML) World
 
 ## Unsorted
-    ##   Portable Object Translation for GNU Gettext
-        .pot                  38;5;7
+        .pot                  38;5;7    # Portable Object Template (localization; also Legacy PowerPoint Template)
     ##   CAD files for printed circuit boards
         .pcb                  38;5;7
-    ## groff (rendering app for texinfo)
-        # .mm                   38;5;7  This isn't correct, I'll fix it later [TODO]
+
     ## GIMP Files
         .gbr                  38;5;7
         .scm                  38;5;7
@@ -932,12 +934,13 @@
         .dat                  38;5;13       # No idea why this was in audio; will move later [TODO]
         .cda                  38;5;13       # CD Audio Track Shortcut
         .IFO                  35            # DVD information (chapters, file locations, etc.)
-        .csv                  38;5;78
-        .tsv                  38;5;78
+
         .xltm                 38;5;73;4     # Macro-enabled Excel template
         .xltx                 38;5;73       # Excel template
         .eml                  38;5;125;1    # Electronic Mail Format
         .msg                  38;5;178      # Outlook Message item
+    ## groff (rendering app for texinfo)
+        # .mm                   38;5;7  This isn't correct, I'll fix it later [TODO]
 
     ## AppCode Files
         .iml                  38;5;166
