@@ -695,6 +695,14 @@
         .vdf                  38;5;215      # Valve Data File (Source Engine games)
         .vpk                  38;5;215      # Valve Pak (Source Engine games)
         .xpi                  38;5;215      # Mozilla Firefox extension
+    ## Texas Instruments Calculator Files
+        # for more see http://tibasicdev.wikidot.com/file-extensions
+        .82p                  38;5;121      # TI-82 Program
+        .83p                  38;5;121      # TI-83 Program
+        .8eu                  38;5;121      # TI-84+ CE Operating System
+        .8xe                  38;5;121      # TI-83+ Program
+        .8xp                  38;5;121      # TI-83+/84+ Program
+        
 ## Segments from 0 to three digits after first extension letter
     .r[0-9]{0,2}          38;5;239
     .z[0-9]{0,2}          38;5;239
@@ -864,13 +872,7 @@
         # .gel                  38;5;213  # Who the hell even knows?
         # .ggl                  38;5;213  # Animal Quest game data?
 
-## Texas Instruments Calculator Files
-## for more see http://tibasicdev.wikidot.com/file-extensions
-    .82p                  38;5;121      # TI-82 Program
-    .83p                  38;5;121      # TI-83 Program
-    .8eu                  38;5;121      # TI-84+ CE Operating System
-    .8xe                  38;5;121      # TI-83+ Program
-    .8xp                  38;5;121      # TI-83+/84+ Program
+
 ## 3D Printing
     .dwg                  38;5;216      # AutoCAD Drawing Database
     .ply                  38;5;216      # Polygon File Format
