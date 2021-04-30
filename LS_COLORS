@@ -686,6 +686,7 @@
         .crx                  38;5;215      # Google Chrome extension
         .deb                  38;5;215      # Debian
         .ipa                  38;5;215      # iOS App Store Package
+        .ipk                  38;5;213      # Opkg package
         .jad                  38;5;215      # Java Application Descriptor
         .jar                  38;5;215
         .pak                  38;5;215      # Package (lots of video games)
@@ -821,33 +822,48 @@
     .pgp                  38;5;192;3
     .sig                  38;5;192;3
     .signature            38;5;192;3
-## Emulators
-    .32x                  38;5;213
-    .cdi                  38;5;213
-    .fm2                  38;5;213
-    .rom                  38;5;213
-    .sav                  38;5;213
-    .st                   38;5;213
-    ## Atari
-        .a00                  38;5;213
-        .a52                  38;5;213
-        .a64                  38;5;213
-        .a78                  38;5;213
-        .adf                  38;5;213
-        .atr                  38;5;213
-    ## Nintendo
-        .gb                   38;5;213
-        .gba                  38;5;213
-        .gbc                  38;5;213
-        .gel                  38;5;213
-        .gg                   38;5;213
-        .ggl                  38;5;213
-        .ipk                  38;5;213 # Nintendo (DS Packed Images)
-        .j64                  38;5;213
-        .nds                  38;5;213
-        .nes                  38;5;213
-    ## Sega
-        .sms                  38;5;213
+
+#################################
+####        Emulation        ####
+#################################
+    ### Console
+        ## Atari
+            .a00                  38;5;213
+            .a26                  38;5;213  # Atari 2600
+            .a52                  38;5;213  # Atari 5200
+            .a78                  38;5;213  # Atari 7800
+            .adf                  38;5;213  # Amiga Disk Format
+            .atr                  38;5;213  # Atari Disk Image
+            .j64                  38;5;213  # Jaguar
+            .st                   38;5;213  # Atari ST
+        ## Nintendo
+            .n64                  38;5;213  # Nintendo 64 (litte-endian)
+            .nes                  38;5;213  # Nintendo Entertainment System
+            .smc                  38;5;213  # Super Nintendo Entertainment System
+            .v64                  38;5;213  # Nintendo 64 (big-endian, byte-swapped)
+            .z64                  38;5;213  # Nintendo 64 (big-endian, native byte-order)
+        ## Others
+            .rom                  38;5;213  # General Read Only Memory image
+        ## Sega
+            .32x                  38;5;213  # Sega 32x
+            .cdi                  38;5;213  # Sega Dreamcast (DiscJuggler disc image)
+            .smd                  38;5;213  # Sega Genesis/Mega Drive
+            .sms                  38;5;213  # Sega Master System
+    ### Handheld
+        ## Nintendo
+            .gb                   38;5;213  # Game Boy
+            .gba                  38;5;213  # Game Boy Advace
+            .gbc                  38;5;213  # Game Boy Color
+            .nds                  38;5;213  # Nintendo DS
+        ## Others
+            .gg                   38;5;213  # Game Gear
+    ## Supporting Files
+        .fm2                  38;5;213  # FCEUX Movie file (NES)
+        .sav                  38;5;213  # Saved game
+        # .a64                  38;5;213  # Adaptoid 64 Controller Pak save file
+        # .gel                  38;5;213  # Who the hell even knows?
+        # .ggl                  38;5;213  # Animal Quest game data?
+
 ## Texas Instruments Calculator Files
 ## for more see http://tibasicdev.wikidot.com/file-extensions
     .82p                  38;5;121      # TI-82 Program
