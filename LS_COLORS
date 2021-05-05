@@ -353,6 +353,7 @@
     ### Repository Documentation
         *AUTHORS              01;38;5;11
         *CHANGES              01;38;5;11
+        *CONTRIBUTING         01;38;5;11
         *CONTRIBUTORS         01;38;5;11
         *COPYING              01;38;5;11
         *COPYRIGHT            01;38;5;11
@@ -363,7 +364,9 @@
         *PATENTS              01;38;5;11
         *README               01;38;5;11
         *README.md            01;38;5;11
+        *README.markdown      01;38;5;11
         *README.rst           01;38;5;11
+        *README.txt           01;38;5;11
         *VERSION              01;38;5;11
     ###       Source Files        ###
         ## Agda
