@@ -724,10 +724,6 @@
         .8xe                  38;5;121      # TI-83+ Program
         .8xp                  38;5;121      # TI-83+/84+ Program
 
-## Segments from 0 to three digits after first extension letter
-    .r[0-9]{0,2}          38;5;239
-    .z[0-9]{0,2}          38;5;239
-    .zx[0-9]{0,2}         38;5;239
     ## Partial Files
         .part                 38;5;239
 
@@ -1010,6 +1006,25 @@
     TERM xterm-color
     TERM xterm-debian
     TERM xterm-kitty
+
+## Segments from 0 to three digits after first extension letter
+    # This doesn't actually work; neither dircolors nor ls recognize regex for
+    # coloring file extensions, which can be verified by checking the source code.
+
+    # If you actually wanted to do something like this, you could either do so 
+    # programatically with, say, a shell script that appends each extension to this
+    # file (so there would be a glut of similar extensions at the bottom of this 
+    # document, e.g. .r01, .r02, etc.) before dircolors is run.
+
+    # Or you could modify ls in some way, either by directly modifying the source code
+    # and building it yourself, or by making a shell function that passes the output
+    # of ls to something like perl to to perform the regex.  All of these "solutions" 
+    # range between inconvenient and diffucult and likely carry some amount of
+    # unintended side effects.
+
+    # .r[0-9]{0,2}          38;5;239
+    # .z[0-9]{0,2}          38;5;239
+    # .zx[0-9]{0,2}         38;5;239
 
 # vim: ft=dircolors:fdm=marker:et:sw=2:
 
