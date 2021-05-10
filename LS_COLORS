@@ -520,8 +520,6 @@
         .vim                  38;5;172
         .zsh                  38;5;172
 
-    ### Bytecode
-        .pyc                  38;5;240
 
     ## Build Stuff
         *Dockerfile           38;5;155
@@ -562,7 +560,7 @@
             .au                   38;5;13   # Audacity
             .caf                  38;5;13   # Apple Core Audio
             .dts                  38;5;13   # Digital Theater System multichannel audio
-            .fcm                  38;5;13   # FC-M Packer Module (Future Composer? -- definitely Amiga)
+            .fcm                  38;5;13   # FC-M Packer Module (Franck "hitchhikr" Charlet? -- definitely Amiga)
             .m4a                  38;5;13   
             .mid                  38;5;13
             .midi                 38;5;13
@@ -619,7 +617,7 @@
         ## Vector
             .ai                   35
             .cdr                  35    # CorelDRAW
-            .drw                  35    # drawn file (some old programs)
+            .drw                  35    # Drawn file (some old programs)
             .eps                  35    # Encapsulated PostScript
             .epsf                 35    # Encapsulated PostScript Format
             .ps                   35
@@ -724,51 +722,56 @@
         .8xe                  38;5;121      # TI-83+ Program
         .8xp                  38;5;121      # TI-83+/84+ Program
 
+
+#################################
+####    Temporary/Cached     ####
+#################################
+    ## Backups
+        .bak                  38;5;241      # Backup (generic)
+        .BUP                  38;5;241      # Backup (generic)
+        *core                 38;5;241      # Linux user core dump file (from /proc/sys/kernel/core_pattern)
+        .dll                  38;5;241      # Dynamic Link Library
+        .hi                   38;5;110      # Glasgow Haskell Compiler nterface
+        .mdmp                 38;5;241      # Minidump crash report
+        .o                    38;5;241      # *nix Object file (shared libraries, core .dmps etc)
+        .rlib                 38;5;241      # Static Rust Library
+    ## Compiled Bytecode
+        .pyc                  38;5;240      # Python Compiled
+        .sassc                38;5;244      # Sass Compiled
+        .zwc                  38;5;241      # Zsh Word Code
+    ## Error Logs
+        .err                  38;5;160;1
+        .error                38;5;160;1
+        .stderr               38;5;160;1
+    ## macOS
+        .CFUserTextEncoding   38;5;239
+        .DS_Store             38;5;239
+        .localized            38;5;239
     ## Partial Files
         .part                 38;5;239
-
-## Tempfiles
-    ## Undo Files
-        .orig                 38;5;241
-        .pacnew               38;5;33
-        .un~                  38;5;241
-    ## Backups
-        .bak                  38;5;241
-        .BUP                  38;5;241
-        *core                 38;5;241  # Linux user core dump file (from /proc/sys/kernel/core_pattern)
-        .dll                  38;5;241  # dynamic linked library
-        .hi                   38;5;110  # Glasgow Haskell Compiler nterface
-        .mdmp                 38;5;241  # Minidump crash report
-        .o                    38;5;241  # *nix Object file (shared libraries, core .dmps etc)
-        .rlib                 38;5;241  # Static rust library
-    ## Temporary Files
-        .sassc                38;5;244
-        .swo                  38;5;244
-        .swp                  38;5;244
-        .tmp                  38;5;244
     ## State Files
         *lock                 38;5;248
         *lockfile             38;5;248
         .pid                  38;5;248
         .state                38;5;248
-    ## Error Logs
-        .err                  38;5;160;1
-        .error                38;5;160;1
-        .stderr               38;5;160;1
     ## State Dumps
         .aria2                38;5;241
         .dump                 38;5;241
         .stackdump            38;5;241
         .zcompdump            38;5;241
-        .zwc                  38;5;241
     ## TCP Dump, Network Traffic Capture
         .cap                  38;5;29
         .dmp                  38;5;29
         .pcap                 38;5;29
-    ## macOS
-        .CFUserTextEncoding   38;5;239
-        .DS_Store             38;5;239
-        .localized            38;5;239
+    ## Temporary Files  
+        .swo                  38;5;244      # vi Swap file (first fallback if file.swp already exists)
+        .swp                  38;5;244      # vi Swap file
+        .tmp                  38;5;244
+    ## Undo Files
+        .orig                 38;5;241
+        .pacnew               38;5;33
+        .un~                  38;5;241
+        
 ## hosts
 ## /etc/hosts.{deny,allow}
     .allow                38;5;112
@@ -802,11 +805,11 @@
     .urlview              38;5;116
     .webloc               38;5;116
 ## macOS Files
-    .car                  38;5;57  # asset catalog
-    *CodeResources        38;5;239 # code signing apps
-    .dylib                38;5;241 # shared lib
-    *PkgInfo              38;5;239 # app bundle id
-    .nib                  38;5;57  # UI
+    .car                  38;5;57       # Compiled Asset Record (asset catalog)
+    *CodeResources        38;5;239      # code signing digital signatures
+    .dylib                38;5;241      # Dynamic Library (Mach-O shared library)
+    *PkgInfo              38;5;239      # Application/Bundle type and creator codes
+    .nib                  38;5;57       # NeXTSTEP Interface Builder (UI)
     ## Xcode Files
         .entitlements         1
         .pbxproj              1
@@ -837,7 +840,7 @@
 #################################
 ####        Emulation        ####
 #################################
-    ### Console
+    ### Console ROM images
         ## Atari
             .a00                  38;5;213
             .a26                  38;5;213  # Atari 2600
@@ -860,7 +863,7 @@
             .cdi                  38;5;213  # Sega Dreamcast (DiscJuggler disc image)
             .smd                  38;5;213  # Sega Genesis/Mega Drive
             .sms                  38;5;213  # Sega Master System
-    ### Handheld
+    ### Handheld ROM images
         ## Nintendo
             .gb                   38;5;213  # Game Boy
             .gba                  38;5;213  # Game Boy Advace
