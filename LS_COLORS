@@ -227,9 +227,9 @@
 #################################
 ####        Documents        ####
 #################################
-    # Plain-text
+    ## Plain-text
         .txt                  38;5;253
-    # Markup
+    ## Markup
         .adoc                 38;5;184
         .asciidoc             38;5;184
         .etx                  38;5;184      # Setext
@@ -240,8 +240,8 @@
         .mustache             38;5;125;1
         .nfo                  38;5;184
         .pod                  38;5;184
-        .rst                  38;5;184
-        .tex                  38;5;184
+        .rst                  38;5;184      
+        .tex                  38;5;184      # LaTex
         .textile              38;5;184
 
 
