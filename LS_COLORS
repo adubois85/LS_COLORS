@@ -62,7 +62,7 @@
 # Cyan              #21c7a8     (33;199;168)
 # White             #d6deeb     (214;222;235)
 
-# Bright Black      #575656     (87;86;86)
+# Bright Black      #807b76     (128;123;118)
 # Bright Red        #f78c6c     (247;140;108)
 # Bright Green      #4cff7d     (76;255;125)
 # Bright Yellow     #ffeb95     (255;235;149)
@@ -174,9 +174,9 @@
     CHR                   03;34
     # Unix domain sockets; file for inter-process communication
     # Using the inverse property so the icon is colored nicely instead of grey
-    SOCK                  07;38;5;8;46
+    SOCK                  07;38;5;240;46
     # File for inter-process communication; Only present in Solaris 2.5+, I think
-    DOOR                  04;07;38;5;8;48;5;14
+    DOOR                  04;07;38;5;240;48;5;14
     # Named pipes
     FIFO                  30;46
     # Symlinks; currently, neither exa nor LSDeluxe recognize the target keyword,
@@ -196,12 +196,12 @@
 
     # Executable files; more generally, a file with any of the execute bits set
     EXEC                  31
-    ## Due to the anti-aliasing that iTerm2 uses, the usual red of my theme ends up
-    ## blending into the background too much and is hard to read, so I'm using a
-    ## more intense ANSI red that ends up looking about the same, but more legible
+    # Due to the anti-aliasing that iTerm2 uses, the usual red of my theme ends up
+    # blending into the background too much and is hard to read, so I'm using a
+    # more intense ANSI red that ends up looking about the same, but more legible
     # File with Set User ID bit set (chmod u+s)
     # The file executes with the owner's permissions instead of the user's
-    SETUID                38;5;196;48;5;8
+    SETUID                38;5;196;48;5;240
     # File with Set Group ID bit set (chmod g+s)
     # The file executes with the owner's group permissions instead of the user's group
     SETGID                38;5;196;42
