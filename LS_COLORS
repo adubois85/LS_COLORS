@@ -345,7 +345,22 @@
         .sublime-workspace    1
         .tmTheme              1
         .user-ca-bundle       1
-
+    ## systemd
+        # http://www.freedesktop.org/software/systemd/man/systemd.unit.html
+        *@.service            38;5;45
+        .automount            38;5;45
+        .device               38;5;45
+        .mount                38;5;45
+        .path                 38;5;45
+        .service              38;5;45
+        .snapshot             38;5;45
+        .socket               38;5;45
+        .swap                 38;5;45
+        .target               38;5;45
+        .timer                38;5;45
+    ## TCP Wrappers  e.g. /etc/hosts.{deny,allow}
+        .allow                38;5;112
+        .deny                 38;5;196
 
 #################################
 ####       Code Files        ####
@@ -771,24 +786,7 @@
         .orig                 38;5;241
         .pacnew               38;5;33
         .un~                  38;5;241
-        
-## hosts
-## /etc/hosts.{deny,allow}
-    .allow                38;5;112
-    .deny                 38;5;196
-## systemd
-## http://www.freedesktop.org/software/systemd/man/systemd.unit.html
-    *@.service            38;5;45
-    .automount            38;5;45
-    .device               38;5;45
-    .mount                38;5;45
-    .path                 38;5;45
-    .service              38;5;45
-    .snapshot             38;5;45
-    .socket               38;5;45
-    .swap                 38;5;45
-    .target               38;5;45
-    .timer                38;5;45
+
 ## Metadata
     .application          38;5;116
     .cue                  38;5;116
