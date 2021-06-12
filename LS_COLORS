@@ -246,6 +246,7 @@
 
 
 
+
     .log                  01;38;5;11
     ## Binary
         .chm                  38;5;141      # Microsoft Compiled HTML Help
@@ -270,12 +271,17 @@
         .odb                  38;5;111      # OpenDocument Database
         .sqlite               38;5;60
         .typelib              38;5;60       # GObject Introspection Repository Type Library (Gnome)
+    ### E-mail
+        .eml                  38;5;125;1    # Electronic Mail format
+        .msg                  38;5;178      # Outlook Message item
+        .vcard                38;5;7        # Vitual business Cards / contact info (aka VCF)
+        .vcf                  38;5;7        # Virtual Contact File (aka vCard)
     ## Presentations
         .key                  38;5;166
         .odp                  38;5;166
-        .pps                  38;5;166      # PowerPoint show (legacy)
-        .ppsm                 38;5;166;4    # Macro-enabled PowerPoint show
-        .ppsx                 38;5;166      # PowerPoint show
+        .pps                  38;5;166      # PowerPoint Show (legacy)
+        .ppsm                 38;5;166;4    # Macro-enabled PowerPoint Show
+        .ppsx                 38;5;166      # PowerPoint Show
         .ppt                  38;5;166      # PowerPoint presentation (legacy)
         .pptm                 38;5;166;4    # Macro-enabled PowerPoint presentation
         .pptx                 38;5;166
@@ -287,6 +293,8 @@
         .xlsb                 38;5;112      # Excel binary workbook
         .xlsm                 38;5;112;4    # Macro-enabled Excel spreadsheet
         .xlsx                 38;5;112
+        .xltm                 38;5;73;4     # Macro-enabled Excel Template
+        .xltx                 38;5;73       # Excel Template
     ## Structured Data
         .bib                  38;5;178
         .csv                  38;5;78       # Comma-separated Values
@@ -331,6 +339,7 @@
         *known_hosts          1
         .plist                1
         *rc                   1     # Run Commands (startup file for many programs)
+        .urlview              38;5;116  # URL extractor/launcher
     ## Sublime Text
         .hidden-color-scheme  1
         .hidden-tmTheme       1
@@ -567,6 +576,12 @@
 #################################
 ####       Multimedia        ####
 #################################
+    ### 3D Printing / CAD
+        .dwg                  38;5;216      # AutoCAD Drawing Database
+        .pcb                  38;5;7        # Printed Circuit Board design file
+        .ply                  38;5;216      # Polygon File Format
+        .stl                  38;5;216      # Stereolithography (3D Systems CAD)
+        .wrl                  38;5;216      # Virtual Reality Modeling Language (VRML) World
     ### Audio
         ## Lossy
             .3ga                  38;5;13
@@ -597,7 +612,7 @@
             .wv                   38;5;13
             .wav                  38;5;13
             .wvc                  38;5;13   # WavPack Correction
-    ## Fonts
+    ### Fonts
         .afm                  38;5;66   # Adobe Font Metrics
         .fnt                  38;5;66   # Windows Font
         .fon                  38;5;66   # Windows 3.X Font Library
@@ -622,12 +637,13 @@
             .jpg                  35
             .nth                  35    # Nokia Theme Studio
             .png                  35
-            .psd                  35
+            .psd                  35    # PhotoShop Document
             .pxd                  35    # Pixlr layered image/Pixelmator Pro (also Cython...)
             .pxm                  35    # Pixelmator
             .tif                  35
             .tiff                 35
             .webp                 35
+            .xcf                  38;5;7    # eXperimental Computing Facility (GIMP native image format)
             .xpm                  35    # X PixMap
         ## Vector
             .ai                   35
@@ -637,6 +653,12 @@
             .epsf                 35    # Encapsulated PostScript Format
             .ps                   35
             .svg                  35
+    ### Metadata / Playlists
+        .cda                  38;5;13       # CD Audio Track Shortcut
+        .cue                  38;5;116
+        .IFO                  35            # DVD information (chapters, file locations, etc.)
+        .m3u                  38;5;116
+        .m3u8                 38;5;116
     ### Video
         ## General
             .avi                  35
@@ -788,19 +810,14 @@
         .un~                  38;5;241
 
 ## Metadata
-    .application          38;5;116
-    .cue                  38;5;116
+    .application          38;5;116      # Microsoft ClickOnce deployment manifest
     .description          38;5;116
     .directory            38;5;116
     .lnk                  38;5;39
-    .m3u                  38;5;116
-    .m3u8                 38;5;116
-    .md5                  38;5;116
     .properties           38;5;116
     .sfv                  38;5;116
     .theme                38;5;116
     .torrent              38;5;116
-    .urlview              38;5;116
     .webloc               38;5;116
 ## macOS Files
     .car                  38;5;57       # Compiled Asset Record (asset catalog)
@@ -824,10 +841,11 @@
     .bfe                  38;5;192;3
     .enc                  38;5;192;3
     .gpg                  38;5;192;3
-    *id_dsa                38;5;192;3
-    *id_ecdsa              38;5;192;3
-    *id_ed25519            38;5;192;3
-    *id_rsa                38;5;192;3
+    *id_dsa               38;5;192;3
+    *id_ecdsa             38;5;192;3
+    *id_ed25519           38;5;192;3
+    *id_rsa               38;5;192;3
+    .md5                  38;5;116      # Message-Digest algorithm
     .p12                  38;5;192;3
     .p7s                  38;5;192;3
     .pem                  38;5;192;3
@@ -876,22 +894,12 @@
         # .gel                  38;5;213  # Who the hell even knows?
         # .ggl                  38;5;213  # Animal Quest game data?
 
-
-## 3D Printing
-    .dwg                  38;5;216      # AutoCAD Drawing Database
-    .ply                  38;5;216      # Polygon File Format
-    .stl                  38;5;216      # Stereolithography (3D Systems CAD)
-    .wrl                  38;5;216      # Virtual Reality Modeling Language (VRML) World
-
 ## Unsorted
         .pot                  38;5;7    # Portable Object Template (localization; also Legacy PowerPoint Template)
-    ##   CAD files for printed circuit boards
-        .pcb                  38;5;7
-
     ## GIMP Files
-        .gbr                  38;5;7
-        .scm                  38;5;7
-        .xcf                  38;5;7
+        .gbr                  38;5;7    # GIMP Brush
+        .scm                  38;5;7    # GIMP Script-Fu macro (a dialect of Scheme)
+
     ## Printer Spool File
         .spl                  38;5;7
     ## RStudio Project File
@@ -926,19 +934,10 @@
         .tfm                  38;5;7
         .tfnt                 38;5;7
         .tg                   38;5;7
-        .vcard                38;5;7
-        .vcf                  38;5;7 #contact information
         .xln                  38;5;7
 
 ### [TODO] Stuff to be sorted
         .dat                  38;5;13       # No idea why this was in audio; will move later [TODO]
-        .cda                  38;5;13       # CD Audio Track Shortcut
-        .IFO                  35            # DVD information (chapters, file locations, etc.)
-
-        .xltm                 38;5;73;4     # Macro-enabled Excel template
-        .xltx                 38;5;73       # Excel template
-        .eml                  38;5;125;1    # Electronic Mail Format
-        .msg                  38;5;178      # Outlook Message item
     ## groff (rendering app for texinfo)
         # .mm                   38;5;7  This isn't correct, I'll fix it later [TODO]
         .viminfo              1             # Vim cache 
